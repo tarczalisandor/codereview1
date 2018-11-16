@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.etools.webservice.wscext:WsClientExtension xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.etools.webservice.wscext="http://www.ibm.com/websphere/appserver/schemas/5.0.2/wscext.xmi" xmi:id="WsClientExtension_1380283675580">
+  <componentScopedRefs xmi:id="ComponentScopedRefs_1380283675580" componentNameLink="??SET THIS TO component name link??">
+    <serviceRefs xmi:id="ServiceRef_1380285033459" serviceRefLink="service/SendSMS">
+      <portQnameBindings xmi:id="PortQnameBinding_1380285033459" portQnameLocalNameLink="SendSMSImplPort"/>
+    </serviceRefs>
+    <serviceRefs xmi:id="ServiceRef_1380698888474" serviceRefLink="service/GWServiceService">
+      <portQnameBindings xmi:id="PortQnameBinding_1380698888474" portQnameLocalNameLink="GWService"/>
+    </serviceRefs>
+  </componentScopedRefs>
+</com.ibm.etools.webservice.wscext:WsClientExtension>

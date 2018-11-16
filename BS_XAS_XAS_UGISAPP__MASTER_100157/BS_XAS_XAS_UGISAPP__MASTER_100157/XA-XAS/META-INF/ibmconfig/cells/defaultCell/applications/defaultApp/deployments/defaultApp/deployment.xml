@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<appdeployment:Deployment xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:appdeployment="http://www.ibm.com/websphere/appserver/schemas/5.0/appdeployment.xmi" xmi:id="Deployment_1362498375952">
+  <deployedObject xmi:type="appdeployment:ApplicationDeployment" xmi:id="ApplicationDeployment_1362498375952" startingWeight="10">
+    <modules xmi:type="appdeployment:EJBModuleDeployment" xmi:id="EJBModuleDeployment_1362498375952" startingWeight="5000" uri="XA-XAS-BF.jar"/>
+    <modules xmi:type="appdeployment:WebModuleDeployment" xmi:id="WebModuleDeployment_1362498375952" startingWeight="10000" uri="XA-XAS-PF.war" classloaderMode="PARENT_LAST"/>
+    <modules xmi:type="appdeployment:WebModuleDeployment" xmi:id="WebModuleDeployment_1362498375953" startingWeight="10000" uri="XA-XAS-WS.war" classloaderMode="PARENT_LAST"/>
+    <classloader xmi:id="Classloader_1360583062849" mode="PARENT_LAST">
+      <libraries xmi:id="LibraryRef_1360583242049" libraryName="X10S-EBA-GLB12"/>
+      <libraries xmi:id="LibraryRef_1360583272813" libraryName="X10S-EBA-GLB-JVM"/>
+    </classloader>
+  </deployedObject>
+</appdeployment:Deployment>

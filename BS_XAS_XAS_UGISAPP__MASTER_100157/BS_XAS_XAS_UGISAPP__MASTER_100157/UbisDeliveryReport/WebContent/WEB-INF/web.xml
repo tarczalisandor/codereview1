@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>UbisDeliveryReport</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>VodafonePopSmsDeliver</display-name>
+    <servlet-name>VodafonePopSmsDeliver</servlet-name>
+    <servlet-class>it.usi.VodafonePopSmsDeliver</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>VodafonePopSmsDeliver</servlet-name>
+    <url-pattern>/VodafonePopSmsDeliver</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<description>Vodafone Pop Check</description>
+  	<display-name>VodafonePopCheck</display-name>
+  	<icon>
+  		<small-icon>icons/small.gif</small-icon>
+  		<large-icon>icons/small.gif</large-icon>
+  	</icon>
+  	<servlet-name>VodafonePopCheck</servlet-name>
+  	<servlet-class>it.usi.VodafonePopCheck</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>VodafonePopCheck</servlet-name>
+  	<url-pattern>/VodafonePopCheck</url-pattern>
+  </servlet-mapping>
+</web-app>

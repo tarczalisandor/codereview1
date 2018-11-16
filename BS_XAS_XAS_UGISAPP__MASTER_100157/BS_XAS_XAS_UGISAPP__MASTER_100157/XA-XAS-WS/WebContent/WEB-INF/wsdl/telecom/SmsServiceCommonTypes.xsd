@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema elementFormDefault="qualified" targetNamespace="http://sms.mgp.service.eng.it/commonTypes" xmlns:cmt="http://sms.mgp.service.eng.it/commonTypes" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	
+	<xs:complexType abstract="true" name="message">
+		<xs:sequence>
+			<xs:element minOccurs="1" name="txId" type="xs:string"/>
+			<xs:element minOccurs="1" name="destAddr" type="xs:string"/>
+			<xs:element name="destAddrNpi" type="xs:int"/>
+			<xs:element name="destAddrTon" type="xs:int"/>
+			<xs:element name="numOfParts" type="xs:int"/>
+			<xs:element name="partNum" type="xs:int"/>
+			<xs:element minOccurs="0" name="partsRefNum" type="xs:integer"/>
+			<xs:element minOccurs="1" name="payloadUd" type="xs:base64Binary"/>
+			<xs:element minOccurs="1" name="payloadUddc" type="cmt:gsmEncoding"/>
+			<xs:element minOccurs="0" name="payloadUdh" type="xs:base64Binary"/>
+			<xs:element minOccurs="0" name="priority" type="cmt:gsmPriority"/>
+			<xs:element minOccurs="0" name="srcAddr" type="xs:string"/>
+			<xs:element name="srcAddrNpi" type="xs:int"/>
+			<xs:element name="srcAddrTon" type="xs:int"/>
+			<xs:element minOccurs="0" name="validityPeriod" type="xs:dateTime"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType abstract="true" name="messageStatus">
+		<xs:sequence>
+			<xs:element minOccurs="0" name="protocolId" type="xs:string"/>
+			<xs:element minOccurs="1" name="date" type="xs:dateTime"/>
+			<xs:element minOccurs="0" name="deliveryDate" type="xs:dateTime"/>
+			<xs:element minOccurs="0" name="responseCode" type="xs:string"/>
+			<xs:element minOccurs="0" name="responseMessage" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:simpleType name="gsmEncoding">
+		<xs:restriction base="xs:string">
+		  <xs:enumeration value="GSM7"/>
+		  <xs:enumeration value="OCTECT_UNSPECIFIED"/>
+		  <xs:enumeration value="LATIN_1"/>
+		  <xs:enumeration value="CYRILLIC"/>
+		  <xs:enumeration value="UCS2"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+  	<xs:simpleType name="gsmPriority">
+	    <xs:restriction base="xs:string">
+	      <xs:enumeration value="LOW"/>
+	      <xs:enumeration value="NORMAL"/>
+	      <xs:enumeration value="URGENT"/>
+	      <xs:enumeration value="VERY_URGENT"/>
+	    </xs:restriction>
+  	</xs:simpleType>
+  	
+</xs:schema>

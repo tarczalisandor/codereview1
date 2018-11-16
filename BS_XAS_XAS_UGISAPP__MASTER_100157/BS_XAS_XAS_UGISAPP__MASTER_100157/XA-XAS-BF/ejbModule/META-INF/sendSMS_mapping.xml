@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE java-wsdl-mapping PUBLIC "-//IBM Corporation, Inc.//DTD J2EE JAX-RPC mapping 1.0//EN" "http://www.ibm.com/webservices/dtd/j2ee_jaxrpc_mapping_1_0.dtd">
+
+   <java-wsdl-mapping id="JavaWSDLMapping_1380285031462">
+      <package-mapping id="PackageMapping_1380285031462">
+         <package-type>eu.unicredit.sms.serverweb</package-type>
+         <namespaceURI>http://serverweb.sms.unicredit.eu/</namespaceURI>
+      </package-mapping>
+      <java-xml-type-mapping id="JavaXMLTypeMapping_1380285031462">
+         <class-type>int</class-type>
+         <root-type-qname id="RootTypeQname_1380285031462">
+            <namespaceURI>http://www.w3.org/2001/XMLSchema</namespaceURI>
+            <localpart>int</localpart>
+         </root-type-qname>
+         <qname-scope>simpleType</qname-scope>
+      </java-xml-type-mapping>
+      <java-xml-type-mapping id="JavaXMLTypeMapping_1380285031463">
+         <class-type>java.lang.String</class-type>
+         <root-type-qname id="RootTypeQname_1380285031463">
+            <namespaceURI>http://www.w3.org/2001/XMLSchema</namespaceURI>
+            <localpart>string</localpart>
+         </root-type-qname>
+         <qname-scope>simpleType</qname-scope>
+      </java-xml-type-mapping>
+      <service-interface-mapping id="ServiceInterfaceMapping_1380285031462">
+         <service-interface>eu.unicredit.sms.serverweb.SendSMS_Service</service-interface>
+         <wsdl-service-name id="WSDLServiceName_1380285031462">
+            <namespaceURI>http://serverweb.sms.unicredit.eu/</namespaceURI>
+            <localpart>SendSMS</localpart>
+         </wsdl-service-name>
+         <port-mapping id="PortMapping_1380285031462">
+            <port-name>SendSMSImplPort</port-name>
+            <java-port-name>SendSMSImplPort</java-port-name>
+         </port-mapping>
+      </service-interface-mapping>
+      <service-endpoint-interface-mapping id="ServiceEndpointInterfaceMapping_1380285031462">
+         <service-endpoint-interface>eu.unicredit.sms.serverweb.SendSMS_Port</service-endpoint-interface>
+         <wsdl-port-type id="WSDLPortType_1380285031462">
+            <namespaceURI>http://serverweb.sms.unicredit.eu/</namespaceURI>
+            <localpart>SendSMS</localpart>
+         </wsdl-port-type>
+         <wsdl-binding id="WSDLBinding_1380285031462">
+            <namespaceURI>http://serverweb.sms.unicredit.eu/</namespaceURI>
+            <localpart>SendSMSSoapBinding</localpart>
+         </wsdl-binding>
+         <service-endpoint-method-mapping id="ServiceEndpointMethodMapping_1380285031462">
+            <java-method-name>send</java-method-name>
+            <wsdl-operation>send</wsdl-operation>
+            <wrapped-element></wrapped-element>
+            <method-param-parts-mapping id="MethodParamPartsMapping_1380285031462">
+               <param-position>0</param-position>
+               <param-type>java.lang.String</param-type>
+               <wsdl-message-mapping id="WSDLMessageMapping_1380285031462">
+                  <wsdl-message id="WSDLMessage_1380285031462">
+                     <namespaceURI>http://serverweb.sms.unicredit.eu/</namespaceURI>
+                     <localpart>send</localpart>
+                  </wsdl-message>
+                  <wsdl-message-part-name>phonenumber</wsdl-message-part-name>
+                  <parameter-mode>IN</parameter-mode>
+               </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <method-param-parts-mapping id="MethodParamPartsMapping_1380285031463">
+               <param-position>1</param-position>
+               <param-type>java.lang.String</param-type>
+               <wsdl-message-mapping id="WSDLMessageMapping_1380285031463">
+                  <wsdl-message id="WSDLMessage_1380285031463">
+                     <namespaceURI>http://serverweb.sms.unicredit.eu/</namespaceURI>
+                     <localpart>send</localpart>
+                  </wsdl-message>
+                  <wsdl-message-part-name>msg</wsdl-message-part-name>
+                  <parameter-mode>IN</parameter-mode>
+               </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <method-param-parts-mapping id="MethodParamPartsMapping_1380285031464">
+               <param-position>2</param-position>
+               <param-type>java.lang.String</param-type>
+               <wsdl-message-mapping id="WSDLMessageMapping_1380285031464">
+                  <wsdl-message id="WSDLMessage_1380285031464">
+                     <namespaceURI>http://serverweb.sms.unicredit.eu/</namespaceURI>
+                     <localpart>send</localpart>
+                  </wsdl-message>
+                  <wsdl-message-part-name>alias</wsdl-message-part-name>
+                  <parameter-mode>IN</parameter-mode>
+               </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <method-param-parts-mapping id="MethodParamPartsMapping_1380285031465">
+               <param-position>3</param-position>
+               <param-type>java.lang.String</param-type>
+               <wsdl-message-mapping id="WSDLMessageMapping_1380285031465">
+                  <wsdl-message id="WSDLMessage_1380285031465">
+                     <namespaceURI>http://serverweb.sms.unicredit.eu/</namespaceURI>
+                     <localpart>send</localpart>
+                  </wsdl-message>
+                  <wsdl-message-part-name>abicode</wsdl-message-part-name>
+                  <parameter-mode>IN</parameter-mode>
+               </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <wsdl-return-value-mapping id="WSDLReturnValueMapping_1380285031462">
+               <method-return-value>int</method-return-value>
+               <wsdl-message id="WSDLMessage_1380285031466">
+                  <namespaceURI>http://serverweb.sms.unicredit.eu/</namespaceURI>
+                  <localpart>sendResponse</localpart>
+               </wsdl-message>
+               <wsdl-message-part-name>status</wsdl-message-part-name>
+            </wsdl-return-value-mapping>
+         </service-endpoint-method-mapping>
+      </service-endpoint-interface-mapping>
+   </java-wsdl-mapping>

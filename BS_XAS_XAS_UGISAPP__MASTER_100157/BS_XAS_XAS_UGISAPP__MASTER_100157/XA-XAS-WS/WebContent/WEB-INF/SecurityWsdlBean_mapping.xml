@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE java-wsdl-mapping PUBLIC "-//IBM Corporation, Inc.//DTD J2EE JAX-RPC mapping 1.0//EN" "http://www.ibm.com/webservices/dtd/j2ee_jaxrpc_mapping_1_0.dtd">
+
+   <java-wsdl-mapping id="JavaWSDLMapping_1363182958771">
+      <package-mapping id="PackageMapping_1363182958771">
+         <package-type>it.usi.xframe.xas.wsutil</package-type>
+         <namespaceURI>http://wsutil.xas.xframe.usi.it</namespaceURI>
+      </package-mapping>
+      <java-xml-type-mapping id="JavaXMLTypeMapping_1363182958771">
+         <class-type>java.lang.String</class-type>
+         <root-type-qname id="RootTypeQname_1363182958771">
+            <namespaceURI>http://www.w3.org/2001/XMLSchema</namespaceURI>
+            <localpart>string</localpart>
+         </root-type-qname>
+         <qname-scope>simpleType</qname-scope>
+      </java-xml-type-mapping>
+      <service-interface-mapping id="ServiceInterfaceMapping_1363182958771">
+         <service-interface>it.usi.xframe.xas.wsutil.SecurityWsdlBeanService</service-interface>
+         <wsdl-service-name id="WSDLServiceName_1363182958771">
+            <namespaceURI>http://wsutil.xas.xframe.usi.it</namespaceURI>
+            <localpart>SecurityWsdlBeanService</localpart>
+         </wsdl-service-name>
+         <port-mapping id="PortMapping_1363182958771">
+            <port-name>SecurityWsdlBean</port-name>
+            <java-port-name>SecurityWsdlBean</java-port-name>
+         </port-mapping>
+      </service-interface-mapping>
+      <service-endpoint-interface-mapping id="ServiceEndpointInterfaceMapping_1363182958771">
+         <service-endpoint-interface>it.usi.xframe.xas.wsutil.SecurityWsdlBean_SEI</service-endpoint-interface>
+         <wsdl-port-type id="WSDLPortType_1363182958771">
+            <namespaceURI>http://wsutil.xas.xframe.usi.it</namespaceURI>
+            <localpart>SecurityWsdlBean_SEI</localpart>
+         </wsdl-port-type>
+         <wsdl-binding id="WSDLBinding_1363182958771">
+            <namespaceURI>http://wsutil.xas.xframe.usi.it</namespaceURI>
+            <localpart>SecurityWsdlBeanSoapBinding</localpart>
+         </wsdl-binding>
+         <service-endpoint-method-mapping id="ServiceEndpointMethodMapping_1363182958771">
+            <java-method-name>getLoggedUser</java-method-name>
+            <wsdl-operation>getLoggedUser</wsdl-operation>
+            <wrapped-element></wrapped-element>
+            <wsdl-return-value-mapping id="WSDLReturnValueMapping_1363182958771">
+               <method-return-value>java.lang.String</method-return-value>
+               <wsdl-message id="WSDLMessage_1363182958771">
+                  <namespaceURI>http://wsutil.xas.xframe.usi.it</namespaceURI>
+                  <localpart>getLoggedUserResponse</localpart>
+               </wsdl-message>
+               <wsdl-message-part-name>getLoggedUserReturn</wsdl-message-part-name>
+            </wsdl-return-value-mapping>
+         </service-endpoint-method-mapping>
+      </service-endpoint-interface-mapping>
+   </java-wsdl-mapping>

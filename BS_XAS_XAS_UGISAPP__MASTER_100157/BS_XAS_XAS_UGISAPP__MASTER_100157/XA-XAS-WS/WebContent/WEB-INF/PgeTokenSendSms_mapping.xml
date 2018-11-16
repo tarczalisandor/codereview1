@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE java-wsdl-mapping PUBLIC "-//IBM Corporation, Inc.//DTD J2EE JAX-RPC mapping 1.0//EN" "http://www.ibm.com/webservices/dtd/j2ee_jaxrpc_mapping_1_0.dtd">
+
+   <java-wsdl-mapping id="JavaWSDLMapping_1425647034562">
+      <package-mapping id="PackageMapping_1425647034562">
+         <package-type>it.usi.xframe.system.eservice</package-type>
+         <namespaceURI>http://eservice.system.xframe.usi.it</namespaceURI>
+      </package-mapping>
+      <package-mapping id="PackageMapping_1425647034563">
+         <package-type>it.usi.xframe.xas.wsutil</package-type>
+         <namespaceURI>http://wsutil.xas.xframe.usi.it</namespaceURI>
+      </package-mapping>
+      <package-mapping id="PackageMapping_1425647034564">
+         <package-type>it.usi.xframe.system.errors</package-type>
+         <namespaceURI>http://errors.system.xframe.usi.it</namespaceURI>
+      </package-mapping>
+      <package-mapping id="PackageMapping_1425647034565">
+         <package-type>it.usi.xframe.xas.bfutil.data</package-type>
+         <namespaceURI>http://data.bfutil.xas.xframe.usi.it</namespaceURI>
+      </package-mapping>
+      <package-mapping id="PackageMapping_1425647034566">
+         <package-type>it.usi.xframe.xas.bfutil</package-type>
+         <namespaceURI>http://bfutil.xas.xframe.usi.it</namespaceURI>
+      </package-mapping>
+      <java-xml-type-mapping id="JavaXMLTypeMapping_1425647034562">
+         <class-type>java.lang.String</class-type>
+         <root-type-qname id="RootTypeQname_1425647034562">
+            <namespaceURI>http://www.w3.org/2001/XMLSchema</namespaceURI>
+            <localpart>string</localpart>
+         </root-type-qname>
+         <qname-scope>simpleType</qname-scope>
+      </java-xml-type-mapping>
+      <java-xml-type-mapping id="JavaXMLTypeMapping_1425647034563">
+         <class-type>java.lang.Object[]</class-type>
+         <root-type-qname id="RootTypeQname_1425647034563">
+            <namespaceURI>http://www.w3.org/2001/XMLSchema</namespaceURI>
+            <localpart>anyType[unbounded]</localpart>
+         </root-type-qname>
+         <qname-scope>complexType</qname-scope>
+      </java-xml-type-mapping>
+      <java-xml-type-mapping id="JavaXMLTypeMapping_1425647034564">
+         <class-type>it.usi.xframe.xas.wsutil.SendInternationalSmsResponse</class-type>
+         <root-type-qname id="RootTypeQname_1425647034564">
+            <namespaceURI>http://wsutil.xas.xframe.usi.it</namespaceURI>
+            <localpart>&gt;sendInternationalSmsResponse</localpart>
+         </root-type-qname>
+         <qname-scope>complexType</qname-scope>
+         <variable-mapping id="VariableMapping_1425647034562">
+            <java-variable-name>sendInternationalSmsReturn</java-variable-name>
+            <xml-element-name>sendInternationalSmsReturn</xml-element-name>
+         </variable-mapping>
+      </java-xml-type-mapping>
+      <java-xml-type-mapping id="JavaXMLTypeMapping_1425647034565">
+         <class-type>int</class-type>
+         <root-type-qname id="RootTypeQname_1425647034565">
+            <namespaceURI>http://www.w3.org/2001/XMLSchema</namespaceURI>
+            <localpart>int</localpart>
+         </root-type-qname>
+         <qname-scope>simpleType</qname-scope>
+      </java-xml-type-mapping>
+      <java-xml-type-mapping id="JavaXMLTypeMapping_1425647034566">
+         <class-type>it.usi.xframe.xas.bfutil.data.InternationalSmsMessage</class-type>
+         <root-type-qname id="RootTypeQname_1425647034566">
+            <namespaceURI>http://data.bfutil.xas.xframe.usi.it</namespaceURI>
+            <localpart>InternationalSmsMessage</localpart>
+         </root-type-qname>
+         <qname-scope>complexType</qname-scope>
+         <variable-mapping id="VariableMapping_1425647034563">
+            <java-variable-name>text</java-variable-name>
+            <xml-element-name>text</xml-element-name>
+         </variable-mapping>
+      </java-xml-type-mapping>
+      <java-xml-type-mapping id="JavaXMLTypeMapping_1425647034567">
+         <class-type>it.usi.xframe.xas.wsutil.SendInternationalSmsResponse</class-type>
+         <root-type-qname id="RootTypeQname_1425647034567">
+            <namespaceURI>http://wsutil.xas.xframe.usi.it</namespaceURI>
+            <localpart>sendInternationalSmsResponse</localpart>
+         </root-type-qname>
+         <qname-scope>element</qname-scope>
+      </java-xml-type-mapping>
+      <java-xml-type-mapping id="JavaXMLTypeMapping_1425647034568">
+         <class-type>it.usi.xframe.xas.bfutil.data.SmsSenderInfo</class-type>
+         <root-type-qname id="RootTypeQname_1425647034568">
+            <namespaceURI>http://data.bfutil.xas.xframe.usi.it</namespaceURI>
+            <localpart>SmsSenderInfo</localpart>
+         </root-type-qname>
+         <qname-scope>complexType</qname-scope>
+         <variable-mapping id="VariableMapping_1425647034564">
+            <java-variable-name>alias</java-variable-name>
+            <xml-element-name>alias</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1425647034565">
+            <java-variable-name>ABICode</java-variable-name>
+            <xml-element-name>ABICode</xml-element-name>
+         </variable-mapping>
+      </java-xml-type-mapping>
+      <java-xml-type-mapping id="JavaXMLTypeMapping_1425647034569">
+         <class-type>java.lang.Object</class-type>
+         <root-type-qname id="RootTypeQname_1425647034569">
+            <namespaceURI>http://www.w3.org/2001/XMLSchema</namespaceURI>
+            <localpart>anyType</localpart>
+         </root-type-qname>
+         <qname-scope>simpleType</qname-scope>
+      </java-xml-type-mapping>
+      <java-xml-type-mapping id="JavaXMLTypeMapping_1425647034570">
+         <class-type>it.usi.xframe.xas.bfutil.data.SmsBillingInfo</class-type>
+         <root-type-qname id="RootTypeQname_1425647034570">
+            <namespaceURI>http://data.bfutil.xas.xframe.usi.it</namespaceURI>
+            <localpart>SmsBillingInfo</localpart>
+         </root-type-qname>
+         <qname-scope>complexType</qname-scope>
+         <variable-mapping id="VariableMapping_1425647034566">
+            <java-variable-name>legalEntity</java-variable-name>
+            <xml-element-name>legalEntity</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1425647034567">
+            <java-variable-name>serviceName</java-variable-name>
+            <xml-element-name>serviceName</xml-element-name>
+         </variable-mapping>
+      </java-xml-type-mapping>
+      <java-xml-type-mapping id="JavaXMLTypeMapping_1425647034571">
+         <class-type>it.usi.xframe.xas.bfutil.data.InternationalSmsResponse</class-type>
+         <root-type-qname id="RootTypeQname_1425647034571">
+            <namespaceURI>http://data.bfutil.xas.xframe.usi.it</namespaceURI>
+            <localpart>InternationalSmsResponse</localpart>
+         </root-type-qname>
+         <qname-scope>complexType</qname-scope>
+         <variable-mapping id="VariableMapping_1425647034568">
+            <java-variable-name>code</java-variable-name>
+            <xml-element-name>code</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1425647034569">
+            <java-variable-name>descr</java-variable-name>
+            <xml-element-name>descr</xml-element-name>
+         </variable-mapping>
+      </java-xml-type-mapping>
+      <java-xml-type-mapping id="JavaXMLTypeMapping_1425647034572">
+         <class-type>it.usi.xframe.xas.bfutil.data.SmsDelivery</class-type>
+         <root-type-qname id="RootTypeQname_1425647034578">
+            <namespaceURI>http://data.bfutil.xas.xframe.usi.it</namespaceURI>
+            <localpart>SmsDelivery</localpart>
+         </root-type-qname>
+         <qname-scope>complexType</qname-scope>
+         <variable-mapping id="VariableMapping_1425647034578">
+            <java-variable-name>phoneNumber</java-variable-name>
+            <xml-element-name>phoneNumber</xml-element-name>
+         </variable-mapping>
+      </java-xml-type-mapping>
+      <java-xml-type-mapping id="JavaXMLTypeMapping_1425647034578">
+         <class-type>it.usi.xframe.xas.wsutil.SendInternationalSms</class-type>
+         <root-type-qname id="RootTypeQname_1425647034579">
+            <namespaceURI>http://wsutil.xas.xframe.usi.it</namespaceURI>
+            <localpart>sendInternationalSms</localpart>
+         </root-type-qname>
+         <qname-scope>element</qname-scope>
+      </java-xml-type-mapping>
+      <java-xml-type-mapping id="JavaXMLTypeMapping_1425647034579">
+         <class-type>it.usi.xframe.xas.bfutil.XASException</class-type>
+         <root-type-qname id="RootTypeQname_1425647034580">
+            <namespaceURI>http://bfutil.xas.xframe.usi.it</namespaceURI>
+            <localpart>XASException</localpart>
+         </root-type-qname>
+         <qname-scope>element</qname-scope>
+      </java-xml-type-mapping>
+      <java-xml-type-mapping id="JavaXMLTypeMapping_1425647034580">
+         <class-type>it.usi.xframe.xas.bfutil.data.SmsMessage</class-type>
+         <root-type-qname id="RootTypeQname_1425647034581">
+            <namespaceURI>http://data.bfutil.xas.xframe.usi.it</namespaceURI>
+            <localpart>SmsMessage</localpart>
+         </root-type-qname>
+         <qname-scope>complexType</qname-scope>
+         <variable-mapping id="VariableMapping_1425647034579">
+            <java-variable-name>msg</java-variable-name>
+            <xml-element-name>msg</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1425647034580">
+            <java-variable-name>phoneNumber</java-variable-name>
+            <xml-element-name>phoneNumber</xml-element-name>
+         </variable-mapping>
+      </java-xml-type-mapping>
+      <java-xml-type-mapping id="JavaXMLTypeMapping_1425647034581">
+         <class-type>it.usi.xframe.xas.wsutil.SendInternationalSms</class-type>
+         <root-type-qname id="RootTypeQname_1425647034582">
+            <namespaceURI>http://wsutil.xas.xframe.usi.it</namespaceURI>
+            <localpart>&gt;sendInternationalSms</localpart>
+         </root-type-qname>
+         <qname-scope>complexType</qname-scope>
+         <variable-mapping id="VariableMapping_1425647034581">
+            <java-variable-name>sms</java-variable-name>
+            <xml-element-name>sms</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1425647034582">
+            <java-variable-name>delivery</java-variable-name>
+            <xml-element-name>delivery</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1425647034583">
+            <java-variable-name>billing</java-variable-name>
+            <xml-element-name>billing</xml-element-name>
+         </variable-mapping>
+      </java-xml-type-mapping>
+      <java-xml-type-mapping id="JavaXMLTypeMapping_1425647034582">
+         <class-type>it.usi.xframe.system.eservice.ServiceFactoryException</class-type>
+         <root-type-qname id="RootTypeQname_1425647034583">
+            <namespaceURI>http://eservice.system.xframe.usi.it</namespaceURI>
+            <localpart>ServiceFactoryException</localpart>
+         </root-type-qname>
+         <qname-scope>element</qname-scope>
+      </java-xml-type-mapping>
+      <exception-mapping id="ExceptionMapping_1425647034578">
+         <exception-type>it.usi.xframe.system.errors.XFRSystemException</exception-type>
+         <wsdl-message id="WSDLMessage_1425647034578">
+            <namespaceURI>http://errors.system.xframe.usi.it</namespaceURI>
+            <localpart>XFRSystemException</localpart>
+         </wsdl-message>
+         <constructor-parameter-order id="ConstructorParameterOrder_1425647034578">
+            <element-name>message</element-name>
+            <element-name>stackTraceString</element-name>
+            <element-name>code</element-name>
+            <element-name>parameters</element-name>
+         </constructor-parameter-order>
+      </exception-mapping>
+      <exception-mapping id="ExceptionMapping_1425647034579">
+         <exception-type>it.usi.xframe.system.errors.XFRException</exception-type>
+         <wsdl-message id="WSDLMessage_1425647034579">
+            <namespaceURI>http://errors.system.xframe.usi.it</namespaceURI>
+            <localpart>XFRException</localpart>
+         </wsdl-message>
+         <constructor-parameter-order id="ConstructorParameterOrder_1425647034579">
+            <element-name>message</element-name>
+            <element-name>stackTraceString</element-name>
+         </constructor-parameter-order>
+      </exception-mapping>
+      <exception-mapping id="ExceptionMapping_1425647034580">
+         <exception-type>it.usi.xframe.system.errors.XFRSevereException</exception-type>
+         <wsdl-message id="WSDLMessage_1425647034580">
+            <namespaceURI>http://errors.system.xframe.usi.it</namespaceURI>
+            <localpart>XFRSevereException</localpart>
+         </wsdl-message>
+         <constructor-parameter-order id="ConstructorParameterOrder_1425647034580">
+            <element-name>message</element-name>
+            <element-name>stackTraceString</element-name>
+            <element-name>code</element-name>
+            <element-name>parameters</element-name>
+         </constructor-parameter-order>
+      </exception-mapping>
+      <exception-mapping id="ExceptionMapping_1425647034581">
+         <exception-type>it.usi.xframe.system.errors.XFRCodedException</exception-type>
+         <wsdl-message id="WSDLMessage_1425647034581">
+            <namespaceURI>http://errors.system.xframe.usi.it</namespaceURI>
+            <localpart>XFRCodedException</localpart>
+         </wsdl-message>
+         <constructor-parameter-order id="ConstructorParameterOrder_1425647034581">
+            <element-name>message</element-name>
+            <element-name>stackTraceString</element-name>
+            <element-name>code</element-name>
+            <element-name>parameters</element-name>
+         </constructor-parameter-order>
+      </exception-mapping>
+      <exception-mapping id="ExceptionMapping_1425647034582">
+         <exception-type>it.usi.xframe.xas.bfutil.XASException</exception-type>
+         <wsdl-message id="WSDLMessage_1425647034582">
+            <namespaceURI>http://bfutil.xas.xframe.usi.it</namespaceURI>
+            <localpart>XASException</localpart>
+         </wsdl-message>
+         <constructor-parameter-order id="ConstructorParameterOrder_1425647034582">
+            <element-name>message</element-name>
+            <element-name>stackTraceString</element-name>
+            <element-name>code</element-name>
+            <element-name>parameters</element-name>
+         </constructor-parameter-order>
+      </exception-mapping>
+      <exception-mapping id="ExceptionMapping_1425647034583">
+         <exception-type>it.usi.xframe.system.eservice.ServiceFactoryException</exception-type>
+         <wsdl-message id="WSDLMessage_1425647034583">
+            <namespaceURI>http://eservice.system.xframe.usi.it</namespaceURI>
+            <localpart>ServiceFactoryException</localpart>
+         </wsdl-message>
+         <constructor-parameter-order id="ConstructorParameterOrder_1425647034583">
+            <element-name>message</element-name>
+            <element-name>stackTraceString</element-name>
+            <element-name>code</element-name>
+            <element-name>parameters</element-name>
+         </constructor-parameter-order>
+      </exception-mapping>
+      <service-interface-mapping id="ServiceInterfaceMapping_1425647034578">
+         <service-interface>it.usi.xframe.xas.wsutil.PgeTokenSendSmsService</service-interface>
+         <wsdl-service-name id="WSDLServiceName_1425647034578">
+            <namespaceURI>http://wsutil.xas.xframe.usi.it</namespaceURI>
+            <localpart>PgeTokenSendSmsService</localpart>
+         </wsdl-service-name>
+         <port-mapping id="PortMapping_1425647034578">
+            <port-name>PgeTokenSendSms</port-name>
+            <java-port-name>PgeTokenSendSms</java-port-name>
+         </port-mapping>
+      </service-interface-mapping>
+      <service-endpoint-interface-mapping id="ServiceEndpointInterfaceMapping_1425647034578">
+         <service-endpoint-interface>it.usi.xframe.xas.wsutil.SendSms_SEI</service-endpoint-interface>
+         <wsdl-port-type id="WSDLPortType_1425647034578">
+            <namespaceURI>http://wsutil.xas.xframe.usi.it</namespaceURI>
+            <localpart>SendSms_SEI</localpart>
+         </wsdl-port-type>
+         <wsdl-binding id="WSDLBinding_1425647034578">
+            <namespaceURI>http://wsutil.xas.xframe.usi.it</namespaceURI>
+            <localpart>PgeTokenSendSmsSoapBinding</localpart>
+         </wsdl-binding>
+         <service-endpoint-method-mapping id="ServiceEndpointMethodMapping_1425647034578">
+            <java-method-name>sendSms</java-method-name>
+            <wsdl-operation>sendSms</wsdl-operation>
+            <wrapped-element></wrapped-element>
+            <method-param-parts-mapping id="MethodParamPartsMapping_1425647034578">
+               <param-position>0</param-position>
+               <param-type>it.usi.xframe.xas.bfutil.data.SmsMessage</param-type>
+               <wsdl-message-mapping id="WSDLMessageMapping_1425647034578">
+                  <wsdl-message id="WSDLMessage_1425647034584">
+                     <namespaceURI>http://wsutil.xas.xframe.usi.it</namespaceURI>
+                     <localpart>sendSmsRequest</localpart>
+                  </wsdl-message>
+                  <wsdl-message-part-name>sms</wsdl-message-part-name>
+                  <parameter-mode>IN</parameter-mode>
+               </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <method-param-parts-mapping id="MethodParamPartsMapping_1425647034579">
+               <param-position>1</param-position>
+               <param-type>it.usi.xframe.xas.bfutil.data.SmsSenderInfo</param-type>
+               <wsdl-message-mapping id="WSDLMessageMapping_1425647034579">
+                  <wsdl-message id="WSDLMessage_1425647034585">
+                     <namespaceURI>http://wsutil.xas.xframe.usi.it</namespaceURI>
+                     <localpart>sendSmsRequest</localpart>
+                  </wsdl-message>
+                  <wsdl-message-part-name>sender</wsdl-message-part-name>
+                  <parameter-mode>IN</parameter-mode>
+               </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <wsdl-return-value-mapping id="WSDLReturnValueMapping_1425647034578">
+               <method-return-value>void</method-return-value>
+               <wsdl-message id="WSDLMessage_1425647034586">
+                  <namespaceURI>http://wsutil.xas.xframe.usi.it</namespaceURI>
+                  <localpart>sendSmsResponse</localpart>
+               </wsdl-message>
+            </wsdl-return-value-mapping>
+         </service-endpoint-method-mapping>
+         <service-endpoint-method-mapping id="ServiceEndpointMethodMapping_1425647034579">
+            <java-method-name>sendInternationalSms</java-method-name>
+            <wsdl-operation>sendInternationalSms</wsdl-operation>
+            <wrapped-element></wrapped-element>
+            <method-param-parts-mapping id="MethodParamPartsMapping_1425647034580">
+               <param-position>0</param-position>
+               <param-type>it.usi.xframe.xas.bfutil.data.InternationalSmsMessage</param-type>
+               <wsdl-message-mapping id="WSDLMessageMapping_1425647034580">
+                  <wsdl-message id="WSDLMessage_1425647034587">
+                     <namespaceURI>http://wsutil.xas.xframe.usi.it</namespaceURI>
+                     <localpart>sendInternationalSmsRequest</localpart>
+                  </wsdl-message>
+                  <wsdl-message-part-name>sms</wsdl-message-part-name>
+                  <parameter-mode>IN</parameter-mode>
+               </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <method-param-parts-mapping id="MethodParamPartsMapping_1425647034581">
+               <param-position>1</param-position>
+               <param-type>it.usi.xframe.xas.bfutil.data.SmsDelivery</param-type>
+               <wsdl-message-mapping id="WSDLMessageMapping_1425647034581">
+                  <wsdl-message id="WSDLMessage_1425647034588">
+                     <namespaceURI>http://wsutil.xas.xframe.usi.it</namespaceURI>
+                     <localpart>sendInternationalSmsRequest</localpart>
+                  </wsdl-message>
+                  <wsdl-message-part-name>delivery</wsdl-message-part-name>
+                  <parameter-mode>IN</parameter-mode>
+               </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <method-param-parts-mapping id="MethodParamPartsMapping_1425647034582">
+               <param-position>2</param-position>
+               <param-type>it.usi.xframe.xas.bfutil.data.SmsBillingInfo</param-type>
+               <wsdl-message-mapping id="WSDLMessageMapping_1425647034582">
+                  <wsdl-message id="WSDLMessage_1425647034589">
+                     <namespaceURI>http://wsutil.xas.xframe.usi.it</namespaceURI>
+                     <localpart>sendInternationalSmsRequest</localpart>
+                  </wsdl-message>
+                  <wsdl-message-part-name>billing</wsdl-message-part-name>
+                  <parameter-mode>IN</parameter-mode>
+               </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <wsdl-return-value-mapping id="WSDLReturnValueMapping_1425647034579">
+               <method-return-value>it.usi.xframe.xas.bfutil.data.InternationalSmsResponse</method-return-value>
+               <wsdl-message id="WSDLMessage_1425647034590">
+                  <namespaceURI>http://wsutil.xas.xframe.usi.it</namespaceURI>
+                  <localpart>sendInternationalSmsResponse</localpart>
+               </wsdl-message>
+               <wsdl-message-part-name>sendInternationalSmsReturn</wsdl-message-part-name>
+            </wsdl-return-value-mapping>
+         </service-endpoint-method-mapping>
+      </service-endpoint-interface-mapping>
+   </java-wsdl-mapping>

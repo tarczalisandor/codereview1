@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?><wsdl:definitions targetNamespace="http://wsutil.xas.xframe.usi.it" xmlns:impl="http://wsutil.xas.xframe.usi.it" xmlns:intf="http://wsutil.xas.xframe.usi.it" xmlns:tns2="http://data.bfutil.xas.xframe.usi.it" xmlns:tns3="http://eservice.system.xframe.usi.it" xmlns:tns4="http://errors.system.xframe.usi.it" xmlns:tns5="http://bfutil.xas.xframe.usi.it" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+ <wsdl:types>
+  <schema elementFormDefault="qualified" targetNamespace="http://data.bfutil.xas.xframe.usi.it" xmlns="http://www.w3.org/2001/XMLSchema">
+   <complexType name="SmsMessage">
+    <sequence>
+     <element name="msg" nillable="true" type="xsd:string"/>
+     <element name="phoneNumber" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="SmsSenderInfo">
+    <sequence>
+     <element name="alias" nillable="true" type="xsd:string"/>
+     <element name="ABICode" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="InternationalSmsMessage">
+    <sequence>
+     <element name="text" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="SmsDelivery">
+    <sequence>
+     <element name="phoneNumber" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="SmsBillingInfo">
+    <sequence>
+     <element name="legalEntity" nillable="true" type="xsd:string"/>
+     <element name="serviceName" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="InternationalSmsResponse">
+    <sequence>
+     <element name="code" type="xsd:int"/>
+     <element name="descr" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+  </schema>
+  <schema elementFormDefault="qualified" targetNamespace="http://wsutil.xas.xframe.usi.it" xmlns="http://www.w3.org/2001/XMLSchema">
+   <import namespace="http://data.bfutil.xas.xframe.usi.it"/>
+   <element name="sendSms">
+    <complexType>
+     <sequence>
+      <element name="sms" nillable="true" type="tns2:SmsMessage"/>
+      <element name="sender" nillable="true" type="tns2:SmsSenderInfo"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="sendSmsResponse">
+    <complexType>
+     <sequence/>
+    </complexType>
+   </element>
+   <element name="sendInternationalSms">
+    <complexType>
+     <sequence>
+      <element name="sms" nillable="true" type="tns2:InternationalSmsMessage"/>
+      <element name="delivery" nillable="true" type="tns2:SmsDelivery"/>
+      <element name="billing" nillable="true" type="tns2:SmsBillingInfo"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="sendInternationalSmsResponse">
+    <complexType>
+     <sequence>
+      <element name="sendInternationalSmsReturn" nillable="true" type="tns2:InternationalSmsResponse"/>
+     </sequence>
+    </complexType>
+   </element>
+  </schema>
+  <schema elementFormDefault="qualified" targetNamespace="http://eservice.system.xframe.usi.it" xmlns="http://www.w3.org/2001/XMLSchema">
+   <import namespace="http://errors.system.xframe.usi.it"/>
+   <complexType name="ServiceFactoryException">
+    <complexContent>
+     <extension base="tns4:XFRSystemException">
+      <sequence/>
+     </extension>
+    </complexContent>
+   </complexType>
+   <element name="ServiceFactoryException" nillable="true" type="tns3:ServiceFactoryException"/>
+  </schema>
+  <schema elementFormDefault="qualified" targetNamespace="http://errors.system.xframe.usi.it" xmlns="http://www.w3.org/2001/XMLSchema">
+   <complexType name="XFRSystemException">
+    <complexContent>
+     <extension base="tns4:XFRSevereException">
+      <sequence/>
+     </extension>
+    </complexContent>
+   </complexType>
+   <complexType name="XFRSevereException">
+    <complexContent>
+     <extension base="tns4:XFRCodedException">
+      <sequence/>
+     </extension>
+    </complexContent>
+   </complexType>
+   <complexType name="XFRCodedException">
+    <complexContent>
+     <extension base="tns4:XFRException">
+      <sequence>
+       <element name="code" nillable="true" type="xsd:string"/>
+       <element maxOccurs="unbounded" name="parameters" nillable="true" type="xsd:anyType"/>
+      </sequence>
+     </extension>
+    </complexContent>
+   </complexType>
+   <complexType name="XFRException">
+    <sequence>
+     <element name="message" nillable="true" type="xsd:string"/>
+     <element name="stackTraceString" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+  </schema>
+  <schema elementFormDefault="qualified" targetNamespace="http://bfutil.xas.xframe.usi.it" xmlns="http://www.w3.org/2001/XMLSchema">
+   <import namespace="http://errors.system.xframe.usi.it"/>
+   <complexType name="XASException">
+    <complexContent>
+     <extension base="tns4:XFRCodedException">
+      <sequence/>
+     </extension>
+    </complexContent>
+   </complexType>
+   <element name="XASException" nillable="true" type="tns5:XASException"/>
+  </schema>
+ </wsdl:types>
+
+   <wsdl:message name="sendInternationalSmsResponse">
+
+      <wsdl:part element="impl:sendInternationalSmsResponse" name="parameters"/>
+
+   </wsdl:message>
+
+   <wsdl:message name="sendInternationalSmsRequest">
+
+      <wsdl:part element="impl:sendInternationalSms" name="parameters"/>
+
+   </wsdl:message>
+
+   <wsdl:message name="ServiceFactoryException">
+
+      <wsdl:part element="tns3:ServiceFactoryException" name="fault"/>
+
+   </wsdl:message>
+
+   <wsdl:message name="sendSmsRequest">
+
+      <wsdl:part element="impl:sendSms" name="parameters"/>
+
+   </wsdl:message>
+
+   <wsdl:message name="XASException">
+
+      <wsdl:part element="tns5:XASException" name="fault"/>
+
+   </wsdl:message>
+
+   <wsdl:message name="sendSmsResponse">
+
+      <wsdl:part element="impl:sendSmsResponse" name="parameters"/>
+
+   </wsdl:message>
+
+   <wsdl:portType name="SendSms_SEI">
+
+      <wsdl:operation name="sendSms">
+
+         <wsdl:input message="impl:sendSmsRequest" name="sendSmsRequest"/>
+
+         <wsdl:output message="impl:sendSmsResponse" name="sendSmsResponse"/>
+
+         <wsdl:fault message="impl:XASException" name="XASException"/>
+
+         <wsdl:fault message="impl:ServiceFactoryException" name="ServiceFactoryException"/>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="sendInternationalSms">
+
+         <wsdl:input message="impl:sendInternationalSmsRequest" name="sendInternationalSmsRequest"/>
+
+         <wsdl:output message="impl:sendInternationalSmsResponse" name="sendInternationalSmsResponse"/>
+
+         <wsdl:fault message="impl:XASException" name="XASException"/>
+
+         <wsdl:fault message="impl:ServiceFactoryException" name="ServiceFactoryException"/>
+
+      </wsdl:operation>
+
+   </wsdl:portType>
+
+   <wsdl:binding name="PgeTokenSendSmsSoapBinding" type="impl:SendSms_SEI">
+
+      <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="sendSms">
+
+         <wsdlsoap:operation soapAction="sendSms"/>
+
+         <wsdl:input name="sendSmsRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="sendSmsResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+         <wsdl:fault name="XASException">
+
+            <wsdlsoap:fault name="XASException" use="literal"/>
+
+         </wsdl:fault>
+
+         <wsdl:fault name="ServiceFactoryException">
+
+            <wsdlsoap:fault name="ServiceFactoryException" use="literal"/>
+
+         </wsdl:fault>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="sendInternationalSms">
+
+         <wsdlsoap:operation soapAction="sendInternationalSms"/>
+
+         <wsdl:input name="sendInternationalSmsRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="sendInternationalSmsResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+         <wsdl:fault name="XASException">
+
+            <wsdlsoap:fault name="XASException" use="literal"/>
+
+         </wsdl:fault>
+
+         <wsdl:fault name="ServiceFactoryException">
+
+            <wsdlsoap:fault name="ServiceFactoryException" use="literal"/>
+
+         </wsdl:fault>
+
+      </wsdl:operation>
+
+   </wsdl:binding>
+
+   <wsdl:service name="PgeTokenSendSmsService">
+
+      <wsdl:port binding="impl:PgeTokenSendSmsSoapBinding" name="PgeTokenSendSms">
+
+         <wsdlsoap:address location="http://localhost:9082/XA-XAS-WS/services/PgeTokenSendSms"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<applicationbnd:ApplicationBinding xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:applicationbnd="applicationbnd.xmi" xmi:id="ApplicationBinding_1237545271859">
+  <authorizationTable xmi:id="AuthorizationTable_1237545271859">
+    <authorizations xmi:id="RoleAssignment_1237545271859">
+      <specialSubjects xmi:type="applicationbnd:AllAuthenticatedUsers" xmi:id="AllAuthenticatedUsers_1297344337667" name="AllAuthenticatedUsers"/>
+      <role href="META-INF/application.xml#SecurityRole_1237545271859"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1237905756515">
+      <specialSubjects xmi:type="applicationbnd:AllAuthenticatedUsers" xmi:id="AllAuthenticatedUsers_1297344337667" name="AllAuthenticatedUsers"/>
+      <role href="META-INF/application.xml#SecurityRole_1237905756515"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1266488443233">
+      <specialSubjects xmi:type="applicationbnd:AllAuthenticatedUsers" xmi:id="AllAuthenticatedUsers_1297344337667" name="AllAuthenticatedUsers"/>
+      <role href="META-INF/application.xml#SecurityRole_1266488443233"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1297344337667">
+      <role href="META-INF/application.xml#SecurityRole_1297344337667"/>
+      <groups xmi:id="Group_1297678962776" name="XASXAS002"/>
+    </authorizations>
+  </authorizationTable>
+  <application href="META-INF/application.xml#Application_ID"/>
+</applicationbnd:ApplicationBinding>

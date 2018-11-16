@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE java-wsdl-mapping PUBLIC "-//IBM Corporation, Inc.//DTD J2EE JAX-RPC mapping 1.0//EN" "http://www.ibm.com/webservices/dtd/j2ee_jaxrpc_mapping_1_0.dtd">
+
+   <java-wsdl-mapping id="JavaWSDLMapping_1424105628543">
+      <package-mapping id="PackageMapping_1424105628543">
+         <package-type>it.usi.xframe.system.eservice</package-type>
+         <namespaceURI>http://eservice.system.xframe.usi.it</namespaceURI>
+      </package-mapping>
+      <package-mapping id="PackageMapping_1424105628544">
+         <package-type>it.usi.xframe.xas.wsutil</package-type>
+         <namespaceURI>http://wsutil.xas.xframe.usi.it</namespaceURI>
+      </package-mapping>
+      <package-mapping id="PackageMapping_1424105628545">
+         <package-type>it.usi.xframe.system.errors</package-type>
+         <namespaceURI>http://errors.system.xframe.usi.it</namespaceURI>
+      </package-mapping>
+      <package-mapping id="PackageMapping_1424105628546">
+         <package-type>it.usi.xframe.xas.bfutil.data</package-type>
+         <namespaceURI>http://data.bfutil.xas.xframe.usi.it</namespaceURI>
+      </package-mapping>
+      <package-mapping id="PackageMapping_1424105628547">
+         <package-type>it.usi.xframe.xas.bfutil</package-type>
+         <namespaceURI>http://bfutil.xas.xframe.usi.it</namespaceURI>
+      </package-mapping>
+      <java-xml-type-mapping id="JavaXMLTypeMapping_1424105628543">
+         <class-type>it.usi.xframe.xas.bfutil.data.BinaryEmailAttachment</class-type>
+         <root-type-qname id="RootTypeQname_1424105628543">
+            <namespaceURI>http://data.bfutil.xas.xframe.usi.it</namespaceURI>
+            <localpart>BinaryEmailAttachment</localpart>
+         </root-type-qname>
+         <qname-scope>complexType</qname-scope>
+         <variable-mapping id="VariableMapping_1424105628558">
+            <java-variable-name>binaryAttachment</java-variable-name>
+            <xml-element-name>binaryAttachment</xml-element-name>
+         </variable-mapping>
+      </java-xml-type-mapping>
+      <java-xml-type-mapping id="JavaXMLTypeMapping_1424105628558">
+         <class-type>java.lang.Object[]</class-type>
+         <root-type-qname id="RootTypeQname_1424105628558">
+            <namespaceURI>http://www.w3.org/2001/XMLSchema</namespaceURI>
+            <localpart>anyType[unbounded]</localpart>
+         </root-type-qname>
+         <qname-scope>complexType</qname-scope>
+      </java-xml-type-mapping>
+      <java-xml-type-mapping id="JavaXMLTypeMapping_1424105628559">
+         <class-type>it.usi.xframe.system.eservice.ServiceFactoryException</class-type>
+         <root-type-qname id="RootTypeQname_1424105628559">
+            <namespaceURI>http://eservice.system.xframe.usi.it</namespaceURI>
+            <localpart>ServiceFactoryException</localpart>
+         </root-type-qname>
+         <qname-scope>element</qname-scope>
+      </java-xml-type-mapping>
+      <java-xml-type-mapping id="JavaXMLTypeMapping_1424105628560">
+         <class-type>it.usi.xframe.xas.bfutil.data.BinaryEmailAttachment[]</class-type>
+         <root-type-qname id="RootTypeQname_1424105628560">
+            <namespaceURI>http://data.bfutil.xas.xframe.usi.it</namespaceURI>
+            <localpart>BinaryEmailAttachment[unbounded]</localpart>
+         </root-type-qname>
+         <qname-scope>complexType</qname-scope>
+      </java-xml-type-mapping>
+      <java-xml-type-mapping id="JavaXMLTypeMapping_1424105628561">
+         <class-type>it.usi.xframe.xas.bfutil.XASException</class-type>
+         <root-type-qname id="RootTypeQname_1424105628561">
+            <namespaceURI>http://bfutil.xas.xframe.usi.it</namespaceURI>
+            <localpart>XASException</localpart>
+         </root-type-qname>
+         <qname-scope>element</qname-scope>
+      </java-xml-type-mapping>
+      <java-xml-type-mapping id="JavaXMLTypeMapping_1424105628562">
+         <class-type>it.usi.xframe.xas.wsutil.SendEmailMessageWithBinary</class-type>
+         <root-type-qname id="RootTypeQname_1424105628562">
+            <namespaceURI>http://wsutil.xas.xframe.usi.it</namespaceURI>
+            <localpart>&gt;sendEmailMessageWithBinary</localpart>
+         </root-type-qname>
+         <qname-scope>complexType</qname-scope>
+         <variable-mapping id="VariableMapping_1424105628559">
+            <java-variable-name>emailMessage</java-variable-name>
+            <xml-element-name>emailMessage</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1424105628560">
+            <java-variable-name>attachments</java-variable-name>
+            <xml-element-name>attachments</xml-element-name>
+         </variable-mapping>
+      </java-xml-type-mapping>
+      <java-xml-type-mapping id="JavaXMLTypeMapping_1424105628563">
+         <class-type>byte[]</class-type>
+         <root-type-qname id="RootTypeQname_1424105628563">
+            <namespaceURI>http://www.w3.org/2001/XMLSchema</namespaceURI>
+            <localpart>base64Binary</localpart>
+         </root-type-qname>
+         <qname-scope>simpleType</qname-scope>
+      </java-xml-type-mapping>
+      <java-xml-type-mapping id="JavaXMLTypeMapping_1424105628564">
+         <class-type>it.usi.xframe.xas.wsutil.SendEmailMessageWithBinaryResponse</class-type>
+         <root-type-qname id="RootTypeQname_1424105628564">
+            <namespaceURI>http://wsutil.xas.xframe.usi.it</namespaceURI>
+            <localpart>&gt;sendEmailMessageWithBinaryResponse</localpart>
+         </root-type-qname>
+         <qname-scope>complexType</qname-scope>
+      </java-xml-type-mapping>
+      <java-xml-type-mapping id="JavaXMLTypeMapping_1424105628565">
+         <class-type>it.usi.xframe.xas.bfutil.data.AbstractEmailAttachment</class-type>
+         <root-type-qname id="RootTypeQname_1424105628565">
+            <namespaceURI>http://data.bfutil.xas.xframe.usi.it</namespaceURI>
+            <localpart>AbstractEmailAttachment</localpart>
+         </root-type-qname>
+         <qname-scope>complexType</qname-scope>
+         <variable-mapping id="VariableMapping_1424105628561">
+            <java-variable-name>attachmentDescription</java-variable-name>
+            <xml-element-name>attachmentDescription</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1424105628562">
+            <java-variable-name>attachmentMimeType</java-variable-name>
+            <xml-element-name>attachmentMimeType</xml-element-name>
+         </variable-mapping>
+      </java-xml-type-mapping>
+      <java-xml-type-mapping id="JavaXMLTypeMapping_1424105628566">
+         <class-type>it.usi.xframe.xas.wsutil.SendEmailMessageWithBinaryResponse</class-type>
+         <root-type-qname id="RootTypeQname_1424105628566">
+            <namespaceURI>http://wsutil.xas.xframe.usi.it</namespaceURI>
+            <localpart>sendEmailMessageWithBinaryResponse</localpart>
+         </root-type-qname>
+         <qname-scope>element</qname-scope>
+      </java-xml-type-mapping>
+      <java-xml-type-mapping id="JavaXMLTypeMapping_1424105628567">
+         <class-type>java.lang.String</class-type>
+         <root-type-qname id="RootTypeQname_1424105628567">
+            <namespaceURI>http://www.w3.org/2001/XMLSchema</namespaceURI>
+            <localpart>string</localpart>
+         </root-type-qname>
+         <qname-scope>simpleType</qname-scope>
+      </java-xml-type-mapping>
+      <java-xml-type-mapping id="JavaXMLTypeMapping_1424105628568">
+         <class-type>boolean</class-type>
+         <root-type-qname id="RootTypeQname_1424105628568">
+            <namespaceURI>http://www.w3.org/2001/XMLSchema</namespaceURI>
+            <localpart>boolean</localpart>
+         </root-type-qname>
+         <qname-scope>simpleType</qname-scope>
+      </java-xml-type-mapping>
+      <java-xml-type-mapping id="JavaXMLTypeMapping_1424105628569">
+         <class-type>it.usi.xframe.xas.wsutil.SendEmailMessageWithBinary</class-type>
+         <root-type-qname id="RootTypeQname_1424105628569">
+            <namespaceURI>http://wsutil.xas.xframe.usi.it</namespaceURI>
+            <localpart>sendEmailMessageWithBinary</localpart>
+         </root-type-qname>
+         <qname-scope>element</qname-scope>
+      </java-xml-type-mapping>
+      <java-xml-type-mapping id="JavaXMLTypeMapping_1424105628570">
+         <class-type>java.lang.Object</class-type>
+         <root-type-qname id="RootTypeQname_1424105628570">
+            <namespaceURI>http://www.w3.org/2001/XMLSchema</namespaceURI>
+            <localpart>anyType</localpart>
+         </root-type-qname>
+         <qname-scope>simpleType</qname-scope>
+      </java-xml-type-mapping>
+      <java-xml-type-mapping id="JavaXMLTypeMapping_1424105628571">
+         <class-type>it.usi.xframe.xas.bfutil.data.EmailMessage</class-type>
+         <root-type-qname id="RootTypeQname_1424105628571">
+            <namespaceURI>http://data.bfutil.xas.xframe.usi.it</namespaceURI>
+            <localpart>EmailMessage</localpart>
+         </root-type-qname>
+         <qname-scope>complexType</qname-scope>
+         <variable-mapping id="VariableMapping_1424105628563">
+            <java-variable-name>html</java-variable-name>
+            <xml-element-name>html</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1424105628564">
+            <java-variable-name>mailBcc</java-variable-name>
+            <xml-element-name>mailBcc</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1424105628565">
+            <java-variable-name>mailCc</java-variable-name>
+            <xml-element-name>mailCc</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1424105628566">
+            <java-variable-name>mailFrom</java-variable-name>
+            <xml-element-name>mailFrom</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1424105628567">
+            <java-variable-name>mailMessage</java-variable-name>
+            <xml-element-name>mailMessage</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1424105628568">
+            <java-variable-name>mailSubject</java-variable-name>
+            <xml-element-name>mailSubject</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1424105628569">
+            <java-variable-name>mailTo</java-variable-name>
+            <xml-element-name>mailTo</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1424105628570">
+            <java-variable-name>replyTo</java-variable-name>
+            <xml-element-name>replyTo</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1424105628571">
+            <java-variable-name>mailFromName</java-variable-name>
+            <xml-element-name>mailFromName</xml-element-name>
+         </variable-mapping>
+      </java-xml-type-mapping>
+      <exception-mapping id="ExceptionMapping_1424105628558">
+         <exception-type>it.usi.xframe.system.eservice.ServiceFactoryException</exception-type>
+         <wsdl-message id="WSDLMessage_1424105628558">
+            <namespaceURI>http://eservice.system.xframe.usi.it</namespaceURI>
+            <localpart>ServiceFactoryException</localpart>
+         </wsdl-message>
+         <constructor-parameter-order id="ConstructorParameterOrder_1424105628558">
+            <element-name>message</element-name>
+            <element-name>stackTraceString</element-name>
+            <element-name>code</element-name>
+            <element-name>parameters</element-name>
+         </constructor-parameter-order>
+      </exception-mapping>
+      <exception-mapping id="ExceptionMapping_1424105628559">
+         <exception-type>it.usi.xframe.xas.bfutil.XASException</exception-type>
+         <wsdl-message id="WSDLMessage_1424105628559">
+            <namespaceURI>http://bfutil.xas.xframe.usi.it</namespaceURI>
+            <localpart>XASException</localpart>
+         </wsdl-message>
+         <constructor-parameter-order id="ConstructorParameterOrder_1424105628559">
+            <element-name>message</element-name>
+            <element-name>stackTraceString</element-name>
+            <element-name>code</element-name>
+            <element-name>parameters</element-name>
+         </constructor-parameter-order>
+      </exception-mapping>
+      <exception-mapping id="ExceptionMapping_1424105628560">
+         <exception-type>it.usi.xframe.system.errors.XFRException</exception-type>
+         <wsdl-message id="WSDLMessage_1424105628560">
+            <namespaceURI>http://errors.system.xframe.usi.it</namespaceURI>
+            <localpart>XFRException</localpart>
+         </wsdl-message>
+         <constructor-parameter-order id="ConstructorParameterOrder_1424105628560">
+            <element-name>message</element-name>
+            <element-name>stackTraceString</element-name>
+         </constructor-parameter-order>
+      </exception-mapping>
+      <exception-mapping id="ExceptionMapping_1424105628561">
+         <exception-type>it.usi.xframe.system.errors.XFRCodedException</exception-type>
+         <wsdl-message id="WSDLMessage_1424105628561">
+            <namespaceURI>http://errors.system.xframe.usi.it</namespaceURI>
+            <localpart>XFRCodedException</localpart>
+         </wsdl-message>
+         <constructor-parameter-order id="ConstructorParameterOrder_1424105628561">
+            <element-name>message</element-name>
+            <element-name>stackTraceString</element-name>
+            <element-name>code</element-name>
+            <element-name>parameters</element-name>
+         </constructor-parameter-order>
+      </exception-mapping>
+      <exception-mapping id="ExceptionMapping_1424105628562">
+         <exception-type>it.usi.xframe.system.errors.XFRSevereException</exception-type>
+         <wsdl-message id="WSDLMessage_1424105628562">
+            <namespaceURI>http://errors.system.xframe.usi.it</namespaceURI>
+            <localpart>XFRSevereException</localpart>
+         </wsdl-message>
+         <constructor-parameter-order id="ConstructorParameterOrder_1424105628562">
+            <element-name>message</element-name>
+            <element-name>stackTraceString</element-name>
+            <element-name>code</element-name>
+            <element-name>parameters</element-name>
+         </constructor-parameter-order>
+      </exception-mapping>
+      <exception-mapping id="ExceptionMapping_1424105628563">
+         <exception-type>it.usi.xframe.system.errors.XFRSystemException</exception-type>
+         <wsdl-message id="WSDLMessage_1424105628563">
+            <namespaceURI>http://errors.system.xframe.usi.it</namespaceURI>
+            <localpart>XFRSystemException</localpart>
+         </wsdl-message>
+         <constructor-parameter-order id="ConstructorParameterOrder_1424105628563">
+            <element-name>message</element-name>
+            <element-name>stackTraceString</element-name>
+            <element-name>code</element-name>
+            <element-name>parameters</element-name>
+         </constructor-parameter-order>
+      </exception-mapping>
+      <service-interface-mapping id="ServiceInterfaceMapping_1424105628558">
+         <service-interface>it.usi.xframe.xas.wsutil.SendEmailService</service-interface>
+         <wsdl-service-name id="WSDLServiceName_1424105628558">
+            <namespaceURI>http://wsutil.xas.xframe.usi.it</namespaceURI>
+            <localpart>SendEmailService</localpart>
+         </wsdl-service-name>
+         <port-mapping id="PortMapping_1424105628558">
+            <port-name>SendEmail</port-name>
+            <java-port-name>SendEmail</java-port-name>
+         </port-mapping>
+      </service-interface-mapping>
+      <service-endpoint-interface-mapping id="ServiceEndpointInterfaceMapping_1424105628558">
+         <service-endpoint-interface>it.usi.xframe.xas.wsutil.SendEmail_SEI</service-endpoint-interface>
+         <wsdl-port-type id="WSDLPortType_1424105628558">
+            <namespaceURI>http://wsutil.xas.xframe.usi.it</namespaceURI>
+            <localpart>SendEmail_SEI</localpart>
+         </wsdl-port-type>
+         <wsdl-binding id="WSDLBinding_1424105628558">
+            <namespaceURI>http://wsutil.xas.xframe.usi.it</namespaceURI>
+            <localpart>SendEmailSoapBinding</localpart>
+         </wsdl-binding>
+         <service-endpoint-method-mapping id="ServiceEndpointMethodMapping_1424105628558">
+            <java-method-name>sendEmailMessageWithBinary</java-method-name>
+            <wsdl-operation>sendEmailMessageWithBinary</wsdl-operation>
+            <wrapped-element></wrapped-element>
+            <method-param-parts-mapping id="MethodParamPartsMapping_1424105628558">
+               <param-position>0</param-position>
+               <param-type>it.usi.xframe.xas.bfutil.data.EmailMessage</param-type>
+               <wsdl-message-mapping id="WSDLMessageMapping_1424105628558">
+                  <wsdl-message id="WSDLMessage_1424105628564">
+                     <namespaceURI>http://wsutil.xas.xframe.usi.it</namespaceURI>
+                     <localpart>sendEmailMessageWithBinaryRequest</localpart>
+                  </wsdl-message>
+                  <wsdl-message-part-name>emailMessage</wsdl-message-part-name>
+                  <parameter-mode>IN</parameter-mode>
+               </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <method-param-parts-mapping id="MethodParamPartsMapping_1424105628559">
+               <param-position>1</param-position>
+               <param-type>it.usi.xframe.xas.bfutil.data.BinaryEmailAttachment[]</param-type>
+               <wsdl-message-mapping id="WSDLMessageMapping_1424105628559">
+                  <wsdl-message id="WSDLMessage_1424105628565">
+                     <namespaceURI>http://wsutil.xas.xframe.usi.it</namespaceURI>
+                     <localpart>sendEmailMessageWithBinaryRequest</localpart>
+                  </wsdl-message>
+                  <wsdl-message-part-name>attachments</wsdl-message-part-name>
+                  <parameter-mode>IN</parameter-mode>
+               </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <wsdl-return-value-mapping id="WSDLReturnValueMapping_1424105628558">
+               <method-return-value>void</method-return-value>
+               <wsdl-message id="WSDLMessage_1424105628566">
+                  <namespaceURI>http://wsutil.xas.xframe.usi.it</namespaceURI>
+                  <localpart>sendEmailMessageWithBinaryResponse</localpart>
+               </wsdl-message>
+            </wsdl-return-value-mapping>
+         </service-endpoint-method-mapping>
+         <service-endpoint-method-mapping id="ServiceEndpointMethodMapping_1424105628559">
+            <java-method-name>exportEmailMessage</java-method-name>
+            <wsdl-operation>exportEmailMessage</wsdl-operation>
+            <wrapped-element></wrapped-element>
+            <method-param-parts-mapping id="MethodParamPartsMapping_1424105628560">
+               <param-position>0</param-position>
+               <param-type>it.usi.xframe.xas.bfutil.data.EmailMessage</param-type>
+               <wsdl-message-mapping id="WSDLMessageMapping_1424105628560">
+                  <wsdl-message id="WSDLMessage_1424105628567">
+                     <namespaceURI>http://wsutil.xas.xframe.usi.it</namespaceURI>
+                     <localpart>exportEmailMessageRequest</localpart>
+                  </wsdl-message>
+                  <wsdl-message-part-name>emailMsg</wsdl-message-part-name>
+                  <parameter-mode>IN</parameter-mode>
+               </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <method-param-parts-mapping id="MethodParamPartsMapping_1424105628561">
+               <param-position>1</param-position>
+               <param-type>it.usi.xframe.xas.bfutil.data.BinaryEmailAttachment[]</param-type>
+               <wsdl-message-mapping id="WSDLMessageMapping_1424105628561">
+                  <wsdl-message id="WSDLMessage_1424105628568">
+                     <namespaceURI>http://wsutil.xas.xframe.usi.it</namespaceURI>
+                     <localpart>exportEmailMessageRequest</localpart>
+                  </wsdl-message>
+                  <wsdl-message-part-name>attachments</wsdl-message-part-name>
+                  <parameter-mode>IN</parameter-mode>
+               </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <wsdl-return-value-mapping id="WSDLReturnValueMapping_1424105628559">
+               <method-return-value>byte[]</method-return-value>
+               <wsdl-message id="WSDLMessage_1424105628569">
+                  <namespaceURI>http://wsutil.xas.xframe.usi.it</namespaceURI>
+                  <localpart>exportEmailMessageResponse</localpart>
+               </wsdl-message>
+               <wsdl-message-part-name>exportEmailMessageReturn</wsdl-message-part-name>
+            </wsdl-return-value-mapping>
+         </service-endpoint-method-mapping>
+      </service-endpoint-interface-mapping>
+   </java-wsdl-mapping>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="XA-XAS">
+        <wb-resource deploy-path="/" source-path="/" tag="defaultRootSource"/>
+        <dependent-module archiveName="XA-XAS-BF.jar" deploy-path="/" handle="module:/resource/XA-XAS-BF/XA-XAS-BF">
+            <dependent-object>EjbModule_1237364684714</dependent-object>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="XA-XAS-BFCL.jar" deploy-path="/" handle="module:/resource/XA-XAS-BFCL/XA-XAS-BFCL">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="XA-XAS-PF.war" deploy-path="/" handle="module:/resource/XA-XAS-PF/XA-XAS-PF">
+            <dependent-object>WebModule_1237364760560</dependent-object>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="XA-XAS-WS.war" deploy-path="/" handle="module:/resource/XA-XAS-WS/XA-XAS-WS">
+            <dependent-object>WebModule_1237364760559</dependent-object>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="XA-PRE-BFCL.jar" deploy-path="/" handle="module:/classpath/lib/XA-PRE/XA-PRE-BFCL.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="XA-IFG-BFCL.jar" deploy-path="/" handle="module:/classpath/lib/XA-IFG/XA-IFG-BFCL.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+    </wb-module>
+</project-modules>

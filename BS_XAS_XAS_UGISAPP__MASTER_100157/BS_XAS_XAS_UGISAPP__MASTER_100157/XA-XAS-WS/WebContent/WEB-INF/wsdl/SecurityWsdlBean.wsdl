@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://wsutil.xas.xframe.usi.it" xmlns:impl="http://wsutil.xas.xframe.usi.it" xmlns:intf="http://wsutil.xas.xframe.usi.it" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+ <wsdl:types>
+  <schema elementFormDefault="qualified" targetNamespace="http://wsutil.xas.xframe.usi.it" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <element name="getLoggedUser">
+    <complexType>
+     <sequence/>
+    </complexType>
+   </element>
+   <element name="getLoggedUserResponse">
+    <complexType>
+     <sequence>
+      <element name="getLoggedUserReturn" nillable="true" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+  </schema>
+ </wsdl:types>
+
+   <wsdl:message name="getLoggedUserResponse">
+
+      <wsdl:part element="impl:getLoggedUserResponse" name="parameters"/>
+
+   </wsdl:message>
+
+   <wsdl:message name="getLoggedUserRequest">
+
+      <wsdl:part element="impl:getLoggedUser" name="parameters"/>
+
+   </wsdl:message>
+
+   <wsdl:portType name="SecurityWsdlBean_SEI">
+
+      <wsdl:operation name="getLoggedUser">
+
+         <wsdl:input message="impl:getLoggedUserRequest" name="getLoggedUserRequest"/>
+
+         <wsdl:output message="impl:getLoggedUserResponse" name="getLoggedUserResponse"/>
+
+      </wsdl:operation>
+
+   </wsdl:portType>
+
+   <wsdl:binding name="SecurityWsdlBeanSoapBinding" type="impl:SecurityWsdlBean_SEI">
+
+      <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="getLoggedUser">
+
+         <wsdlsoap:operation soapAction="getLoggedUser"/>
+
+         <wsdl:input name="getLoggedUserRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getLoggedUserResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:binding>
+
+   <wsdl:service name="SecurityWsdlBeanService">
+
+      <wsdl:port binding="impl:SecurityWsdlBeanSoapBinding" name="SecurityWsdlBean">
+
+         <wsdlsoap:address location="http://localhost:9083/XA-XAS-WS/services/SecurityWsdlBean"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>

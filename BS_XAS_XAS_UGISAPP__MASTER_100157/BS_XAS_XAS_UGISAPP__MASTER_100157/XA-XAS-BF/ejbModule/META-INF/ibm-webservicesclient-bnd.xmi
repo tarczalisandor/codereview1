@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.etools.webservice.wscbnd:ClientBinding xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.etools.webservice.wscbnd="http://www.ibm.com/websphere/appserver/schemas/5.0.2/wscbnd.xmi" xmi:id="ClientBinding_1380283675564">
+  <componentScopedRefs xmi:id="ComponentScopedRefs_1380283675580" componentNameLink="XasSendsms">
+    <serviceRefs xmi:id="ServiceRef_1380285033303" serviceRefLink="service/SendSMS">
+      <portQnameBindings xmi:id="PortQnameBinding_1380285033303" portQnameLocalNameLink="SendSMSImplPort"/>
+    </serviceRefs>
+    <serviceRefs xmi:id="ServiceRef_1380698888459" serviceRefLink="service/GWServiceService">
+      <portQnameBindings xmi:id="PortQnameBinding_1380698888459" portQnameLocalNameLink="GWService"/>
+    </serviceRefs>
+    <serviceRefs xmi:id="ServiceRef_1500447197958" serviceRefLink="service/XasNotificationService">
+      <portQnameBindings xmi:id="PortQnameBinding_1500447197958" portQnameLocalNameLink="XasNotification"/>
+    </serviceRefs>
+    <serviceRefs xmi:id="ServiceRef_1501766564282" serviceRefLink="service/SmsSendingService">
+      <portQnameBindings xmi:id="PortQnameBinding_1501766564282" portQnameLocalNameLink="SmsSendingServicePort">
+        <securityRequestSenderBindingConfig xmi:id="SecurityRequestSenderBindingConfig_1502436757381">
+          <loginBinding xmi:id="LoginBinding_1502437608090" authMethod="BasicAuth" callbackHandler="Callback Handler">
+            <properties xmi:id="Property_1502437608090" name="userid" value="userid"/>
+            <properties xmi:id="Property_1502437608091" name="password" value="password"/>
+            <basicAuth xmi:id="BasicAuth_1502437608090" userid="userId" password="{xor}Dz4sLAgwLTs="/>
+          </loginBinding>
+        </securityRequestSenderBindingConfig>
+      </portQnameBindings>
+    </serviceRefs>
+  </componentScopedRefs>
+  <componentScopedRefs xmi:id="ComponentScopedRefs_1491398425983" componentNameLink="XasEcho">
+    <serviceRefs xmi:id="ServiceRef_1491398425983" serviceRefLink="service/SmsSendingService">
+      <portQnameBindings xmi:id="PortQnameBinding_1491398425983" portQnameLocalNameLink="SmsSendingServicePort"/>
+    </serviceRefs>
+    <serviceRefs xmi:id="ServiceRef_1497519406602" serviceRefLink="service/XasNotificationService">
+      <portQnameBindings xmi:id="PortQnameBinding_1497519406602" portQnameLocalNameLink="XasNotification"/>
+    </serviceRefs>
+  </componentScopedRefs>
+</com.ibm.etools.webservice.wscbnd:ClientBinding>

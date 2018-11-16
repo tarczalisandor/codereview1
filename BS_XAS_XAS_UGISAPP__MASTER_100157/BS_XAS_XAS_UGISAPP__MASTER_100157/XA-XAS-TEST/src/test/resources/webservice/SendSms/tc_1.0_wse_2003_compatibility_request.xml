@@ -1,0 +1,29 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+ xmlns:wsut="http://wsutil.xas.xframe.usi.it" xmlns:data="http://data.bfutil.xas.xframe.usi.it">
+  <soapenv:Header>
+     <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://schemas.xmlsoap.org/ws/2003/06/secext">
+        <wsse:UsernameToken>
+			<wsse:Username>{username}</wsse:Username>
+			<wsse:Password>{password}</wsse:Password>
+        </wsse:UsernameToken>
+     </wsse:Security>
+	<slf:smartLogFacility xmlns:slf="urn:smart-log-facility"  
+		soapenv:role="http://www.w3.org/2003/05/soap-envelope/role/next"
+		soapenv:relay="true">
+   		<slf:uuid>{slf_uuid}</slf:uuid>
+   		<slf:crid>{slf_crid}</slf:crid>
+  	</slf:smartLogFacility>
+  </soapenv:Header>
+  <soapenv:Body>
+     <wsut:sendSms>
+        <wsut:sms>
+           <data:msg>{testName} -- {xasUserTest}</data:msg>
+           <data:phoneNumber>{phone}</data:phoneNumber>
+        </wsut:sms>
+        <wsut:sender>
+           <data:alias/>
+           <data:ABICode>02008XAS</data:ABICode>
+        </wsut:sender>
+     </wsut:sendSms>
+  </soapenv:Body>
+</soapenv:Envelope>

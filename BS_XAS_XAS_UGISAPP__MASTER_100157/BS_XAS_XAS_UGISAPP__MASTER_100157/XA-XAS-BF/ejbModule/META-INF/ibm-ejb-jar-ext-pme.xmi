@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmeext:PMEEJBJarExtension xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:pmeext="http://www.ibm.com/websphere/appserver/schemas/5.0/pmeext.xmi" xmi:id="PMEEJBJarExtension_1434710295360">
+  <appProfileEJBJarExtension xmi:id="AppProfileEJBJarExtension_1434710295360">
+    <ejbJarExtension href="META-INF/ibm-ejb-jar-ext.xmi#EJBJarExtension_1430748952867"/>
+  </appProfileEJBJarExtension>
+</pmeext:PMEEJBJarExtension>
