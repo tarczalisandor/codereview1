@@ -1,6 +1,0 @@
-Manifest-Version: 1.0
-Class-Path: applid.jar 
- XA-XAS-BFCL.jar 
- jettison-1.0.1.jar 
- xstream-1.4.8.jar
-
