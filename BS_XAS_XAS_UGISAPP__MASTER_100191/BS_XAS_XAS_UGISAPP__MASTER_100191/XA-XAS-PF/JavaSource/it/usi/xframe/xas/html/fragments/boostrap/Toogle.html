@@ -1,0 +1,20 @@
+<!--header.start-->
+<div class="form-group row">
+	<label class="col-form-label col-sm-2" for="${toogle_name}">${toogle_label}</label>
+	<div class="input-group col-sm-10">
+<!--header.end-->
+<!--body.start-->
+		<input id="${toogle_name}" name="${toogle_name}" data-toggle="toggle" type="checkbox"
+		 onclick="${toogle_name}OnClick()" ${toogle_checked}>
+		<script type="text/javascript">
+			$(function() {
+				$('#${toogle_name}').change(function() {
+					${toogle_disabledFields}
+				})
+			})
+		</script>
+<!--body.end-->
+<!--footer.start-->
+	</div>
+</div>
+<!--footer.end-->

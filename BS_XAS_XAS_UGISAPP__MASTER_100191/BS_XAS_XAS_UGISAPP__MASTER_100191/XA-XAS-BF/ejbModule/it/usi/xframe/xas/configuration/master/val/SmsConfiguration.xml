@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+	<!-- WARNING: USED ONLY BY A2PSMS VERSION -->
+	<!-- Documentation at: http://agora.wiki.intranet.unicredit.it/xwiki/bin/view/APP-XAS/Maintainer_A2PSMS_Configuration -->
+	<Disabled>True</Disabled>
+	<!-- WARNING "COMMAS" AS VALUE MUST BE ESCAPED DUE TO apache common XMLConfiguration list separated values use \,-->
+	<Version2> 
+		<CacheTimeout>60</CacheTimeout><!-- Cache timeout in seconds -->
+		<!--JmsTimeZone>UTC</JmsTimeZone-->
+		<!-- NotificationAddress eMail address for configuration update notification. -->
+		<NotificationAddress>ictcp.ubis@unicredit.eu</NotificationAddress><!-- COMMA ESCAPED: our group ictcp.ubis@unicredit.eu -->
+ 		<XasUsers defaultXasUserName="02008NOP" defaultRegion="IT" defaultProvider="VodafonePop" defaultProviderBackup="VodafonePop">
+			<XasUser name="02008NOP" interface="1" originator="NoOperation" description="Default for not defined XAS User"/>
+			<XasUser name="01020" interface="1" originator="NoOperation" description="Banco di Sicilia" />
+			<XasUser name="02008" interface="1" originator="NoOperation" description="Unicredit Banca" />
+			<XasUser name="03002" interface="1" originator="NoOperation" description="Unicredit Banca di Roma" />
+			<XasUser name="03214" interface="1" originator="NoOperation" description="FinecoBank" />
+			<XasUser name="03218" interface="1" originator="NoOperation" description="Unicredit Family Financing Bank" />
+			<XasUser name="03223" interface="1" originator="NoOperation" description="Unicredit Private Banking" />
+			<XasUser name="03226" interface="1" originator="NoOperation" description="Unicredit Corporate Banking" />
+			<XasUser name="05437" interface="1" originator="NoOperation" description="Bipop Carire" />
+			<XasUser name="06170" interface="1" originator="NoOperation" description="Cassa di Risparmio di Fossano" />
+			<XasUser name="06355" interface="1" originator="NoOperation" description=""/>
+			<XasUser name="2008"  interface="1" originator="NoOperation" description="Unicredit Banca" />
+			<XasUser name="21307" interface="1" originator="NoOperation" description=""/>
+			<XasUser name="77777" interface="1" originator="NoOperation" description=""/>
+			<XasUser name="80320" interface="1" originator="NoOperation" description=""/>
+			<XasUser name="88888" interface="1" originator="NoOperation" description=""/>
+			<XasUser name="99988" interface="1" originator="NoOperation" description=""/>
+			<XasUser name="00095RTE" interface="1" originator="NoOperation" description="RTE Bank of Austria"/>
+			<XasUser name="00109HUN" interface="1" originator="NoOperation" defaultRegion="HU" validatePhoneNumberRegEx="^((00)|\+)(\d*)$" description=""/>
+			<XasUser name="02008000" interface="1" originator="NoOperation" description=""/>
+			<XasUser name="02008ARS" interface="1" originator="NoOperation" description="ARS"/>
+			<XasUser name="02008BDF" interface="1" originator="NoOperation" description="Banca Depositaria Fondi"/>
+			<XasUser name="02008CAR" interface="1" originator="NoOperation" description="CAR"/>
+			<XasUser name="02008DS2" interface="1" originator="NoOperation" description="DS2 Boost Dematerializzazione"/>
+			<XasUser name="02008FS3" interface="1" originator="NoOperation" description="FS3"/>
+			<XasUser name="02008GEC" interface="1" originator="NoOperation" description="GEC"/>
+			<XasUser name="02008MBI" interface="1" originator="NoOperation" description="MBI"/>
+			<XasUser name="02008MD0" interface="1" originator="NoOperation" description="MD0"/>
+			<XasUser name="02008MDE" interface="1" originator="NoOperation" description=""/>	
+			<XasUser name="02008MHY" interface="1" originator="NoOperation" description="MHY Monhey application"/>
+			<XasUser name="02008OLC" interface="1" originator="NoOperation" description="OLC On Line Credit Express"/>
+			<XasUser name="02008OLF" interface="1" originator="NoOperation" description="OLF On Line Carta Flexia"/>
+			<XasUser name="02008OLI" interface="1" originator="NoOperation" description=""/>
+			<XasUser name="02008OLO" interface="1" originator="NoOperation" description="OLO On Line Senza Pensieri"/>
+			<XasUser name="02008OLR" interface="1" originator="NoOperation" description="OLR On Line Motor "/>
+			<XasUser name="02008OLS" interface="1" originator="NoOperation" description="OLS On Line Selling"/>
+<!-- 		<XasUser name="02008P2P" interface="1" originator="NoOperation" description="P2P"/>  --> <!-- Sostituito da 02008MHY -->
+			<XasUser name="02008Q4S" interface="1" originator="NoOperation" description="Q4S"/>
+			<XasUser name="02008Q55" interface="1" originator="NoOperation" description="Q55 XPI"/>
+			<XasUser name="02008SAM" interface="1" originator="NoOperation" description="SAM"/>
+			<XasUser name="02008SBS" interface="1" originator="NoOperation" description="SBS"/>
+			<XasUser name="02008SCL" interface="1" originator="NoOperation" description="SCL SCHEDA CLIENTE"/>
+			<XasUser name="02008SS9" interface="1" originator="NoOperation" description="SS9 PROCEDURE SAS"/>
+			<XasUser name="02008STW" interface="1" originator="NoOperation" description="STW Security Travel"/>
+			<XasUser name="02008UMF" interface="1" originator="NoOperation" description="UMF FirmaMia"/>
+			<XasUser name="02008XFM" interface="1" originator="NoOperation" description=""/>
+			<XasUser name="02008XMN" interface="1" originator="NoOperation" description="XMN VtS Routine Notify"/>
+			<XasUser name="06170CAR" interface="1" originator="NoOperation" description="CR Fossano Carte"/>
+			<XasUser name="97003CAR" interface="1" originator="NoOperation" description="SIA"/>
+			<XasUser name="UBIS"     interface="1" originator="NoOperation" description=""/>
+			<!-- required:defaultXasUserName, defaultRegion, defaultProvider, defaultRegion  (defaultXasUserName valid only for sendSmsV1) -->  
+			<XasUser name="02008XAS"    interface="1" originator="NoOperation" />
+			<XasUser name="02008XASNOP" interface="1" originator="NoOperation" provider="VodafonePop" /><!-- Sample don't send -->
+			<XasUser name="02008XASNUM" interface="1" originator="Numeric"     provider="VodafonePop" /><!-- Send it as Numeric -->
+			<XasUser name="02008XASUNI" interface="1" originator="UNICREDIT"   provider="VodafonePop" /><!-- Send it as Unicredit -->
+			<XasUser name="02008XASMAI" interface="1" originator="UNICREDIT"   provider="SendMail"    /><!-- Mail it as Unicredit -->
+			<!-- TESTCASE used for automatic test case by JUnit test 
+				 set XasUsers.defaultXasUserName="02008XASTSC"
+			   - sending SMS set 
+			     XasUsers.defaultProvider="TestProvider@Vodafone" 
+				 Providers.Provider[TestProvider@Vodafone].Originator[TestCase].address="393424145657" 
+			   - NOT sending SMS set
+			     Providers.Provider[TestProvider@Vodafone].Originator[TestCase].address="393424190086" 
+			   - sending MAILS set 
+				 XasUsers.defaultProvider="TestProvider@Mail" 
+				 Providers.Provider[TestProvider@Mail].Customization.MailMap[02008XAS].mailAddress="your.mail@unicredit.eu" 
+			-->
+			<XasUser name="02008XASDVP" interface="1" originator="TestCase"  provider="TestProvider@Vodafone" defaultValidityPeriod="10" /><!-- TestCase for Default Validity Period -->
+			<XasUser name="02008XASFAE" interface="1" originator="TestCase"  provider="TestProvider@Vodafone" defaultForceAsciiEncoding="true" /><!-- TestCase for Default Force Ascii Encoding -->
+			<XasUser name="02008XASNEW" interface="1" originator="TestCase"  provider="TestProvider@Mail" /><!-- TestCase for new Provider key -->
+			<XasUser name="02008XASSNM" interface="1" originator="UNICREDIT" provider="TestProvider@Mail" /><!-- Sample for SendMail provider, please setup the correct MailMap to destination address -->
+			<XasUser name="02008XASUBU" interface="1" originator="TestCase"  provider="TestProvider@Vodafone" useBackup="true" /><!-- TestCase for Use BackUP -->
+			<XasUser name="02008XASUNP" interface="1" originator="TestCase"  provider="UNDEF_PROV" /><!-- TestCase for Undefined Provider -->
+			<XasUser name="02008XASDRH" interface="1" originator="TestCase"  provider="TestProvider@Vodafone" defaultRegion="HU" /><!-- TestCase for DefaultRegion [HUN] override XasUsers.defaultRegion -->
+			<XasUser name="02008XASDRU" interface="1" originator="TestCase"  provider="TestProvider@Vodafone" defaultRegion="XX" /><!-- TestCase for DefaultRegion Unsupported -->
+			<XasUser name="02008XASVPN" interface="1" originator="TestCase"  validatePhoneNumberRegEx="^((00)|\+)(\d*)$"/><!-- TestCase default -->
+			<XasUser name="02008XASTSC" interface="1" originator="TestCase"  provider="TestProvider@Vodafone" /><!-- TestCase default -->
+			<XasUser name="02008XASINT" interface="2" originator="TestCase"  provider="TestProvider@Vodafone" /><!-- TestCase for InterfaceVersion -->
+		</XasUsers>
+		<Providers>
+			<Provider name="VodafonePop" type="vodafonepop" maxSmsAllowed="5"><!-- VODAFONE SMS POP SOAP gateway -->
+				<!-- Provider.type must match package name in it.usi.xframe.xas.bfimpl.a2psms.providers -->
+				<Originators>
+					<!-- START PRODUZIONE -->
+					<!-- START ROUTER -->
+					<Originator name="HungarySC" routerRegex="^(\\+|00)?36.*$"
+						typeOfNumber="2" numPlanId="1" address="06305555566" />
+					<!-- END ROUTER -->
+					<Originator name="UNICREDIT" 
+						typeOfNumber="5" numPlanId="0" alias="UniCredit" />
+					<Originator name="Numeric"
+						typeOfNumber="1" numPlanId="1" address="393424145657" />
+					<!-- END PRODUZIONE -->
+					<!-- START COLLAUDO -->
+					<!-- NoOperation don't send real sms -->
+					<Originator name="NoOperation"
+						typeOfNumber="1" numPlanId="1" address="393424190086" />
+					<Originator name="TestCase"
+						typeOfNumber="1" numPlanId="1" address="393424145657" />
+					<!-- END COLLAUDO -->
+				</Originators>
+				<Customization>
+					<!-- account used internally by XAS to authenticate with POP -->
+					<POP_Account user="NEWGWService" password="NEWGWService" />
+				</Customization>
+			</Provider>
+			<Provider name="SendMail" type="sendmail" maxSmsAllowed="5"><!-- SENDMAIL used for single test development -->
+				<!-- Provider.type must match package name in it.usi.xframe.xas.bfimpl.a2psms.providers -->
+				<Originators>
+					<!-- START ROUTER -->
+					<Originator name="HungarySC" routerRegex="^(\\+|00)?36.*$"
+						typeOfNumber="2" numPlanId="1" address="06305555566" />
+					<Originator name="TestCase1" routerRegex="^(\\+|00)?672.*"
+						typeOfNumber="2" numPlanId="1" address="393424190086" /><!-- +672 Antartica -->
+					<Originator name="TestCase2" routerRegex="^(\\+|00)?6722.*"
+						typeOfNumber="2" numPlanId="1" address="393424190086" /><!-- +672 Antartica2 -->
+					<!-- END ROUTER -->
+					<!-- START PRODUZIONE -->
+					<Originator name="UNICREDIT" 
+						typeOfNumber="5" numPlanId="0" alias="UniCredit" />
+					<Originator name="Numeric"
+						typeOfNumber="1" numPlanId="1" address="393424145657" />
+					<!-- END PRODUZIONE -->
+					<!-- START COLLAUDO -->
+					<!-- NoOperation don't send real sms -->
+					<Originator name="NoOperation"
+						typeOfNumber="1" numPlanId="1" address="393424190086" />
+					<Originator name="TestCase"
+						typeOfNumber="1" numPlanId="1" address="393424190086" />
+					<!-- END COLLAUDO -->
+				</Originators>
+				<Customization>
+					<!-- account used internally by XAS to authenticate with POP -->
+					<MailMap xasUser="02008XAS" mailAddress="ictcp.ubis@unicredit.eu" /><!-- COMMA ESCAPED @no.where doesn't send e mail-->
+				</Customization>
+			</Provider>
+			<Provider name="TestProvider@Vodafone" type="vodafonepop" maxSmsAllowed="5"><!-- TESTCASE AT VODAFONE used for automatic test case by JUnit test -->
+				<!-- Provider.type must match package name in it.usi.xframe.xas.bfimpl.a2psms.providers -->
+				<Originators>
+					<!-- START ROUTER -->
+					<Originator name="HungarySC" routerRegex="^(\\+|00)?36.*$"
+						typeOfNumber="2" numPlanId="1" address="06305555566" />
+					<Originator name="TestCase1" routerRegex="^(\\+|00)?672.*" 
+						typeOfNumber="2" numPlanId="1" address="393424190086" /><!-- +672 Antartica -->
+					<Originator name="TestCase2" routerRegex="^(\\+|00)?6722.*" 
+						typeOfNumber="2" numPlanId="1" address="393424190086" /><!-- +672 Antartica2 -->
+					<!-- END ROUTER -->
+					<!-- START PRODUZIONE -->
+					<Originator name="UNICREDIT" 
+						typeOfNumber="5" numPlanId="0" alias="UniCredit" />
+					<Originator name="Numeric"
+						typeOfNumber="1" numPlanId="1" address="393424145657" />
+					<!-- END PRODUZIONE -->
+					<!-- START COLLAUDO -->
+					<!-- NoOperation don't send real sms -->
+					<Originator name="NoOperation"
+						typeOfNumber="1" numPlanId="1" address="393424190086" />
+					<Originator name="TestCase"
+						typeOfNumber="1" numPlanId="1" address="393424190086" /><!-- 393424145657 Send, 393424190086 Don't send -->
+					<!-- END COLLAUDO -->
+				</Originators>
+				<Customization>
+					<!-- account used internally by XAS to authenticate with POP -->
+					<POP_Account user="NEWGWService" password="NEWGWService" />
+				</Customization>
+			</Provider>
+			<Provider name="TestProvider@Mail" type="sendmail" maxSmsAllowed="5"><!-- TESTCASE AT MAIL used for automatic test case by JUnit test -->
+				<!-- Provider.type must match package name in it.usi.xframe.xas.bfimpl.a2psms.providers -->
+				<Originators>
+					<!-- START ROUTER -->
+					<Originator name="HungarySC" routerRegex="^(\\+|00)?36.*$"
+						typeOfNumber="2" numPlanId="1" address="06305555566" />
+					<Originator name="TestCase1" routerRegex="^(\\+|00)?672.*"
+						typeOfNumber="2" numPlanId="1" address="393424190086" /><!-- +672 Antartica -->
+					<Originator name="TestCase2" routerRegex="^(\\+|00)?6722.*"
+						typeOfNumber="2" numPlanId="1" address="393424190086" /><!-- +672 Antartica2 -->
+					<!-- END ROUTER -->
+					<!-- START PRODUZIONE -->
+					<Originator name="UNICREDIT" 
+						typeOfNumber="5" numPlanId="0" alias="UniCredit" />
+					<Originator name="Numeric"
+						typeOfNumber="1" numPlanId="1" address="393424145657" />
+					<!-- END PRODUZIONE -->
+					<!-- START COLLAUDO -->
+					<!-- NoOperation don't send real sms -->
+					<Originator name="NoOperation"
+						typeOfNumber="1" numPlanId="1" address="393424190086" />
+					<Originator name="TestCase"
+						typeOfNumber="1" numPlanId="1" address="393424190086" />
+					<!-- END COLLAUDO -->
+				</Originators>
+				<Customization>
+					<!-- account used internally by XAS to authenticate with POP -->
+					<MailMap xasUser="02008XAS" mailAddress="ictcp.ubis@unicredit.eu" /><!-- COMMA ESCAPED @no.where doesn't send e mail, @unicredit.eu-->
+				</Customization>
+			</Provider>
+		</Providers>
+	</Version2>
+	<Version3>
+		<!-- Not Yet Defined -->
+	</Version3>
+</Configuration>

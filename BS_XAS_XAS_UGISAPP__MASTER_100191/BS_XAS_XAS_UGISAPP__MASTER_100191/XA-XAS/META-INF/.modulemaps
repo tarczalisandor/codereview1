@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modulemap:EARProjectMap xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:application="application.xmi" xmlns:modulemap="modulemap.xmi" xmi:id="EARProjectMap_1237364684714">
+  <mappings xmi:id="ModuleMapping_1237364684714" projectName="XA-XAS-BF">
+    <module xmi:type="application:EjbModule" href="META-INF/application.xml#EjbModule_1237364684714"/>
+  </mappings>
+  <mappings xmi:id="ModuleMapping_1237364760559" projectName="XA-XAS-WS">
+    <module xmi:type="application:WebModule" href="META-INF/application.xml#WebModule_1237364760559"/>
+  </mappings>
+  <mappings xmi:id="ModuleMapping_1237364760560" projectName="XA-XAS-PF">
+    <module xmi:type="application:WebModule" href="META-INF/application.xml#WebModule_1237364760560"/>
+  </mappings>
+  <utilityJARMappings xmi:id="UtilityJARMapping_1237364689355" projectName="XA-XAS-BFCL" uri="XA-XAS-BFCL.jar"/>
+</modulemap:EARProjectMap>

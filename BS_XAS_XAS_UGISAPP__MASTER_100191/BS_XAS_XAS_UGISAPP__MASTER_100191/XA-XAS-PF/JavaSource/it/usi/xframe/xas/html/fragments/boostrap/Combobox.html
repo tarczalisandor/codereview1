@@ -1,0 +1,22 @@
+<!--header.start-->
+<div class="form-group row">
+	<label class="col-form-label col-sm-2" for="${combobox_name}">${combobox_label}</label>
+	<div class="input-group col-sm-10">
+		<div class="input-group-prepend">
+			<span class="input-group-text" id="${combobox_name}Prepend"><i class="fa fa-list"></i></span>
+		</div>
+		<select class="form-control combobox" id="${combobox_name}" name="${combobox_name}">
+<!--header.end-->
+<!--footer.start-->
+		</select>
+		<small id="${combobox_name}Help" class="form-text text-muted">${combobox_suggestion}</small>
+		<div class="invalid-tooltip">${combobox_label}</div>
+	</div>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$('#${combobox_name}').combobox();
+		//$('#${combobox_name}').combobox({bsVersion: '4'});	
+	});
+	</script>
+</div>
+<!--footer.end-->

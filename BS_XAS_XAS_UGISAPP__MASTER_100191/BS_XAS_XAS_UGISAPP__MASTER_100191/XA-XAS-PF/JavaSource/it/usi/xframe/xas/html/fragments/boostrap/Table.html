@@ -1,0 +1,103 @@
+<!--header.start-->
+<div class="form-group">
+	<script type="text/javascript">
+		function format ( d ) {
+			var dataTable= '<table cellpadding="${table_column_length}" cellspacing="0" border="0" style="padding-left:50px;">';
+			for(key in d) {
+				dataTable += '<tr>';
+				dataTable += 	'<td>'+key+':</td>';
+				dataTable += 	'<td>'+ d[key]+'</td>';
+				dataTable += '</tr>';
+			};    
+			dataTable += '</table>';
+			return dataTable;
+		}
+
+		$(document).ready(${table_ready});
+
+		function table_ready()
+		{
+	    	var table = $('#${table_name}').DataTable( {
+		        "columns": [${table_column_list}],
+		        "order": [[1, 'asc']]
+    		});
+		}
+
+		function table_ajax_ready()
+		{
+	    	var table = $('#${table_name}').DataTable( {
+		        "ajax": "${table_url}",
+		        "columns": [${table_column_list}],
+		        "order": [[1, 'asc']]
+    		});
+		} 
+
+		function table_ajax_masterdetail_ready()
+		{
+
+	    	var table = $('#${table_name}').DataTable( {
+	        "ajax": "${table_url}",
+	        "columns": [
+	            {
+	                "className":      'details-control',
+	                "orderable":      false,
+	                "data":           null,
+	                "defaultContent": ''
+	            },
+	           ${table_column_list}
+	        ],
+	        "order": [[1, 'asc']]
+    		} );
+     
+    // Add event listener for opening and closing details
+    		$('#${table_name} tbody').on('click', 'td.details-control', function () {
+		        var tr = $(this).closest('tr');
+		        var row = table.row( tr );
+
+		        if ( row.child.isShown() ) {
+		            // This row is already open - close it
+		            row.child.hide();
+		            tr.removeClass('shown');
+		        }
+		        else {
+					// Open this row
+					var currentRow=$(this).closest('tr');
+					var idKey = currentRow.find('.${table_searchKey}').html(); 
+// sourcetype è il campo che fa da chiave per aprire il dettaglio. Nel caso degli sms è lo smsid ... e quindi andrà sostituito con il campo chiave
+					var urlDetails = '${table_urlDetails}';
+					urlDetails = urlDetails + (urlDetails.indexOf("?")==-1 ? '?' : '&') + '${table_searchKey}=' + idKey;
+					spinner(true);
+					$.ajax({url: urlDetails, async: false, cache: false, success: function(result){
+						row.child( format(result.data[0]) ).show();
+						tr.addClass('shown');
+						spinner(false);
+						}
+					});
+				}
+		    });
+		} 
+
+	</script>
+	<style>
+		td.details-control {
+		    background: url('./image/details_open.png') no-repeat center center;
+		    cursor: pointer;
+		}
+		tr.shown td.details-control {
+		    background: url('./image/details_close.png') no-repeat center center;
+		}
+	</style>
+	<label for="${table_name}">${table_label}</label>
+	<table id="${table_name}" name="${table_name}" class="table table-hover display">
+		<thead>
+			<tr>
+				${table_columns}
+			</tr>
+		</thead>
+		<tbody>
+<!--header.end-->
+<!--footer.start-->
+		</tbody>
+	</table>
+</div>
+<!--footer.end-->

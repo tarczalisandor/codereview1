@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE java-wsdl-mapping PUBLIC "-//IBM Corporation, Inc.//DTD J2EE JAX-RPC mapping 1.0//EN" "http://www.ibm.com/webservices/dtd/j2ee_jaxrpc_mapping_1_0.dtd">
+
+   <java-wsdl-mapping id="JavaWSDLMapping_1503905786830">
+      <package-mapping id="PackageMapping_1503905786830">
+         <package-type>it.eng.service.mgp.sms</package-type>
+         <namespaceURI>http://sms.mgp.service.eng.it/commonTypes</namespaceURI>
+      </package-mapping>
+      <package-mapping id="PackageMapping_1503905786831">
+         <package-type>it.eng.service.mgp.sms</package-type>
+         <namespaceURI>http://sms.mgp.service.eng.it/</namespaceURI>
+      </package-mapping>
+      <java-xml-type-mapping id="JavaXMLTypeMapping_1503905786830">
+         <class-type>it.eng.service.mgp.sms.Status</class-type>
+         <root-type-qname id="RootTypeQname_1503905786830">
+            <namespaceURI>http://sms.mgp.service.eng.it/</namespaceURI>
+            <localpart>status</localpart>
+         </root-type-qname>
+         <qname-scope>simpleType</qname-scope>
+         <variable-mapping id="VariableMapping_1503905786830">
+            <java-variable-name>NO_ROUTE</java-variable-name>
+            <xml-element-name>NO_ROUTE</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1503905786831">
+            <java-variable-name>REJECTED_BY_FILTER</java-variable-name>
+            <xml-element-name>REJECTED_BY_FILTER</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1503905786832">
+            <java-variable-name>EXPIRED_IN_QUEUE</java-variable-name>
+            <xml-element-name>EXPIRED_IN_QUEUE</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1503905786833">
+            <java-variable-name>COMMAND_FAILED</java-variable-name>
+            <xml-element-name>COMMAND_FAILED</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1503905786834">
+            <java-variable-name>UNKNOWN_SMSC_RESPONSE</java-variable-name>
+            <xml-element-name>UNKNOWN_SMSC_RESPONSE</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1503905786835">
+            <java-variable-name>ACCEPTED_BY_SMSC</java-variable-name>
+            <xml-element-name>ACCEPTED_BY_SMSC</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1503905786836">
+            <java-variable-name>REJECTED_BY_SMSC</java-variable-name>
+            <xml-element-name>REJECTED_BY_SMSC</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1503905786837">
+            <java-variable-name>DROPPED_BY_SMSC</java-variable-name>
+            <xml-element-name>DROPPED_BY_SMSC</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1503905786838">
+            <java-variable-name>EXPIRED_ON_SMSC</java-variable-name>
+            <xml-element-name>EXPIRED_ON_SMSC</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1503905786839">
+            <java-variable-name>DELIVERED_TO_DEV</java-variable-name>
+            <xml-element-name>DELIVERED_TO_DEV</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1503905786840">
+            <java-variable-name>REJECTED_BY_DEV</java-variable-name>
+            <xml-element-name>REJECTED_BY_DEV</xml-element-name>
+         </variable-mapping>
+      </java-xml-type-mapping>
+      <java-xml-type-mapping id="JavaXMLTypeMapping_1503905786831">
+         <class-type>it.eng.service.mgp.sms.MessageStatus</class-type>
+         <root-type-qname id="RootTypeQname_1503905786831">
+            <namespaceURI>http://sms.mgp.service.eng.it/commonTypes</namespaceURI>
+            <localpart>messageStatus</localpart>
+         </root-type-qname>
+         <qname-scope>complexType</qname-scope>
+         <variable-mapping id="VariableMapping_1503905786841">
+            <java-variable-name>protocolId</java-variable-name>
+            <xml-element-name>protocolId</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1503905786842">
+            <java-variable-name>date</java-variable-name>
+            <xml-element-name>date</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1503905786843">
+            <java-variable-name>deliveryDate</java-variable-name>
+            <xml-element-name>deliveryDate</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1503905786844">
+            <java-variable-name>responseCode</java-variable-name>
+            <xml-element-name>responseCode</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1503905786845">
+            <java-variable-name>responseMessage</java-variable-name>
+            <xml-element-name>responseMessage</xml-element-name>
+         </variable-mapping>
+      </java-xml-type-mapping>
+      <java-xml-type-mapping id="JavaXMLTypeMapping_1503905786832">
+         <class-type>byte[]</class-type>
+         <root-type-qname id="RootTypeQname_1503905786832">
+            <namespaceURI>http://www.w3.org/2001/XMLSchema</namespaceURI>
+            <localpart>base64Binary</localpart>
+         </root-type-qname>
+         <qname-scope>simpleType</qname-scope>
+      </java-xml-type-mapping>
+      <java-xml-type-mapping id="JavaXMLTypeMapping_1503905786833">
+         <class-type>it.eng.service.mgp.sms.GsmPriority</class-type>
+         <root-type-qname id="RootTypeQname_1503905786833">
+            <namespaceURI>http://sms.mgp.service.eng.it/commonTypes</namespaceURI>
+            <localpart>gsmPriority</localpart>
+         </root-type-qname>
+         <qname-scope>simpleType</qname-scope>
+         <variable-mapping id="VariableMapping_1503905786846">
+            <java-variable-name>LOW</java-variable-name>
+            <xml-element-name>LOW</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1503905786847">
+            <java-variable-name>NORMAL</java-variable-name>
+            <xml-element-name>NORMAL</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1503905786848">
+            <java-variable-name>URGENT</java-variable-name>
+            <xml-element-name>URGENT</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1503905786849">
+            <java-variable-name>VERY_URGENT</java-variable-name>
+            <xml-element-name>VERY_URGENT</xml-element-name>
+         </variable-mapping>
+      </java-xml-type-mapping>
+      <java-xml-type-mapping id="JavaXMLTypeMapping_1503905786834">
+         <class-type>int</class-type>
+         <root-type-qname id="RootTypeQname_1503905786834">
+            <namespaceURI>http://www.w3.org/2001/XMLSchema</namespaceURI>
+            <localpart>int</localpart>
+         </root-type-qname>
+         <qname-scope>simpleType</qname-scope>
+      </java-xml-type-mapping>
+      <java-xml-type-mapping id="JavaXMLTypeMapping_1503905786835">
+         <class-type>it.eng.service.mgp.sms.GsmEncoding</class-type>
+         <root-type-qname id="RootTypeQname_1503905786835">
+            <namespaceURI>http://sms.mgp.service.eng.it/commonTypes</namespaceURI>
+            <localpart>gsmEncoding</localpart>
+         </root-type-qname>
+         <qname-scope>simpleType</qname-scope>
+         <variable-mapping id="VariableMapping_1503905786850">
+            <java-variable-name>GSM7</java-variable-name>
+            <xml-element-name>GSM7</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1503905786851">
+            <java-variable-name>OCTECT_UNSPECIFIED</java-variable-name>
+            <xml-element-name>OCTECT_UNSPECIFIED</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1503905786852">
+            <java-variable-name>LATIN_1</java-variable-name>
+            <xml-element-name>LATIN_1</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1503905786853">
+            <java-variable-name>CYRILLIC</java-variable-name>
+            <xml-element-name>CYRILLIC</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1503905786854">
+            <java-variable-name>UCS2</java-variable-name>
+            <xml-element-name>UCS2</xml-element-name>
+         </variable-mapping>
+      </java-xml-type-mapping>
+      <java-xml-type-mapping id="JavaXMLTypeMapping_1503905786836">
+         <class-type>java.math.BigInteger</class-type>
+         <root-type-qname id="RootTypeQname_1503905786836">
+            <namespaceURI>http://www.w3.org/2001/XMLSchema</namespaceURI>
+            <localpart>integer</localpart>
+         </root-type-qname>
+         <qname-scope>simpleType</qname-scope>
+      </java-xml-type-mapping>
+      <java-xml-type-mapping id="JavaXMLTypeMapping_1503905786837">
+         <class-type>it.eng.service.mgp.sms.Message</class-type>
+         <root-type-qname id="RootTypeQname_1503905786837">
+            <namespaceURI>http://sms.mgp.service.eng.it/commonTypes</namespaceURI>
+            <localpart>message</localpart>
+         </root-type-qname>
+         <qname-scope>complexType</qname-scope>
+         <variable-mapping id="VariableMapping_1503905786855">
+            <java-variable-name>txId</java-variable-name>
+            <xml-element-name>txId</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1503905786856">
+            <java-variable-name>destAddr</java-variable-name>
+            <xml-element-name>destAddr</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1503905786857">
+            <java-variable-name>destAddrNpi</java-variable-name>
+            <xml-element-name>destAddrNpi</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1503905786858">
+            <java-variable-name>destAddrTon</java-variable-name>
+            <xml-element-name>destAddrTon</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1503905786859">
+            <java-variable-name>numOfParts</java-variable-name>
+            <xml-element-name>numOfParts</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1503905786860">
+            <java-variable-name>partNum</java-variable-name>
+            <xml-element-name>partNum</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1503905786861">
+            <java-variable-name>partsRefNum</java-variable-name>
+            <xml-element-name>partsRefNum</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1503905786862">
+            <java-variable-name>payloadUd</java-variable-name>
+            <xml-element-name>payloadUd</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1503905786863">
+            <java-variable-name>payloadUddc</java-variable-name>
+            <xml-element-name>payloadUddc</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1503905786864">
+            <java-variable-name>payloadUdh</java-variable-name>
+            <xml-element-name>payloadUdh</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1503905786865">
+            <java-variable-name>priority</java-variable-name>
+            <xml-element-name>priority</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1503905786866">
+            <java-variable-name>srcAddr</java-variable-name>
+            <xml-element-name>srcAddr</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1503905786867">
+            <java-variable-name>srcAddrNpi</java-variable-name>
+            <xml-element-name>srcAddrNpi</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1503905786868">
+            <java-variable-name>srcAddrTon</java-variable-name>
+            <xml-element-name>srcAddrTon</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1503905786869">
+            <java-variable-name>validityPeriod</java-variable-name>
+            <xml-element-name>validityPeriod</xml-element-name>
+         </variable-mapping>
+      </java-xml-type-mapping>
+      <java-xml-type-mapping id="JavaXMLTypeMapping_1503905786838">
+         <class-type>byte[]</class-type>
+         <root-type-qname id="RootTypeQname_1503905786838">
+            <namespaceURI>http://schemas.xmlsoap.org/soap/encoding/</namespaceURI>
+            <localpart>base64</localpart>
+         </root-type-qname>
+         <qname-scope>simpleType</qname-scope>
+      </java-xml-type-mapping>
+      <java-xml-type-mapping id="JavaXMLTypeMapping_1503905786839">
+         <class-type>java.util.Calendar</class-type>
+         <root-type-qname id="RootTypeQname_1503905786839">
+            <namespaceURI>http://www.w3.org/2001/XMLSchema</namespaceURI>
+            <localpart>dateTime</localpart>
+         </root-type-qname>
+         <qname-scope>simpleType</qname-scope>
+      </java-xml-type-mapping>
+      <java-xml-type-mapping id="JavaXMLTypeMapping_1503905786840">
+         <class-type>it.eng.service.mgp.sms.MtDeliveryStatus</class-type>
+         <root-type-qname id="RootTypeQname_1503905786840">
+            <namespaceURI>http://sms.mgp.service.eng.it/</namespaceURI>
+            <localpart>mtDeliveryStatus</localpart>
+         </root-type-qname>
+         <qname-scope>complexType</qname-scope>
+         <variable-mapping id="VariableMapping_1503905786870">
+            <java-variable-name>destAddr</java-variable-name>
+            <xml-element-name>destAddr</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1503905786871">
+            <java-variable-name>destAddrNpi</java-variable-name>
+            <xml-element-name>destAddrNpi</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1503905786872">
+            <java-variable-name>destAddrTon</java-variable-name>
+            <xml-element-name>destAddrTon</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1503905786873">
+            <java-variable-name>status</java-variable-name>
+            <xml-element-name>status</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1503905786874">
+            <java-variable-name>txId</java-variable-name>
+            <xml-element-name>txId</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1503905786875">
+            <java-variable-name>msgId</java-variable-name>
+            <xml-element-name>msgId</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1503905786876">
+            <java-variable-name>smsId</java-variable-name>
+            <xml-element-name>smsId</xml-element-name>
+         </variable-mapping>
+      </java-xml-type-mapping>
+      <java-xml-type-mapping id="JavaXMLTypeMapping_1503905786841">
+         <class-type>java.lang.String</class-type>
+         <root-type-qname id="RootTypeQname_1503905786841">
+            <namespaceURI>http://www.w3.org/2001/XMLSchema</namespaceURI>
+            <localpart>string</localpart>
+         </root-type-qname>
+         <qname-scope>simpleType</qname-scope>
+      </java-xml-type-mapping>
+      <java-xml-type-mapping id="JavaXMLTypeMapping_1503905786842">
+         <class-type>it.eng.service.mgp.sms.MoMessage</class-type>
+         <root-type-qname id="RootTypeQname_1503905786842">
+            <namespaceURI>http://sms.mgp.service.eng.it/</namespaceURI>
+            <localpart>moMessage</localpart>
+         </root-type-qname>
+         <qname-scope>complexType</qname-scope>
+         <variable-mapping id="VariableMapping_1503905786877">
+            <java-variable-name>smsId</java-variable-name>
+            <xml-element-name>smsId</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1503905786878">
+            <java-variable-name>date</java-variable-name>
+            <xml-element-name>date</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1503905786879">
+            <java-variable-name>smscDate</java-variable-name>
+            <xml-element-name>smscDate</xml-element-name>
+         </variable-mapping>
+      </java-xml-type-mapping>
+      <service-interface-mapping id="ServiceInterfaceMapping_1503905786846">
+         <service-interface>it.eng.service.mgp.sms.SmsNotificationService</service-interface>
+         <wsdl-service-name id="WSDLServiceName_1503905786846">
+            <namespaceURI>http://sms.mgp.service.eng.it/</namespaceURI>
+            <localpart>SmsNotificationService</localpart>
+         </wsdl-service-name>
+         <port-mapping id="PortMapping_1503905786846">
+            <port-name>SmsNotificationServicePort</port-name>
+            <java-port-name>SmsNotificationServicePort</java-port-name>
+         </port-mapping>
+      </service-interface-mapping>
+      <service-endpoint-interface-mapping id="ServiceEndpointInterfaceMapping_1503905786846">
+         <service-endpoint-interface>it.eng.service.mgp.sms.SmsNotificationServicePortType</service-endpoint-interface>
+         <wsdl-port-type id="WSDLPortType_1503905786846">
+            <namespaceURI>http://sms.mgp.service.eng.it/</namespaceURI>
+            <localpart>SmsNotificationServicePortType</localpart>
+         </wsdl-port-type>
+         <wsdl-binding id="WSDLBinding_1503905786846">
+            <namespaceURI>http://sms.mgp.service.eng.it/</namespaceURI>
+            <localpart>SmsNotificationServiceSoapBinding</localpart>
+         </wsdl-binding>
+         <service-endpoint-method-mapping id="ServiceEndpointMethodMapping_1503905786846">
+            <java-method-name>newMessage</java-method-name>
+            <wsdl-operation>newMessage</wsdl-operation>
+            <wrapped-element></wrapped-element>
+            <method-param-parts-mapping id="MethodParamPartsMapping_1503905786846">
+               <param-position>0</param-position>
+               <param-type>it.eng.service.mgp.sms.MoMessage</param-type>
+               <wsdl-message-mapping id="WSDLMessageMapping_1503905786846">
+                  <wsdl-message id="WSDLMessage_1503905786846">
+                     <namespaceURI>http://sms.mgp.service.eng.it/</namespaceURI>
+                     <localpart>newMessage</localpart>
+                  </wsdl-message>
+                  <wsdl-message-part-name>arg1</wsdl-message-part-name>
+                  <parameter-mode>IN</parameter-mode>
+               </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <wsdl-return-value-mapping id="WSDLReturnValueMapping_1503905786846">
+               <method-return-value>void</method-return-value>
+               <wsdl-message id="WSDLMessage_1503905786847">
+                  <namespaceURI>http://sms.mgp.service.eng.it/</namespaceURI>
+                  <localpart>newMessageResponse</localpart>
+               </wsdl-message>
+            </wsdl-return-value-mapping>
+         </service-endpoint-method-mapping>
+         <service-endpoint-method-mapping id="ServiceEndpointMethodMapping_1503905786847">
+            <java-method-name>newDeliveryStatus</java-method-name>
+            <wsdl-operation>newDeliveryStatus</wsdl-operation>
+            <wrapped-element></wrapped-element>
+            <method-param-parts-mapping id="MethodParamPartsMapping_1503905786847">
+               <param-position>0</param-position>
+               <param-type>it.eng.service.mgp.sms.MtDeliveryStatus</param-type>
+               <wsdl-message-mapping id="WSDLMessageMapping_1503905786847">
+                  <wsdl-message id="WSDLMessage_1503905786848">
+                     <namespaceURI>http://sms.mgp.service.eng.it/</namespaceURI>
+                     <localpart>newDeliveryStatus</localpart>
+                  </wsdl-message>
+                  <wsdl-message-part-name>arg1</wsdl-message-part-name>
+                  <parameter-mode>IN</parameter-mode>
+               </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <wsdl-return-value-mapping id="WSDLReturnValueMapping_1503905786847">
+               <method-return-value>void</method-return-value>
+               <wsdl-message id="WSDLMessage_1503905786849">
+                  <namespaceURI>http://sms.mgp.service.eng.it/</namespaceURI>
+                  <localpart>newDeliveryStatusResponse</localpart>
+               </wsdl-message>
+            </wsdl-return-value-mapping>
+         </service-endpoint-method-mapping>
+      </service-endpoint-interface-mapping>
+   </java-wsdl-mapping>

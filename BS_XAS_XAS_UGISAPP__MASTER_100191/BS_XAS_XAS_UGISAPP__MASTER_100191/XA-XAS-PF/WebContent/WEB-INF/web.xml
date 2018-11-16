@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- USI web xml descriptor -->
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app id="WebApp">
+	<display-name>XA-XAS-PF</display-name>
+	<servlet>
+		<servlet-name>LoggerInitializeServlet</servlet-name>
+		<display-name>LoggerInitializeServlet</display-name>
+		<servlet-class>it.usi.xframe.system.pfutil.LoggerInitializeServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>Test</servlet-name>
+		<display-name>Test</display-name>
+		<description>mah</description>
+		<servlet-class>it.usi.xframe.xas.servlet.ServletTestOld</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>VodafonePopSmsDeliver</servlet-name>
+		<display-name>VodafonePopSmsDeliver</display-name>
+		<description>mah</description>
+		<servlet-class>it.usi.xframe.xas.servlet.ServletVodafonePopSmsDeliver</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Console</servlet-name>
+		<display-name>Console</display-name>
+		<description>administrative console</description>
+		<servlet-class>it.usi.xframe.xas.servlet.ServletConsole</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Sms</servlet-name>
+		<display-name>Sms</display-name>
+		<description>servlet to make sms status inquiry</description>
+		<servlet-class>it.usi.xframe.xas.servlet.ServletSms</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>TestHtmlObjects</servlet-name>
+		<display-name>TestHtmlObjects</display-name>
+		<description>for test pourpose</description>
+		<servlet-class>it.usi.xframe.xas.servlet.ServletTestHtmlObjects</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>SplunkDataRest</servlet-name>
+		<display-name>SplunkDataRest</display-name>
+		<description>Servlet to call Splunk Rest  API</description>
+		<servlet-class>it.usi.xframe.xas.servlet.ServletSplunkDataRest</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Statistics</servlet-name>
+		<display-name>Statistics</display-name>
+		<description>servlet to show database statistics</description>
+		<servlet-class>it.usi.xframe.xas.servlet.ServletStatistics</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Initialization</servlet-name>
+		<display-name>Initialization</display-name>
+		<description>servlet used to make initialization procedures</description>
+		<servlet-class>it.usi.xframe.xas.servlet.ServletInitialization</servlet-class>
+		<load-on-startup>-1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Test</servlet-name>
+		<url-pattern>/test</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>VodafonePopSmsDeliver</servlet-name>
+		<url-pattern>/VodafonePopSmsDeliver</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Console</servlet-name>
+		<url-pattern>/console</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Sms</servlet-name>
+		<url-pattern>/sms</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>TestHtmlObjects</servlet-name>
+		<url-pattern>/testhtmlobjects</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SplunkDataRest</servlet-name>
+		<url-pattern>/SplunkDataRest</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SplunkDataRest</servlet-name>
+		<url-pattern>/splunkDataRest</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Statistics</servlet-name>
+		<url-pattern>/statistics</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Initialization</servlet-name>
+		<url-pattern>/initialization</url-pattern>
+	</servlet-mapping>
+	<mime-mapping>
+		<extension>json</extension>
+		<mime-type>application/json</mime-type>
+	</mime-mapping>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+	<error-page>
+		<error-code>401</error-code>
+		<location>/console</location>
+	</error-page>
+	<error-page>
+		<error-code>403</error-code>
+		<location>/error.jsp</location>
+	</error-page>
+	<resource-ref id="ResourceRef_1089887274831">
+		<res-ref-name>url/log4j</res-ref-name>
+		<res-type>java.net.URL</res-type>
+		<res-auth>Container</res-auth>
+		<res-sharing-scope>Shareable</res-sharing-scope>
+	</resource-ref>
+	<resource-ref id="ResourceRef_1434639737327">
+		<description></description>
+		<res-ref-name>jms/TestConnection</res-ref-name>
+		<res-type>javax.jms.QueueConnectionFactory</res-type>
+		<res-auth>Container</res-auth>
+		<res-sharing-scope>Shareable</res-sharing-scope>
+	</resource-ref>
+	<resource-ref id="ResourceRef_1435745824353">
+		<description></description>
+		<res-ref-name>jms/TestQueue</res-ref-name>
+		<res-type>javax.jms.Queue</res-type>
+		<res-auth>Container</res-auth>
+		<res-sharing-scope>Shareable</res-sharing-scope>
+	</resource-ref>
+	<security-constraint>
+		<display-name>Search</display-name>
+		<web-resource-collection>
+			<web-resource-name>search</web-resource-name>
+			<description>search smses</description>
+			<url-pattern>/sms</url-pattern>
+			<url-pattern>/sms/*</url-pattern>
+			<http-method>GET</http-method>
+			<http-method>PUT</http-method>
+			<http-method>HEAD</http-method>
+			<http-method>TRACE</http-method>
+			<http-method>POST</http-method>
+			<http-method>DELETE</http-method>
+			<http-method>OPTIONS</http-method>
+		</web-resource-collection>
+		<auth-constraint>
+			<description>Search sms roles</description>
+			<role-name>Authenticated</role-name>
+		</auth-constraint>
+	</security-constraint>
+	<security-constraint>
+		<display-name>Console</display-name>
+		<web-resource-collection>
+			<web-resource-name>console</web-resource-name>
+			<description>admin console</description>
+			<url-pattern>/console</url-pattern>
+			<url-pattern>/console/*</url-pattern>
+			<http-method>GET</http-method>
+			<http-method>PUT</http-method>
+			<http-method>HEAD</http-method>
+			<http-method>TRACE</http-method>
+			<http-method>POST</http-method>
+			<http-method>DELETE</http-method>
+			<http-method>OPTIONS</http-method>
+		</web-resource-collection>
+		<auth-constraint>
+			<description>admin console roles</description>
+			<role-name>Authenticated</role-name>
+		</auth-constraint>
+	</security-constraint>
+	<security-constraint>
+		<display-name>Statistics</display-name>
+		<web-resource-collection>
+			<web-resource-name>statistics</web-resource-name>
+			<description>Statistics data viewer</description>
+			<url-pattern>/statistics</url-pattern>
+			<url-pattern>/statistics/*</url-pattern>
+			<http-method>GET</http-method>
+			<http-method>PUT</http-method>
+			<http-method>HEAD</http-method>
+			<http-method>TRACE</http-method>
+			<http-method>POST</http-method>
+			<http-method>DELETE</http-method>
+			<http-method>OPTIONS</http-method>
+		</web-resource-collection>
+		<auth-constraint>
+			<description>Users for sms statistics</description>
+			<role-name>Authenticated</role-name>
+		</auth-constraint>
+	</security-constraint>
+	<login-config>
+		<auth-method>FORM</auth-method>
+		<form-login-config>
+			<form-login-page>/../../XA-UTL-PF/public/login.jsp</form-login-page>
+			<form-error-page>/../../XA-UTL-PF/public/error.jsp</form-error-page>
+		</form-login-config>
+	</login-config>
+	<security-role>
+		<description></description>
+		<role-name>SendSms</role-name>
+	</security-role>
+	<security-role>
+		<description></description>
+		<role-name>SendEmail</role-name>
+	</security-role>
+	<security-role>
+		<role-name>SearchSms</role-name>
+	</security-role>
+	<security-role>
+		<description>All authenticated users</description>
+		<role-name>Authenticated</role-name>
+	</security-role>
+	<security-role>
+		<description>All unauthenticated users</description>
+		<role-name>Unauthenticated</role-name>
+	</security-role>
+	<security-role>
+		<description>amministratore</description>
+		<role-name>Admin</role-name>
+	</security-role>
+	<security-role>
+		<description>user that can view statistics</description>
+		<role-name>ViewStatistics</role-name>
+	</security-role>
+	<security-role>
+		<description>user that can manage configuration</description>
+		<role-name>ManageConfiguration</role-name>
+	</security-role>
+	<ejb-local-ref id="EJBLocalRef_1295366478956">
+		<ejb-ref-name>ejb/XasSendsms</ejb-ref-name>
+		<ejb-ref-type>Session</ejb-ref-type>
+		<local-home>it.usi.xframe.xas.bfintf.XasSendsmsLocalHome</local-home>
+		<local>it.usi.xframe.xas.bfintf.XasSendsmsLocal</local>
+		<ejb-link>XA-XAS-BF.jar#XasSendsms</ejb-link>
+	</ejb-local-ref>
+	<ejb-local-ref id="EJBLocalRef_1327587150820">
+		<ejb-ref-name>ejb/XasTest</ejb-ref-name>
+		<ejb-ref-type>Session</ejb-ref-type>
+		<local-home>it.usi.xframe.xas.bfintf.XasTestLocalHome</local-home>
+		<local>it.usi.xframe.xas.bfintf.XasTestLocal</local>
+		<ejb-link>XA-XAS-BF.jar#XasTest</ejb-link>
+	</ejb-local-ref>
+	<ejb-local-ref id="EJBLocalRef_1358508346281">
+		<ejb-ref-name>ejb/XasEmail</ejb-ref-name>
+		<ejb-ref-type>Session</ejb-ref-type>
+		<local-home>it.usi.xframe.xas.bfintf.XasEmailLocalHome</local-home>
+		<local>it.usi.xframe.xas.bfintf.XasEmailLocal</local>
+		<ejb-link>XA-XAS-BF.jar#XasEmail</ejb-link>
+	</ejb-local-ref>
+</web-app>
+	

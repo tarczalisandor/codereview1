@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.etools.webservice.wsbnd:WSBinding xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.etools.webservice.wsbnd="http://www.ibm.com/websphere/appserver/schemas/5.0.2/wsbnd.xmi" xmi:id="WSBinding_1239286125953">
+  <wsdescBindings xmi:id="WSDescBinding_1425478928073" wsDescNameLink="PgeTokenSendEmailService">
+    <pcBindings xmi:id="PCBinding_1425478928073" pcNameLink="PgeTokenSendEmail">
+      <securityRequestReceiverBindingConfig xmi:id="SecurityRequestReceiverBindingConfig_1425479051485">
+        <loginMappings xmi:id="LoginMapping_1425487290435" authMethod="BasicAuth" configName="PGTOKEN">
+          <callbackHandlerFactory xmi:id="CallbackHandlerFactory_1425487290435" classname="com.ibm.wsspi.wssecurity.auth.callback.WSCallbackHandlerFactoryImpl"/>
+        </loginMappings>
+      </securityRequestReceiverBindingConfig>
+    </pcBindings>
+  </wsdescBindings>
+  <wsdescBindings xmi:id="WSDescBinding_1425648723240" wsDescNameLink="PgeTokenSendSmsService">
+    <pcBindings xmi:id="PCBinding_1425648723240" pcNameLink="PgeTokenSendSms">
+      <securityRequestReceiverBindingConfig xmi:id="SecurityRequestReceiverBindingConfig_1425648723240">
+        <loginMappings xmi:id="LoginMapping_1448460785492" authMethod="BasicAuth" configName="PGTOKEN">
+          <callbackHandlerFactory xmi:id="CallbackHandlerFactory_1448460785492" classname="com.ibm.wsspi.wssecurity.auth.callback.WSCallbackHandlerFactoryImpl"/>
+        </loginMappings>
+      </securityRequestReceiverBindingConfig>
+    </pcBindings>
+  </wsdescBindings>
+  <wsdescBindings xmi:id="WSDescBinding_1449675270669" wsDescNameLink="PgeTokenSendSms2Service">
+    <pcBindings xmi:id="PCBinding_1449675270669" pcNameLink="PgeTokenSendSms2">
+      <securityRequestReceiverBindingConfig xmi:id="SecurityRequestReceiverBindingConfig_1449675503783">
+        <loginMappings xmi:id="LoginMapping_1449675503783" authMethod="BasicAuth" configName="PGTOKEN">
+          <callbackHandlerFactory xmi:id="CallbackHandlerFactory_1449675503783" classname="com.ibm.wsspi.wssecurity.auth.callback.WSCallbackHandlerFactoryImpl"/>
+        </loginMappings>
+      </securityRequestReceiverBindingConfig>
+    </pcBindings>
+  </wsdescBindings>
+  <wsdescBindings xmi:id="WSDescBinding_1491571155793" wsDescNameLink="SendEmailService">
+    <pcBindings xmi:id="PCBinding_1491571155793" pcNameLink="SendEmail"/>
+  </wsdescBindings>
+  <wsdescBindings xmi:id="WSDescBinding_1500377788723" wsDescNameLink="SendSmsService">
+    <pcBindings xmi:id="PCBinding_1500377788723" pcNameLink="SendSms"/>
+  </wsdescBindings>
+  <wsdescBindings xmi:id="WSDescBinding_1500453818177" wsDescNameLink="XasNotificationService">
+    <pcBindings xmi:id="PCBinding_1500453818177" pcNameLink="XasNotification"/>
+  </wsdescBindings>
+  <wsdescBindings xmi:id="WSDescBinding_1503905788815" wsDescNameLink="SmsNotificationService">
+    <pcBindings xmi:id="PCBinding_1503905788815" pcNameLink="SmsNotificationServicePort"/>
+  </wsdescBindings>
+  <wsdescBindings xmi:id="WSDescBinding_1501835643693" wsDescNameLink="SendSms2Service">
+    <pcBindings xmi:id="PCBinding_1501835643693" pcNameLink="SendSms2"/>
+  </wsdescBindings>
+  <wsdescBindings xmi:id="WSDescBinding_1519297363330" wsDescNameLink="GWServiceService">
+    <pcBindings xmi:id="PCBinding_1519297363330" pcNameLink="GWService"/>
+  </wsdescBindings>
+</com.ibm.etools.webservice.wsbnd:WSBinding>

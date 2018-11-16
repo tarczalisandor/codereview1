@@ -1,0 +1,856 @@
+NULL           ------------------------------------------------------------------------
+0SECTION       TITLE subcomponent dump routine
+NULL           ===============================
+1TISIGINFO     signal 11 received 
+1TIDATETIME    Date:                 2013/10/15 at 16:31:13
+1TIFILENAME    Javacore filename:    D:\Projects\workspaces\xas\XA-XAS-BF\javacore.20131015.163113.3712.txt
+NULL           ------------------------------------------------------------------------
+0SECTION       XHPI subcomponent dump routine
+NULL           ==============================
+1XHEXCPCODE    Exception code: C0000005 Access Violation
+1XHEXCPADDRESS Fault address:  1008B0A7 01:0008A0A7
+1XHEXCPMODULE  Fault module:   C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\java\jre\bin\classic\jvm.dll
+NULL           
+1XHREGISTERS   Registers:
+2XHREGISTER      EAX:00000000
+2XHREGISTER      EBX:00000000
+2XHREGISTER      ECX:085D7DF8
+2XHREGISTER      EDX:00000000
+2XHREGISTER      ESI:08301410
+2XHREGISTER      EDI:0CC3FC2C
+2XHREGISTER      CS:EIP:0023:1008B0A7
+2XHREGISTER      SS:ESP:002B:0CC3FC0C  EBP:00000000
+2XHREGISTER      DS:002B  ES:002B  FS:0053  GS:002B
+NULL           
+1XHFLAGS       Flags:00010246
+NULL           
+NULL           ------------------------------------------------------------------------
+0SECTION       CI subcomponent dump routine
+NULL           ============================
+1CIJAVAVERSION J2RE 1.4.2 IBM Windows 32 build cn142-20050609
+1CIRUNNINGAS   Running as a standalone JVM
+1CICMDLINE     C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\java\jre\bin\javaw.exe -Xdebug -Xnoagent -Xrunjdwp:transport=dt_socket,suspend=y,address=localhost:58483 -Dfile.encoding=Cp1252 -classpath D:\Projects\workspaces\xas\XA-XAS-BF\classes;D:\Projects\workspaces\xas\XA-XAS\applid.jar;D:\Projects\workspaces\xas\XA-XAS\CommRes.jar;D:\Projects\workspaces\xas\XA-XAS\stcommsrvrtk.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\activitySession.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\acwa.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\admin.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\appprofile.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\asynchbeans.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\bootstrap.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\bsf.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\ccf.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\ccf2.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\channelfw.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\cluster.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\clusteradapter.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\commonj-twm.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\commons-discovery.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\commons-logging-api.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\distexcep.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\dwlmclient.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\dynacache.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\eablib.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\ecutils.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\ejbcontainer.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\ejbcontainerImpl.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\ejbportable.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\emf.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\ffdc.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\i18nctx.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\installedChannels\channel.http.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\installedChannels\channel.ssl.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\installedChannels\channel.tcp.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\ivjejb35.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\j2cIntf.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\j2ee.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\jdbcmediator.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\jsf-api.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\jstl.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\management.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\marshall.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\objectpool.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\odc.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\pm.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\pmimpl.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\processintf.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\qryclient.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\query.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\querymd.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\queryws.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\ras.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\recjava.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\rsadaptercci.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\rsadapterspi.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\rsaexternal.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\runtime.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\runtimefw.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\sas.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\scheduler-client.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\scheduler-service.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\security.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\securityImpl.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\servletevent.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\sib.common.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\sib.server.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\soap-sec.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\soap.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\standard.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\startupbean.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\tx.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\uddi4jv2.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\utils.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\vaprt.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\wccm_base.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\webcontainer.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\webservices.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\ws-commons-logging.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\ws-jsf.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\wsatlib.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\wsdl4j.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\wsexception.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\wsif-j2c.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\wsif.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\wssec.jar;D:\Projects\workspaces\xas\XA-XAS-BFCL\classes;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB12\lib\brgorb.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB12\lib\commons-attributes-api.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB12\lib\commons-configuration.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB12\lib\commons-digester.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB12\lib\commons-validator.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB12\lib\iomdriver.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB12\lib\iomprx.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB12\lib\jaxb-api-1.0.1.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB12\lib\jaxb-impl-1.0.6.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB12\lib\jaxb-libs-1.0.6.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB12\lib\jbeanmapper.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB12\lib\jsf-api.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB12\lib\jsf-ibm.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB12\lib\jsf-impl.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB12\lib\namespace-1.0.1.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB12\lib\netutil.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB12\lib\relaxngDatatype.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB12\lib\spring-remoting-1.2.8.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB12\lib\spring-web-1.2.8.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB12\lib\spring-webmvc-1.2.8.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB12\lib\struts.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB12\lib\struts-el.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB12\lib\struts-menu-2.3.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB12\lib\xsd.bean.runtime.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB12\lib\xsdbeans.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB12\lib\xsdlib.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB12\lib\xsglb12.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB12\only_for_compile\bcmail.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB12\only_for_compile\bcprov.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB12\only_for_compile\castor-0.9.5.2-xml.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\AcAATArchiveClient_XFrame.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\AcAATCommon_XFrame.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\antlr-2.7.6.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\asm.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\asm-attrs.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\authapi.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\axis.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\backport-util-concurrent.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\cglib-2.1.3.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\commons-beanutils.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\commons-collections.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\commons-dbcp-1.1.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\commons-discovery.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\commons-email-1.0.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\commons-fileupload.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\commons-httpclient.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\commons-lang.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\commons-net-1.4.1.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\commons-pool-1.1.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\dbbeans.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\dom4j.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\ehcache.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\hibernate3.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\hibernate3-src.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\i18n.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\itext-1.3.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\iwSessionPoolManager.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\iwtelnet.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\jakarta-oro-2.0.8.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\jaxen-full.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\jdom-1.1.1.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\jspsql.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\jsr107cache.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\jstl.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\kcServlet.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\ms4j.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\saxpath.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\spring-aop-1.2.8.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\spring-beans-1.2.8.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\spring-context-1.2.8.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\spring-core-1.2.8.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\spring-dao-1.2.8.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\spring-hibernate-1.2.8.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\spring-jdbc-1.2.8.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\spring-orm-1.2.8.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\spring-remoting-1.2.8.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\spring-support-1.2.8.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\standard.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\taglibs-application.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\taglibs-datetime.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\taglibs-mailer.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\taglibs-page.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\taglibs-request.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\taglibs-response.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\taglibs-session.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\taglibs-string.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\utility.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\wss4j.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\xsglbjvm.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\commons-logging-1.1.1.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\log4j-1.2.15.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\only_for_compile\bcmail.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\only_for_compile\bcprov.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\only_for_compile\ccf2.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\only_for_compile\cicseci.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\only_for_compile\cicsecitools.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\only_for_compile\cicsframe.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\only_for_compile\imsico.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\only_for_compile\imstools.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\only_for_compile\jcpic.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\only_for_compile\jmxc.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\only_for_compile\kxcjbind.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\only_for_compile\kxmjhf.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\only_for_compile\log4j.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\only_for_compile\mfs.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\only_for_compile\mfsadapter.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\only_for_compile\mof.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\only_for_compile\opensaml-1.1.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\only_for_compile\tdlang.jar;D:\Projects\workspaces\xas\XA-XAS\smppapi-0.3.9.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-WS-EXT-DIR\lib\PassticketRequester.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-WS-EXT-DIR\lib\smjavaagentapi.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-WS-EXT-DIR\lib\xswsextdir.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-WS-EXT-DIR\lib\ZeropiuLoginModule.jar it.usi.xframe.xas.bfimpl.sms.providers.vodafonepop.GatewaySmsVodafonePop
+1CIJAVAHOMEDIR Java Home Dir:   C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\java\jre
+1CIJAVADLLDIR  Java DLL Dir:    C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\java\jre\bin
+1CISYSCP       Sys Classpath:   C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\java\jre\lib\core.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\java\jre\lib\graphics.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\java\jre\lib\security.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\java\jre\lib\server.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\java\jre\lib\xml.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\java\jre\lib\charsets.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\java\jre\lib\ibmcertpathprovider.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\java\jre\lib\ibmjaasactivelm.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\java\jre\lib\ibmjaaslm.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\java\jre\lib\ibmjcefw.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\java\jre\lib\ibmjgssprovider.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\java\jre\lib\ibmjssefips.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\java\jre\lib\ibmjsseprovider.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\java\jre\lib\ibmorb.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\java\jre\lib\ibmorbapi.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\java\jre\lib\ibmpkcs.jar
+1CIUSERARGS    UserArgs:
+2CIUSERARG               vfprintf 0x403000
+2CIUSERARG               -Xdebug
+2CIUSERARG               -Xnoagent
+2CIUSERARG               -Xrunjdwp:transport=dt_socket,suspend=y,address=localhost:58483
+2CIUSERARG               -Dfile.encoding=Cp1252
+2CIUSERARG               -Dinvokedviajava
+2CIUSERARG               -Djava.class.path=D:\Projects\workspaces\xas\XA-XAS-BF\classes;D:\Projects\workspaces\xas\XA-XAS\applid.jar;D:\Projects\workspaces\xas\XA-XAS\CommRes.jar;D:\Projects\workspaces\xas\XA-XAS\stcommsrvrtk.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\activitySession.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\acwa.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\admin.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\appprofile.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\asynchbeans.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\bootstrap.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\bsf.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\ccf.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\ccf2.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\channelfw.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\cluster.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\clusteradapter.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\commonj-twm.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\commons-discovery.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\commons-logging-api.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\distexcep.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\dwlmclient.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\dynacache.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\eablib.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\ecutils.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\ejbcontainer.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\ejbcontainerImpl.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\ejbportable.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\emf.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\ffdc.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\i18nctx.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\installedChannels\channel.http.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\installedChannels\channel.ssl.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\installedChannels\channel.tcp.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\ivjejb35.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\j2cIntf.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\j2ee.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\jdbcmediator.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\jsf-api.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\jstl.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\management.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\marshall.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\objectpool.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\odc.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\pm.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\pmimpl.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\processintf.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\qryclient.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\query.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\querymd.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\queryws.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\ras.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\recjava.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\rsadaptercci.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\rsadapterspi.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\rsaexternal.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\runtime.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\runtimefw.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\sas.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\scheduler-client.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\scheduler-service.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\security.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\securityImpl.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\servletevent.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\sib.common.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\sib.server.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\soap-sec.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\soap.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\standard.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\startupbean.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\tx.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\uddi4jv2.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\utils.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\vaprt.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\wccm_base.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\webcontainer.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\webservices.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\ws-commons-logging.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\ws-jsf.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\wsatlib.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\wsdl4j.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\wsexception.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\wsif-j2c.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\wsif.jar;C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\lib\wssec.jar;D:\Projects\workspaces\xas\XA-XAS-BFCL\classes;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB12\lib\brgorb.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB12\lib\commons-attributes-api.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB12\lib\commons-configuration.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB12\lib\commons-digester.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB12\lib\commons-validator.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB12\lib\iomdriver.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB12\lib\iomprx.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB12\lib\jaxb-api-1.0.1.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB12\lib\jaxb-impl-1.0.6.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB12\lib\jaxb-libs-1.0.6.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB12\lib\jbeanmapper.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB12\lib\jsf-api.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB12\lib\jsf-ibm.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB12\lib\jsf-impl.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB12\lib\namespace-1.0.1.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB12\lib\netutil.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB12\lib\relaxngDatatype.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB12\lib\spring-remoting-1.2.8.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB12\lib\spring-web-1.2.8.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB12\lib\spring-webmvc-1.2.8.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB12\lib\struts.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB12\lib\struts-el.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB12\lib\struts-menu-2.3.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB12\lib\xsd.bean.runtime.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB12\lib\xsdbeans.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB12\lib\xsdlib.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB12\lib\xsglb12.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB12\only_for_compile\bcmail.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB12\only_for_compile\bcprov.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB12\only_for_compile\castor-0.9.5.2-xml.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\AcAATArchiveClient_XFrame.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\AcAATCommon_XFrame.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\antlr-2.7.6.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\asm.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\asm-attrs.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\authapi.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\axis.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\backport-util-concurrent.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\cglib-2.1.3.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\commons-beanutils.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\commons-collections.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\commons-dbcp-1.1.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\commons-discovery.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\commons-email-1.0.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\commons-fileupload.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\commons-httpclient.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\commons-lang.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\commons-net-1.4.1.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\commons-pool-1.1.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\dbbeans.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\dom4j.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\ehcache.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\hibernate3.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\hibernate3-src.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\i18n.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\itext-1.3.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\iwSessionPoolManager.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\iwtelnet.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\jakarta-oro-2.0.8.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\jaxen-full.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\jdom-1.1.1.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\jspsql.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\jsr107cache.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\jstl.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\kcServlet.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\ms4j.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\saxpath.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\spring-aop-1.2.8.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\spring-beans-1.2.8.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\spring-context-1.2.8.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\spring-core-1.2.8.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\spring-dao-1.2.8.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\spring-hibernate-1.2.8.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\spring-jdbc-1.2.8.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\spring-orm-1.2.8.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\spring-remoting-1.2.8.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\spring-support-1.2.8.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\standard.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\taglibs-application.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\taglibs-datetime.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\taglibs-mailer.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\taglibs-page.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\taglibs-request.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\taglibs-response.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\taglibs-session.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\taglibs-string.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\utility.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\wss4j.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\xsglbjvm.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\commons-logging-1.1.1.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\lib\log4j-1.2.15.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\only_for_compile\bcmail.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\only_for_compile\bcprov.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\only_for_compile\ccf2.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\only_for_compile\cicseci.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\only_for_compile\cicsecitools.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\only_for_compile\cicsframe.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\only_for_compile\imsico.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\only_for_compile\imstools.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\only_for_compile\jcpic.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\only_for_compile\jmxc.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\only_for_compile\kxcjbind.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\only_for_compile\kxmjhf.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\only_for_compile\log4j.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\only_for_compile\mfs.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\only_for_compile\mfsadapter.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\only_for_compile\mof.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\only_for_compile\opensaml-1.1.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-GLB-JVM\only_for_compile\tdlang.jar;D:\Projects\workspaces\xas\XA-XAS\smppapi-0.3.9.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-WS-EXT-DIR\lib\PassticketRequester.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-WS-EXT-DIR\lib\smjavaagentapi.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-WS-EXT-DIR\lib\xswsextdir.jar;D:\Projects\workspaces\xas\X10S-EBA-SHLIB\X10S-EBA-WS-EXT-DIR\lib\ZeropiuLoginModule.jar
+2CIUSERARG               vfprintf
+NULL           
+1CIJVMMI       JVM Monitoring Interface (JVMMI)
+NULL           ------------------------
+2CIJVMMIOFF    No events are enabled.
+NULL           
+NULL           ------------------------------------------------------------------------
+0SECTION       DC subcomponent dump routine
+NULL           ============================
+1DCHEADEREYE   Header eye catcher  DCST
+1DCHEADERLEN   Header length       24
+1DCHEADERVER   Header version      1
+1DCHEADERMOD   Header modification 0
+1DCINTERFACE   DC Interface at 0x1015EE7C with 15 entries
+2DCINTERFACE      1 - dcCString2JavaString           0x1006E970
+2DCINTERFACE      2 - dcInt642CString                0x1006EB30
+2DCINTERFACE      3 - dcJavaString2NewCString        0x1006ED50
+2DCINTERFACE      4 - dcJavaString2CString           0x1006EC70
+2DCINTERFACE      5 - dcJavaString2NewPlatformString 0x1006EEA0
+2DCINTERFACE      6 - dcJavaString2UTF               0x1006F240
+2DCINTERFACE      7 - dcPlatformString2JavaString    0x1006EFC0
+2DCINTERFACE      8 - dcUnicode2UTF                  0x1006F170
+2DCINTERFACE      9 - dcUnicode2UTFLength            0x1006F0E0
+2DCINTERFACE     10 - dcUTF2JavaString               0x1006F610
+2DCINTERFACE     11 - dcUTFClassName2JavaString      0x1006F910
+2DCINTERFACE     12 - dcJavaString2ClassName         0x1006F310
+2DCINTERFACE     13 - dcUTF2UnicodeNext              0x1006FB90
+2DCINTERFACE     14 - dcVerifyUTF8                   0x1006FC80
+2DCINTERFACE     15 - dcDumpRoutine                  0x10070310
+1DCARRAYINFO   Array info at 0x101139A8 with 16 entries
+2DCARRAYINFO      1 - index  0 signature 0 name      N/A factor 0
+2DCARRAYINFO      2 - index  0 signature 0 name      N/A factor 0
+2DCARRAYINFO      3 - index  2 signature L name  class[] factor 4
+2DCARRAYINFO      4 - index  0 signature 0 name      N/A factor 0
+2DCARRAYINFO      5 - index  4 signature Z name   bool[] factor 1
+2DCARRAYINFO      6 - index  5 signature C name   char[] factor 2
+2DCARRAYINFO      7 - index  6 signature F name  float[] factor 4
+2DCARRAYINFO      8 - index  7 signature D name double[] factor 8
+2DCARRAYINFO      9 - index  8 signature B name   byte[] factor 1
+2DCARRAYINFO     10 - index  9 signature S name  short[] factor 2
+2DCARRAYINFO     11 - index 10 signature I name    int[] factor 4
+2DCARRAYINFO     12 - index 11 signature J name   long[] factor 8
+2DCARRAYINFO     13 - index  0 signature 0 name   uint[] factor 0
+2DCARRAYINFO     14 - index  0 signature 0 name  uint1[] factor 0
+2DCARRAYINFO     15 - index  0 signature 0 name  uint2[] factor 0
+2DCARRAYINFO     16 - index  0 signature 0 name  uint3[] factor 0
+NULL           ------------------------------------------------------------------------
+0SECTION       DG subcomponent dump routine
+NULL           ============================
+1DGTRCENABLED  Trace enabled: Yes
+2DGTRCTYPE       Trace: Internal
+2DGTRCBUFFERS    Buffer specification: 8k
+2DGTRCBUFALLOC   Buffers allocated: 0
+2DGTRCBUFUSED    Buffers in use:    0
+1DGJDUMPBUFF   Javadump buffer size (allocated): 2621440
+NULL           ------------------------------------------------------------------------
+0SECTION       ST subcomponent dump routine
+NULL           ============================
+1STGCMODES     Resettable GC: No
+1STGCMODES     Concurrent GC: No
+1STCURHBASE    Current Heap Base: 0x101801FC
+1STCURHLIM     Current Heap Limit: 0x1057FBFC
+1STMWHBASE     Middleware Heap Base: 0x101801FC
+1STMWHLIM      Middleware Heap Limit: 0x1057FBFC
+1STGCHELPERS   Number of GC Helper Threads: 3
+1STJVMOPTS     -Xconcurrentlevel: 0 
+1STJVMOPTS     -Xconcurrentbackground: 0 
+1STGCCTR       GC Counter: 2 
+1STAFCTR       AF Counter: 2 
+1STHEAPFREE    Bytes of Heap Space Free: 117320 
+1STHEAPALLOC   Bytes of Heap Space Allocated: 3ffa00 
+1STSMBASE      SM Base: 0x0 
+1STSMEND       SM End: 0x0 
+1STPAMSTART    PAM Start: 0x0 
+1STPAMEND      PAM End: 0x0 
+1STCOMACTION   Compact Action: 0 
+NULL           ------------------------------------------------------------------------
+0SECTION       XE subcomponent dump routine
+NULL           ============================
+1XETHRESHOLD   MMI threshold for java methods is set to 2000
+1XEJITNINIT    JIT is not initialized 
+1XEJVMPIOFF    JVMPI is not activated 
+1XEJNITHRESH   MMI threshold for JNI methods is set to 0
+1XETRCHIS      Trace history length is set to 4
+NULL           ------------------------------------------------------------------------
+0SECTION       LK subcomponent dump routine
+NULL           ============================
+NULL           
+1LKPOOLINFO    Monitor pool info:
+2LKPOOLINIT      Initial monitor count: 32
+2LKPOOLEXPNUM    Minimum number of free monitors before expansion: 5
+2LKPOOLEXPBY     Pool will next be expanded by: 16
+2LKPOOLTOTAL     Current total number of monitors: 32
+2LKPOOLFREE      Current number of free monitors: 30
+NULL           
+1LKMONPOOLDUMP Monitor Pool Dump (flat & inflated object-monitors):
+2LKMONINUSE      sys_mon_t:0x01F90AA0 infl_mon_t: 0x0098E4B8:
+3LKMONOBJECT       java.lang.ref.Reference$Lock@10200558/10200560: <unowned>
+3LKNOTIFYQ            Waiting to be notified:
+3LKWAITNOTIFY            "Reference Handler" (0x7DC3830)
+2LKMONINUSE      sys_mon_t:0x01F90AE8 infl_mon_t: 0x0098E4E4:
+3LKMONOBJECT       java.lang.ref.ReferenceQueue$Lock@10200290/10200298: <unowned>
+3LKNOTIFYQ            Waiting to be notified:
+3LKWAITNOTIFY            "Finalizer" (0x7DC8490)
+NULL           
+1LKREGMONDUMP  JVM System Monitor Dump (registered monitors):
+2LKREGMON          JDWP Command Queue Lock (0x087887E8): <unowned>
+2LKREGMON          JDWP Event Block CommandLoop Monitor (0x08788340): <unowned>
+2LKREGMON          JDWP Event Helper Completion Monitor (0x087882F8): <unowned>
+2LKREGMON          JDWP Event Helper Queue Monitor (0x087882B0): <unowned>
+3LKNOTIFYQ            Waiting to be notified:
+3LKWAITNOTIFY            "JDWP Event Helper Thread" (0x83019E0)
+2LKREGMON          JDWP Event Handler Lock (0x08780348): <unowned>
+2LKREGMON          JDWP Transport Send Monitor (0x08780300): <unowned>
+2LKREGMON          JDWP Transport Listener Monitor (0x087802B8): <unowned>
+2LKREGMON          JDWP Initialization Monitor (0x08780270): <unowned>
+2LKREGMON          JDWP Invocation Lock (0x08780128): <unowned>
+2LKREGMON          JDWP Step Handler Lock (0x087800E0): <unowned>
+2LKREGMON          JDWP Thread Lock (0x08780098): <unowned>
+2LKREGMON          JDWP Reference Table Monitor (0x08780050): <unowned>
+2LKREGMON          JDWP Alloc Lock (0x08780008): <unowned>
+2LKREGMON          Free Class Loader Cache Entry lock (0x01F919D0): <unowned>
+2LKREGMON          IO lock (0x01F91988): <unowned>
+2LKREGMON          Evacuation Region lock (0x01F918F8): <unowned>
+2LKREGMON          Heap Promotion lock (0x01F918B0): <unowned>
+2LKREGMON          Sleep lock (0x01F91868): <unowned>
+2LKREGMON          Method trace lock (0x01F91820): <unowned>
+2LKREGMON          Heap lock (0x01F91700): owner "JDWP Transport Listener: dt_socket" (0x83015E8), entry count 1
+2LKREGMON          Monitor Cache lock (0x01F91670): owner "JDWP Transport Listener: dt_socket" (0x83015E8), entry count 1
+2LKREGMON          JNI Pinning lock (0x01F91748): <unowned>
+2LKREGMON          JNI Global Reference lock (0x01F916B8): <unowned>
+2LKREGMON          Classloader lock (0x01F917D8): owner "main" (0x1F87B18), entry count 1
+2LKREGMON          Binclass lock (0x0098F9D0): owner "JDWP Transport Listener: dt_socket" (0x83015E8), entry count 1
+3LKWAITERQ            Waiting to enter:
+3LKWAITER                "main" (0x1F87B18)
+2LKREGMON          Thread queue lock (0x01F878F0): owner "JDWP Transport Listener: dt_socket" (0x83015E8), entry count 1
+2LKREGMON          Monitor Registry lock (0x01F91790): owner "JDWP Transport Listener: dt_socket" (0x83015E8), entry count 1
+2LKREGMON          System Heap lock (0x0098F280): <unowned>
+2LKREGMON          ACS Heap lock (0x0098F2C8): <unowned>
+2LKREGMON          PAM lock (0x0098F310): <unowned>
+2LKREGMON          Intern String Table lock (0x0098F358): <unowned>
+2LKREGMON          Classloader lock (0x0098F3A0): <unowned>
+2LKREGMON          JIT Byte Code lock (0x0098F3E8): <unowned>
+2LKREGMON          JIT Global Compile lock (0x0098F430): <unowned>
+2LKREGMON          JIT BINCLASS lock (0x0098F478): <unowned>
+2LKREGMON          JIT Debug lock (0x0098F4C0): <unowned>
+2LKREGMON          JIT Log lock (0x0098F508): <unowned>
+2LKREGMON          JITmemT 1 lock (0x0098F550): <unowned>
+2LKREGMON          JITspaceT 1 lock (0x0098F598): <unowned>
+2LKREGMON          JITcodeT 1 lock (0x0098F5E0): <unowned>
+2LKREGMON          JITnccbT 1 lock (0x0098F628): <unowned>
+2LKREGMON          JIT Invoke Interface Cache lock (0x0098F670): <unowned>
+2LKREGMON          JIT Class Map lock (0x0098F6B8): <unowned>
+2LKREGMON          JIT Code lock (0x0098F700): <unowned>
+2LKREGMON          JITmblkT 1 lock (0x0098F748): <unowned>
+2LKREGMON          JIT MB Update lock (0x0098F790): <unowned>
+2LKREGMON          Permanent Variable subpool lock (0x0098F7D8): <unowned>
+2LKREGMON          Intern String Buckets subpool lock (0x0098F820): <unowned>
+2LKREGMON          UTF8 Cache subpool lock (0x0098F868): <unowned>
+2LKREGMON          Namespace Cache subpool lock (0x0098F8B0): <unowned>
+2LKREGMON          Class Storage subpool lock (0x0098F8F8): <unowned>
+2LKREGMON          CL Tables subpool lock (0x0098F940): <unowned>
+2LKREGMON          JIT General subpool lock (0x0098F988): <unowned>
+NULL           
+1LKFLATMONDUMP Thread identifiers (as used in flat monitors):
+2LKFLATMON         ident 0x0C "JDWP Command Reader" (0x82D8730) ee 0x082D8558
+2LKFLATMON         ident 0x0B "JDWP Event Helper Thread" (0x83019E0) ee 0x08301808
+2LKFLATMON         ident 0x0A "JDWP Transport Listener: dt_socket" (0x83015E8) ee 0x08301410
+2LKFLATMON         ident 0x05 "Finalizer" (0x7DC8490) ee 0x07DC82B8
+2LKFLATMON         ident 0x04 "Reference Handler" (0x7DC3830) ee 0x07DC3658
+2LKFLATMON         ident 0x03 "Signal dispatcher" (0x7DC3438) ee 0x07DC3260
+2LKFLATMON         ident 0x02 "main" (0x1F87B18) ee 0x01F87940
+NULL           
+1LKOBJMONDUMP  Java Object Monitor Dump (flat & inflated object-monitors):
+2LKINFLATEDMON     java.lang.ref.ReferenceQueue$Lock@10200290/10200298
+3LKINFLDETAILS         locknflags 80000200 Monitor inflated infl_mon 0x0098E4E4
+2LKINFLATEDMON     java.lang.ref.Reference$Lock@10200558/10200560
+3LKINFLDETAILS         locknflags 80000100 Monitor inflated infl_mon 0x0098E4B8
+NULL           ------------------------------------------------------------------------
+0SECTION       XM subcomponent dump routine
+NULL           ============================
+NULL            
+1XMCURTHDINFO  Current Thread Details
+NULL           ----------------------
+3XMTHREADINFO      "JDWP Transport Listener: dt_socket" (TID:0x101EB5F8, sys_thread_t:0x83015E8, state:R, native ID:0x18C0) prio=5
+1XMTHDINFO     All Thread Details
+NULL           ------------------
+NULL           
+2XMFULLTHDDUMP Full thread dump Classic VM (J2RE 1.4.2 IBM Windows 32 build cn142-20050609, native threads):
+3XMTHREADINFO      "JDWP Command Reader" (TID:0x101EB548, sys_thread_t:0x82D8730, state:R, native ID:0x1010) prio=5
+3XMTHREADINFO      "JDWP Event Helper Thread" (TID:0x101EB5A0, sys_thread_t:0x83019E0, state:CW, native ID:0x130C) prio=5
+3XMTHREADINFO      "JDWP Transport Listener: dt_socket" (TID:0x101EB5F8, sys_thread_t:0x83015E8, state:R, native ID:0x18C0) prio=5
+3XMTHREADINFO      "Finalizer" (TID:0x101EB8B0, sys_thread_t:0x7DC8490, state:CW, native ID:0x1158) prio=8
+4XESTACKTRACE          at java.lang.Object.wait(Native Method)
+4XESTACKTRACE          at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+4XESTACKTRACE          at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:160)
+4XESTACKTRACE          at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:211)
+3XMTHREADINFO      "Reference Handler" (TID:0x101EB908, sys_thread_t:0x7DC3830, state:CW, native ID:0xB5C) prio=10
+4XESTACKTRACE          at java.lang.ref.Reference.process(Native Method)
+4XESTACKTRACE          at java.lang.ref.Reference.access$300(Reference.java:50)
+4XESTACKTRACE          at java.lang.ref.Reference$ReferenceHandler.run(Reference.java:130)
+3XMTHREADINFO      "Signal dispatcher" (TID:0x101EB960, sys_thread_t:0x7DC3438, state:R, native ID:0x1AA0) prio=5
+3XMTHREADINFO      "main" (TID:0x101EB9B8, sys_thread_t:0x1F87B18, state:MW, native ID:0x1674) prio=5
+4XESTACKTRACE          at sun.text.resources.LocaleData.getBundle(LocaleData.java:134)
+4XESTACKTRACE          at sun.text.resources.LocaleData.getLocaleElements(LocaleData.java:122)
+4XESTACKTRACE          at java.text.DecimalFormatSymbols.initialize(DecimalFormatSymbols.java:414)
+4XESTACKTRACE          at java.text.DecimalFormatSymbols.<init>(DecimalFormatSymbols.java:74)
+4XESTACKTRACE          at java.text.MessageFormat.makeFormat(MessageFormat.java:1372)
+4XESTACKTRACE          at java.text.MessageFormat.applyPattern(MessageFormat.java:452)
+4XESTACKTRACE          at java.text.MessageFormat.<init>(MessageFormat.java:347)
+4XESTACKTRACE          at java.text.MessageFormat.format(MessageFormat.java:805)
+4XESTACKTRACE          at ie.omk.smpp.util.DefaultAlphabetEncoding.toString(DefaultAlphabetEncoding.java:244)
+4XESTACKTRACE          at it.usi.xframe.xas.bfimpl.sms.providers.vodafonepop.GatewaySmsVodafonePop.sendSms(GatewaySmsVodafonePop.java:119)
+4XESTACKTRACE          at it.usi.xframe.xas.bfimpl.sms.providers.vodafonepop.GatewaySmsVodafonePop.main(GatewaySmsVodafonePop.java:573)
+NULL           ------------------------------------------------------------------------
+0SECTION       CL subcomponent dump routine
+NULL           ============================
+1CLCLASSPATH   	Classpath Z(C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\java\jre\lib\core.jar),Z(C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\java\jre\lib\graphics.jar),Z(C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\java\jre\lib\security.jar),Z(C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\java\jre\lib\server.jar),Z(C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\java\jre\lib\xml.jar),Z(C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\java\jre\lib\charsets.jar),Z(C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\java\jre\lib\ibmcertpathprovider.jar),Z(C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\java\jre\lib\ibmjaasactivelm.jar),Z(C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\java\jre\lib\ibmjaaslm.jar),Z(C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\java\jre\lib\ibmjcefw.jar),Z(C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\java\jre\lib\ibmjgssprovider.jar),Z(C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\java\jre\lib\ibmjssefips.jar),Z(C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\java\jre\lib\ibmjsseprovider.jar),Z(C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\java\jre\lib\ibmorb.jar),Z(C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\java\jre\lib\ibmorbapi.jar),Z(C:\Program Files\IBM\SDP80\runtimes\base_v6_stub\java\jre\lib\ibmpkcs.jar)
+1CLFLAGOLDJAVA 	Oldjava mode false
+1CLFLAGBOOTSTRP	Bootstrapping false
+1CLFLAGVERBOSE 	Verbose class dependencies false
+1CLENUMVERIFY  	Class verification VERIFY_REMOTE
+1CLPNTRNAMECLLO	Namespace to classloader 0x00000000
+1CLPNTRCHAINLO 	Start of cache entry pool 0x085F24D0
+1CLPNTRCHFREE  	Start of free cache entries 0x085F3618
+1CLPNTRMETHODTB	Location of method table 0x07D401C0
+1CLPNTRANCHRGLN	Global namespace anchor 0x01F88694
+1CLPNTRCLSLOADS	System classloader shadow 0x07D76068
+1CLPNTRSYSLOADS	Classloader shadows 0x082C9808
+1CLPNTRCLSEXT  	Extension loader 0x101EB728
+1CLPNTRSYSLOADR	System classloader 0x101EB6A8
+1CLTEXTCLLOS   	Classloader summaries
+1CLTEXTCLLSS   		12345678: 1=primordial,2=extension,3=shareable,4=middleware,5=system,6=trusted,7=application,8=delegating
+2CLTEXTCLLOADER		-----ta- Loader sun/misc/Launcher$AppClassLoader(0x082C9808), Shadow 0x101EB6A8, Parent sun/misc/Launcher$ExtClassLoader(0x101EB728)
+3CLNMBRLOADEDCL			Number of loaded classes 27
+3CLNMBRCACHECLS			Number of cached classes 305
+3CLHEXDALLOCTIO			Allocation used for loaded classes 1
+3CLHEXDPCKGEOWN			Package owner 0x101EB6A8
+2CLTEXTCLLOADER		-xh-st-- Loader sun/misc/Launcher$ExtClassLoader(0x082B64C8), Shadow 0x101EB728, Parent *none*(0x00000000)
+3CLNMBRLOADEDCL			Number of loaded classes 0
+3CLNMBRCACHECLS			Number of cached classes 0
+3CLHEXDALLOCTIO			Allocation used for loaded classes 3
+3CLHEXDPCKGEOWN			Package owner 0x101EB728
+2CLTEXTCLLOADER		p-h-st-- Loader *System*(0x07D76068), Shadow 0x00000000
+3CLNMBRLOADEDCL			Number of loaded classes 527
+3CLNMBRCACHECLS			Number of cached classes 528
+3CLHEXDALLOCTIO			Allocation used for loaded classes 3
+3CLHEXDPCKGEOWN			Package owner 0x00000000
+1CLTEXTCLLOD   	ClassLoader loaded classes
+2CLTEXTCLLOAD  		Loader sun/misc/Launcher$AppClassLoader(0x082C9808)
+3CLTEXTCLASS   			org/apache/commons/logging/LogFactory$2(0x101DE040)
+3CLTEXTCLASS   			ie/omk/smpp/util/AlphabetEncoding(0x101DE9C0)
+3CLTEXTCLASS   			org/apache/commons/logging/impl/Jdk14Logger(0x101DDB80)
+3CLTEXTCLASS   			it/usi/xframe/xas/bfimpl/sms/GatewaySms(0x101DEFB0)
+3CLTEXTCLASS   			it/usi/xframe/xas/bfimpl/sms/providers/vodafonepop/ReadConfigFile(0x101DD6C0)
+3CLTEXTCLASS   			it/usi/xframe/xas/bfimpl/sms/providers/vodafonepop/PopAccount(0x101DD330)
+3CLTEXTCLASS   			it/usi/xframe/xas/bfimpl/sms/providers/vodafonepop/GatewaySmsVodafonePop(0x101DF0E0)
+3CLTEXTCLASS   			org/apache/commons/logging/impl/LogFactoryImpl$1(0x101DDCB0)
+3CLTEXTCLASS   			it/usi/xframe/system/errors/XFRException(0x101DEAF0)
+3CLTEXTCLASS   			org/apache/commons/logging/LogFactory$1(0x101DE2A0)
+3CLTEXTCLASS   			ie/omk/smpp/SMPPRuntimeException(0x101DDA50)
+3CLTEXTCLASS   			it/usi/xframe/xas/bfimpl/sms/providers/vodafonepop/Client(0x101DD200)
+3CLTEXTCLASS   			it/usi/xframe/xas/bfutil/data/SmsMessage(0x101DD920)
+3CLTEXTCLASS   			org/apache/commons/logging/LogFactory(0x101DE500)
+3CLTEXTCLASS   			it/usi/xframe/xas/bfimpl/sms/providers/vodafonepop/MamAccount(0x101DD460)
+3CLTEXTCLASS   			ie/omk/smpp/util/MessageEncoding(0x101DE890)
+3CLTEXTCLASS   			it/usi/xframe/xas/bfimpl/sms/providers/vodafonepop/ReadConfigFile$1(0x101DD590)
+3CLTEXTCLASS   			ie/omk/smpp/util/UCS2Encoding(0x101DE630)
+3CLTEXTCLASS   			it/usi/xframe/system/errors/XFRCodedException(0x101DEC20)
+3CLTEXTCLASS   			org/apache/commons/logging/LogFactory$3(0x101DE170)
+3CLTEXTCLASS   			org/apache/commons/logging/LogConfigurationException(0x101DE3D0)
+3CLTEXTCLASS   			ie/omk/smpp/util/DefaultAlphabetEncoding(0x101DE760)
+3CLTEXTCLASS   			it/usi/xframe/xas/bfutil/data/SmsSenderInfo(0x101DD7F0)
+3CLTEXTCLASS   			it/usi/xframe/xas/bfutil/data/IGatewaySms(0x101DEE80)
+3CLTEXTCLASS   			it/usi/xframe/xas/bfutil/XASException(0x101DED50)
+3CLTEXTCLASS   			org/apache/commons/logging/Log(0x101DDDE0)
+3CLTEXTCLASS   			org/apache/commons/logging/impl/LogFactoryImpl(0x101DDF10)
+2CLTEXTCLLOAD  		Loader sun/misc/Launcher$ExtClassLoader(0x082B64C8)
+2CLTEXTCLLOAD  		Loader *System*(0x07D76068)
+3CLTEXTCLASS   			sun/misc/URLClassPath$5(0x08297F28)
+3CLTEXTCLASS   			org/apache/xerces/xni/parser/XMLErrorHandler(0x085D57F8)
+3CLTEXTCLASS   			org/apache/xerces/xni/XMLResourceIdentifier(0x0829F718)
+3CLTEXTCLASS   			sun/nio/cs/StreamDecoder(0x08298778)
+3CLTEXTCLASS   			java/io/DataInput(0x01FB9A78)
+3CLTEXTCLASS   			org/apache/xerces/xni/XNIException(0x085D5208)
+3CLTEXTCLASS   			org/apache/xerces/util/XMLAttributesImpl(0x085D0E58)
+3CLTEXTCLASS   			org/apache/xerces/xni/parser/XMLDocumentSource(0x085D0278)
+3CLTEXTCLASS   			javax/xml/parsers/SAXParser(0x0829CD88)
+3CLTEXTCLASS   			sun/net/www/protocol/file/FileURLConnection(0x082963D8)
+3CLTEXTCLASS   			java/io/ObjectInputStream(0x01FB96E8)
+3CLTEXTCLASS   			java/io/InvalidClassException(0x01FB9488)
+3CLTEXTCLASS   			java/lang/ThreadGroup(0x01FB8C38)
+3CLTEXTCLASS   			java/lang/Long$1(0x01FB88A8)
+3CLTEXTCLASS   			[C(0x01FB1A38)
+3CLTEXTCLASS   			org/apache/xerces/xni/parser/XMLPullParserConfiguration(0x0829EC68)
+3CLTEXTCLASS   			java/lang/StackOverflowError(0x01FB5208)
+3CLTEXTCLASS   			java/lang/ClassLoader(0x01FB29A8)
+3CLTEXTCLASS   			java/lang/Comparable(0x01FB0738)
+3CLTEXTCLASS   			org/apache/xerces/impl/dv/DatatypeValidator(0x085D4038)
+3CLTEXTCLASS   			java/util/HashMap$KeyIterator(0x08293B78)
+3CLTEXTCLASS   			java/io/ExpiringCache$Entry(0x01FBF718)
+3CLTEXTCLASS   			java/io/ObjectOutput(0x01FB9F38)
+3CLTEXTCLASS   			org/apache/xerces/xni/XMLDTDHandler(0x0829D5D8)
+3CLTEXTCLASS   			com/ibm/jvm/io/FileOutputStream(0x01FBC2D8)
+3CLTEXTCLASS   			java/lang/Number(0x01FB75A8)
+3CLTEXTCLASS   			java/util/Hashtable$EmptyIterator(0x01FB4758)
+3CLTEXTCLASS   			sun/reflect/UnsafeStaticFieldAccessorImpl(0x01FB0998)
+3CLTEXTCLASS   			org/apache/xerces/util/SecurityManager(0x085D5A58)
+3CLTEXTCLASS   			org/apache/xerces/impl/XMLErrorReporter(0x0829FAA8)
+3CLTEXTCLASS   			sun/reflect/NativeMethodAccessorImpl(0x082995B8)
+3CLTEXTCLASS   			sun/misc/JarFilter(0x08291A38)
+3CLTEXTCLASS   			java/lang/Integer(0x01FB82B8)
+3CLTEXTCLASS   			java/util/logging/LogManager$RootLogger(0x0829B368)
+3CLTEXTCLASS   			sun/net/www/protocol/jar/URLJarFile$URLJarFileEntry(0x08299F38)
+3CLTEXTCLASS   			java/lang/Double(0x01FB89D8)
+3CLTEXTCLASS   			org/apache/xerces/util/EntityResolverWrapper(0x085D5598)
+3CLTEXTCLASS   			org/xml/sax/AttributeList(0x085D4E78)
+3CLTEXTCLASS   			org/apache/xerces/xni/parser/XMLDTDSource(0x085D2288)
+3CLTEXTCLASS   			org/apache/xerces/xni/XMLAttributes(0x085D0F88)
+3CLTEXTCLASS   			org/apache/xerces/impl/XMLDocumentFragmentScannerImpl$Dispatcher(0x085D0D28)
+3CLTEXTCLASS   			org/apache/xerces/parsers/XML11Configuration(0x0829E8D8)
+3CLTEXTCLASS   			java/io/File(0x01FBCEB8)
+3CLTEXTCLASS   			org/apache/xerces/parsers/AbstractSAXParser$AttributesProxy(0x085D4D48)
+3CLTEXTCLASS   			java/lang/SystemClassLoaderAction(0x08294038)
+3CLTEXTCLASS   			[Ljava/lang/UnsatisfiedLinkError;(0x08292E68)
+3CLTEXTCLASS   			java/lang/ref/WeakReference(0x01FBB828)
+3CLTEXTCLASS   			java/lang/ref/Reference$Lock(0x01FBB498)
+3CLTEXTCLASS   			com/ibm/jvm/ExtendedSystem(0x01FB8D68)
+3CLTEXTCLASS   			java/lang/ref/ReferenceQueue(0x01FB6FB8)
+3CLTEXTCLASS   			java/lang/RuntimePermission(0x01FB6638)
+3CLTEXTCLASS   			java/lang/reflect/ReflectPermission(0x01FB5CB8)
+3CLTEXTCLASS   			org/apache/xerces/impl/XMLDocumentScannerImpl$TrailingMiscDispatcher(0x085D1EF8)
+3CLTEXTCLASS   			java/util/AbstractSequentialList(0x08298B08)
+3CLTEXTCLASS   			java/lang/Compiler(0x08294168)
+3CLTEXTCLASS   			com/ibm/jvm/ExtendedSystem$2(0x082929A8)
+3CLTEXTCLASS   			sun/misc/Launcher(0x082910B8)
+3CLTEXTCLASS   			java/lang/NullPointerException(0x01FB3B78)
+3CLTEXTCLASS   			sun/net/www/protocol/jar/Handler(0x08293DD8)
+3CLTEXTCLASS   			org/apache/xerces/parsers/SecuritySupport12$6(0x0829E7A8)
+3CLTEXTCLASS   			sun/io/ByteToCharISO8859_1(0x0829A068)
+3CLTEXTCLASS   			java/security/UnresolvedPermission(0x08296E88)
+3CLTEXTCLASS   			java/util/zip/InflaterInputStream(0x082957F8)
+3CLTEXTCLASS   			sun/reflect/UnsafeFieldAccessorFactory(0x08290868)
+3CLTEXTCLASS   			java/lang/Class$1(0x01FBF128)
+3CLTEXTCLASS   			java/util/zip/ZipConstants(0x01FBCC58)
+3CLTEXTCLASS   			sun/reflect/ConstructorAccessorImpl(0x01FB56C8)
+3CLTEXTCLASS   			org/apache/xerces/impl/XMLEntityScanner(0x0829F848)
+3CLTEXTCLASS   			org/xml/sax/ContentHandler(0x0829BF48)
+3CLTEXTCLASS   			javax/naming/Context(0x082990F8)
+3CLTEXTCLASS   			sun/io/ByteToCharUTF8(0x08297B98)
+3CLTEXTCLASS   			com/ibm/jvm/Trace(0x082943C8)
+3CLTEXTCLASS   			java/lang/reflect/Array(0x08291EF8)
+3CLTEXTCLASS   			java/io/ObjectStreamConstants(0x01FB9BA8)
+3CLTEXTCLASS   			org/apache/xerces/util/XMLChar(0x085D69C8)
+3CLTEXTCLASS   			org/apache/xerces/impl/XMLDocumentScannerImpl$XMLDeclDispatcher(0x085D1B68)
+3CLTEXTCLASS   			java/net/URLClassLoader(0x08291578)
+3CLTEXTCLASS   			java/lang/StringCoding$EncoderCache(0x01FBD968)
+3CLTEXTCLASS   			java/security/SecureClassLoader(0x01FB6AF8)
+3CLTEXTCLASS   			org/apache/xerces/xni/parser/XMLDTDFilter(0x085D2618)
+3CLTEXTCLASS   			javax/xml/parsers/SecuritySupport12$4(0x0829C9F8)
+3CLTEXTCLASS   			java/lang/ref/Finalizer(0x01FBBA88)
+3CLTEXTCLASS   			sun/reflect/MagicAccessorImpl(0x01FB0D28)
+3CLTEXTCLASS   			org/apache/xerces/impl/dv/SecuritySupport12$3(0x085D3CA8)
+3CLTEXTCLASS   			java/security/cert/Certificate(0x08292AD8)
+3CLTEXTCLASS   			sun/net/www/protocol/file/Handler(0x08292618)
+3CLTEXTCLASS   			java/lang/StringCoding(0x01FBD5D8)
+3CLTEXTCLASS   			java/util/Enumeration(0x01FB4628)
+3CLTEXTCLASS   			java/util/logging/Logger(0x0829A3F8)
+3CLTEXTCLASS   			java/net/JarURLConnection(0x08299BA8)
+3CLTEXTCLASS   			java/util/HashMap$HashIterator(0x08293CA8)
+3CLTEXTCLASS   			sun/misc/URLClassPath(0x082930C8)
+3CLTEXTCLASS   			sun/misc/VM(0x01FBF5E8)
+3CLTEXTCLASS   			sun/io/CharToByteSingleByte(0x01FBEFF8)
+3CLTEXTCLASS   			java/lang/reflect/Member(0x01FB5B88)
+3CLTEXTCLASS   			com/ibm/jvm/classloader/Shareable(0x01FB4E78)
+3CLTEXTCLASS   			org/apache/xerces/impl/dv/dtd/NOTATIONDatatypeValidator(0x085D4628)
+3CLTEXTCLASS   			java/util/jar/Manifest$FastInputStream(0x082975A8)
+3CLTEXTCLASS   			java/util/jar/JarEntry(0x082950D8)
+3CLTEXTCLASS   			[Ljava/lang/reflect/Field;(0x08293588)
+3CLTEXTCLASS   			java/lang/Terminator$1(0x08290D28)
+3CLTEXTCLASS   			[Ljava/io/ObjectStreamClass$ClassDataSlot;(0x01FBA788)
+3CLTEXTCLASS   			[B(0x01FB17D8)
+3CLTEXTCLASS   			org/apache/xerces/util/URI(0x085D5B88)
+3CLTEXTCLASS   			org/apache/xerces/impl/XMLVersionDetector(0x085D49B8)
+3CLTEXTCLASS   			org/apache/xerces/parsers/SecuritySupport12$2(0x0829E088)
+3CLTEXTCLASS   			java/util/zip/Inflater(0x08295928)
+3CLTEXTCLASS   			sun/misc/ExtensionDependency(0x08295338)
+3CLTEXTCLASS   			sun/reflect/DelegatingConstructorAccessorImpl(0x01FBF4B8)
+3CLTEXTCLASS   			sun/reflect/LangReflectAccess(0x01FBAEA8)
+3CLTEXTCLASS   			java/io/ObjectStreamClass$ClassDataSlot(0x01FBA658)
+3CLTEXTCLASS   			java/util/RandomAccess(0x01FB30C8)
+3CLTEXTCLASS   			java/lang/Package(0x08295F18)
+3CLTEXTCLASS   			java/util/Collections$EmptyMap(0x01FBEA08)
+3CLTEXTCLASS   			javax/xml/parsers/SecuritySupport12(0x0829C538)
+3CLTEXTCLASS   			java/beans/PropertyChangeSupport(0x0829A9E8)
+3CLTEXTCLASS   			java/io/Reader(0x08298518)
+3CLTEXTCLASS   			java/util/zip/ZipFile(0x01FBCB28)
+3CLTEXTCLASS   			java/io/FileInputStream(0x01FBC078)
+3CLTEXTCLASS   			java/lang/ThreadLocal(0x01FB8518)
+3CLTEXTCLASS   			java/util/Map(0x01FB43C8)
+3CLTEXTCLASS   			java/util/Comparator(0x01FB11E8)
+3CLTEXTCLASS   			java/lang/String(0x01FB0608)
+3CLTEXTCLASS   			java/text/NumberFormat(0x085D7808)
+3CLTEXTCLASS   			java/net/URLConnection$1(0x085D63D8)
+3CLTEXTCLASS   			java/io/UnsupportedEncodingException(0x08299358)
+3CLTEXTCLASS   			java/lang/Compiler$1(0x08294298)
+3CLTEXTCLASS   			java/io/PrintStream(0x08290148)
+3CLTEXTCLASS   			org/apache/xerces/xni/parser/XMLDocumentFilter(0x085D2C08)
+3CLTEXTCLASS   			java/io/DataInputStream(0x08295598)
+3CLTEXTCLASS   			java/util/HashMap$KeySet(0x08293A48)
+3CLTEXTCLASS   			com/ibm/jvm/io/ConsolePrintStream(0x08290018)
+3CLTEXTCLASS   			java/lang/IncompatibleClassChangeError(0x01FB7A68)
+3CLTEXTCLASS   			[D(0x01FB2618)
+3CLTEXTCLASS   			org/apache/xerces/impl/Constants(0x085D6FB8)
+3CLTEXTCLASS   			org/apache/xerces/impl/dv/dtd/IDDatatypeValidator(0x085D4168)
+3CLTEXTCLASS   			org/apache/xerces/impl/XMLDocumentScannerImpl(0x0829FD08)
+3CLTEXTCLASS   			sun/misc/NativeSignalHandler(0x08290F88)
+3CLTEXTCLASS   			sun/reflect/UnsafeStaticBooleanFieldAccessorImpl(0x08290AC8)
+3CLTEXTCLASS   			java/io/Writer(0x082903A8)
+3CLTEXTCLASS   			java/util/AbstractCollection(0x01FB2D38)
+3CLTEXTCLASS   			org/apache/xerces/xni/parser/XMLComponent(0x0829F388)
+3CLTEXTCLASS   			java/util/zip/ZipFile$ZipFileInputStream(0x01FBFAA8)
+3CLTEXTCLASS   			java/util/Hashtable$Entry(0x01FB8648)
+3CLTEXTCLASS   			java/lang/ClassNotFoundException(0x01FB3918)
+3CLTEXTCLASS   			sun/net/www/MimeTable(0x085D5CB8)
+3CLTEXTCLASS   			java/lang/ArrayIndexOutOfBoundsException(0x0829B828)
+3CLTEXTCLASS   			java/util/jar/JarFile(0x08294AE8)
+3CLTEXTCLASS   			java/net/URLStreamHandlerFactory(0x08291318)
+3CLTEXTCLASS   			java/lang/ref/Finalizer$FinalizerThread(0x01FBBBB8)
+3CLTEXTCLASS   			java/lang/StrictMath(0x085D7348)
+3CLTEXTCLASS   			org/apache/xerces/util/ErrorHandlerWrapper(0x085D56C8)
+3CLTEXTCLASS   			org/apache/xerces/xni/grammars/XMLGrammarPool(0x0829EFF8)
+3CLTEXTCLASS   			org/xml/sax/Parser(0x0829D968)
+3CLTEXTCLASS   			java/security/Permission(0x01FB5F18)
+3CLTEXTCLASS   			org/apache/xerces/parsers/AbstractSAXParser$LocatorProxy(0x085D6D58)
+3CLTEXTCLASS   			java/io/FilterOutputStream(0x01FBFE38)
+3CLTEXTCLASS   			java/lang/ThreadLocal$ThreadLocalMap(0x01FBD708)
+3CLTEXTCLASS   			java/security/AccessController(0x01FB63D8)
+3CLTEXTCLASS   			org/apache/xerces/util/ParserConfigurationSettings(0x0829EA08)
+3CLTEXTCLASS   			java/io/IOException(0x01FB4AE8)
+3CLTEXTCLASS   			java/lang/String$CaseInsensitiveComparator(0x01FB10B8)
+3CLTEXTCLASS   			java/util/EventObject(0x0829B6F8)
+3CLTEXTCLASS   			java/lang/reflect/Modifier(0x01FBAC48)
+3CLTEXTCLASS   			java/io/OutputStream(0x01FB9E08)
+3CLTEXTCLASS   			java/util/HashMap$Entry(0x01FB76D8)
+3CLTEXTCLASS   			[J(0x01FB2158)
+3CLTEXTCLASS   			org/apache/xerces/impl/dv/dtd/DTDDVFactoryImpl(0x085D3DD8)
+3CLTEXTCLASS   			org/apache/xerces/xni/XMLDocumentHandler(0x0829D4A8)
+3CLTEXTCLASS   			java/io/OutputStreamWriter(0x08290278)
+3CLTEXTCLASS   			com/ibm/jvm/io/FileInputStream(0x01FBBF48)
+3CLTEXTCLASS   			java/lang/reflect/InvocationTargetException(0x01FBA2C8)
+3CLTEXTCLASS   			java/util/Hashtable$EmptyEnumerator(0x01FB44F8)
+3CLTEXTCLASS   			org/apache/xerces/impl/XMLEntityManager(0x0829F258)
+3CLTEXTCLASS   			org/xml/sax/helpers/DefaultHandler(0x0829BBB8)
+3CLTEXTCLASS   			java/lang/ThreadLocal$ThreadLocalMap$Entry(0x01FBD838)
+3CLTEXTCLASS   			java/lang/InterruptedException(0x01FB3CA8)
+3CLTEXTCLASS   			java/lang/NoClassDefFoundError(0x01FB0018)
+3CLTEXTCLASS   			java/util/logging/LogManager$1(0x0829A8B8)
+3CLTEXTCLASS   			java/net/URLStreamHandler(0x082924E8)
+3CLTEXTCLASS   			java/io/Win32FileSystem(0x01FBD248)
+3CLTEXTCLASS   			java/lang/Float(0x01FB7478)
+3CLTEXTCLASS   			java/lang/ref/ReferenceQueue$Null(0x01FB70E8)
+3CLTEXTCLASS   			org/apache/xerces/impl/XMLEntityManager$Entity(0x085D17D8)
+3CLTEXTCLASS   			org/apache/xerces/impl/XMLDocumentFragmentScannerImpl(0x0829FE38)
+3CLTEXTCLASS   			sun/net/www/protocol/jar/URLJarFile(0x08299E08)
+3CLTEXTCLASS   			java/util/StringTokenizer(0x082917D8)
+3CLTEXTCLASS   			sun/misc/Unsafe(0x08290998)
+3CLTEXTCLASS   			org/apache/xerces/xni/QName(0x085D0868)
+3CLTEXTCLASS   			org/apache/xerces/parsers/ObjectFactory(0x0829DBC8)
+3CLTEXTCLASS   			com/ibm/misc/BASE64Decoder(0x08298188)
+3CLTEXTCLASS   			java/lang/ref/SoftReference(0x01FBB6F8)
+3CLTEXTCLASS   			java/lang/OutOfMemoryError(0x01FB3F08)
+3CLTEXTCLASS   			java/lang/SecurityException(0x08299228)
+3CLTEXTCLASS   			java/security/PermissionCollection(0x08293328)
+3CLTEXTCLASS   			[[C(0x01FB7F28)
+3CLTEXTCLASS   			com/ibm/jvm/classloader/Middleware(0x01FB4FA8)
+3CLTEXTCLASS   			sun/text/resources/LocaleData(0x085D7CC8)
+3CLTEXTCLASS   			org/apache/xerces/impl/dtd/XMLSimpleType(0x085D31F8)
+3CLTEXTCLASS   			java/util/logging/Handler(0x0829A528)
+3CLTEXTCLASS   			java/lang/StringCoding$1(0x08297938)
+3CLTEXTCLASS   			sun/io/CharacterEncoding(0x01FBE1B8)
+3CLTEXTCLASS   			java/lang/reflect/Field(0x01FB6898)
+3CLTEXTCLASS   			java/util/Collection(0x01FB2E68)
+3CLTEXTCLASS   			[S(0x01FB1C98)
+3CLTEXTCLASS   			java/net/HttpURLConnection(0x085D6508)
+3CLTEXTCLASS   			org/apache/xerces/impl/dtd/XMLAttributeDecl(0x085D3328)
+3CLTEXTCLASS   			org/apache/xerces/parsers/SecuritySupport12$5(0x0829E678)
+3CLTEXTCLASS   			java/security/AllPermission(0x08296D58)
+3CLTEXTCLASS   			java/io/ExpiringCache(0x01FBD378)
+3CLTEXTCLASS   			org/xml/sax/DTDHandler(0x0829BE18)
+3CLTEXTCLASS   			java/io/ObjectInput(0x01FB9948)
+3CLTEXTCLASS   			java/lang/IllegalArgumentException(0x01FB3DD8)
+3CLTEXTCLASS   			org/apache/xerces/jaxp/JAXPConstants(0x0829CEB8)
+3CLTEXTCLASS   			java/lang/StringCoding$3(0x08297808)
+3CLTEXTCLASS   			java/util/Properties(0x01FB49B8)
+3CLTEXTCLASS   			org/apache/xerces/impl/XMLDocumentScannerImpl$ContentDispatcher(0x085D0AC8)
+3CLTEXTCLASS   			org/apache/xerces/xni/parser/XMLDocumentScanner(0x085D0148)
+3CLTEXTCLASS   			java/util/logging/LoggingPermission(0x0829AC48)
+3CLTEXTCLASS   			java/util/jar/JavaUtilJarAccessImpl(0x08294C18)
+3CLTEXTCLASS   			[Ljava/io/ObjectStreamField;(0x01FB9358)
+3CLTEXTCLASS   			java/lang/Character(0x01FB7DF8)
+3CLTEXTCLASS   			java/io/Serializable(0x01FB04D8)
+3CLTEXTCLASS   			javax/xml/parsers/FilePathToURI(0x085D5338)
+3CLTEXTCLASS   			org/apache/xerces/impl/dv/SecuritySupport12$2(0x085D3B78)
+3CLTEXTCLASS   			org/apache/xerces/impl/dtd/XMLEntityDecl(0x085D2878)
+3CLTEXTCLASS   			org/apache/xerces/impl/XMLNSDocumentScannerImpl$NSContentDispatcher(0x085D0998)
+3CLTEXTCLASS   			java/io/ByteArrayOutputStream(0x08297DF8)
+3CLTEXTCLASS   			[Ljava/lang/Object;(0x01FBA8B8)
+3CLTEXTCLASS   			java/lang/Exception(0x01FB36B8)
+3CLTEXTCLASS   			org/apache/xerces/impl/XMLDocumentFragmentScannerImpl$ElementStack(0x085D0738)
+3CLTEXTCLASS   			java/io/FilePermission(0x08296AF8)
+3CLTEXTCLASS   			sun/misc/URLClassPath$JarLoader(0x08294758)
+3CLTEXTCLASS   			com/ibm/jvm/AllocationPolicy(0x08292F98)
+3CLTEXTCLASS   			sun/reflect/ReflectionFactory$GetReflectionFactoryAction(0x01FB6178)
+3CLTEXTCLASS   			java/lang/reflect/AccessibleObject(0x01FB5A58)
+3CLTEXTCLASS   			java/util/Vector(0x01FB2AD8)
+3CLTEXTCLASS   			org/apache/xerces/impl/dv/dtd/ENTITYDatatypeValidator(0x085D44F8)
+3CLTEXTCLASS   			java/util/jar/JarVerifier(0x08297CC8)
+3CLTEXTCLASS   			sun/net/www/URLConnection(0x08296508)
+3CLTEXTCLASS   			[Ljava/lang/ref/SoftReference;(0x01FBDF58)
+3CLTEXTCLASS   			java/util/List(0x01FB2F98)
+3CLTEXTCLASS   			java/text/Format(0x085D75A8)
+3CLTEXTCLASS   			org/apache/xerces/impl/validation/ValidationManager(0x085D4888)
+3CLTEXTCLASS   			org/apache/xerces/impl/dv/ValidationContext(0x085D2F98)
+3CLTEXTCLASS   			org/apache/xerces/util/XMLAttributesImpl$Attribute(0x085D10B8)
+3CLTEXTCLASS   			org/apache/xerces/parsers/SecuritySupport12$1(0x0829DF58)
+3CLTEXTCLASS   			java/rmi/RemoteException(0x08298FC8)
+3CLTEXTCLASS   			java/io/InputStreamReader(0x08298648)
+3CLTEXTCLASS   			sun/reflect/NativeConstructorAccessorImpl(0x01FBF388)
+3CLTEXTCLASS   			java/lang/Boolean(0x01FB7CC8)
+3CLTEXTCLASS   			sun/misc/SoftCache(0x01FB6D58)
+3CLTEXTCLASS   			sun/security/util/Debug(0x082916A8)
+3CLTEXTCLASS   			sun/misc/Launcher$ExtClassLoader(0x08291448)
+3CLTEXTCLASS   			java/io/ObjectStreamException(0x01FB95B8)
+3CLTEXTCLASS   			java/util/AbstractList(0x01FB2C08)
+3CLTEXTCLASS   			org/apache/xerces/xni/XMLString(0x085D04D8)
+3CLTEXTCLASS   			java/util/logging/Level(0x0829A658)
+3CLTEXTCLASS   			java/net/URLConnection(0x08296638)
+3CLTEXTCLASS   			sun/net/www/ParseUtil(0x08292028)
+3CLTEXTCLASS   			[Ljava/lang/String;(0x08291DC8)
+3CLTEXTCLASS   			java/util/Collections$EmptyList(0x01FBE8D8)
+3CLTEXTCLASS   			java/security/Guard(0x01FB6048)
+3CLTEXTCLASS   			org/apache/xerces/util/NamespaceSupport(0x085D1908)
+3CLTEXTCLASS   			java/net/URL(0x08292288)
+3CLTEXTCLASS   			java/util/Collections$UnmodifiableMap(0x01FBEC68)
+3CLTEXTCLASS   			sun/reflect/Reflection(0x01FB90F8)
+3CLTEXTCLASS   			java/security/BasicPermission(0x01FB5DE8)
+3CLTEXTCLASS   			java/lang/Object(0x01FB0278)
+3CLTEXTCLASS   			org/xml/sax/InputSource(0x085D5468)
+3CLTEXTCLASS   			org/apache/xerces/impl/dv/SecuritySupport(0x085D37E8)
+3CLTEXTCLASS   			java/util/jar/Attributes(0x08297478)
+3CLTEXTCLASS   			[Ljava/security/cert/Certificate;(0x08292C08)
+3CLTEXTCLASS   			java/lang/System(0x01FB6768)
+3CLTEXTCLASS   			sun/reflect/DelegatingClassLoader(0x01FB5338)
+3CLTEXTCLASS   			org/apache/xerces/impl/Constants$ArrayEnumeration(0x085D70E8)
+3CLTEXTCLASS   			java/util/Arrays(0x085D6AF8)
+3CLTEXTCLASS   			sun/net/www/MessageHeader(0x082969C8)
+3CLTEXTCLASS   			java/net/URLClassLoader$1(0x08296048)
+3CLTEXTCLASS   			sun/misc/URLClassPath$3(0x08294628)
+3CLTEXTCLASS   			java/lang/reflect/ReflectAccess(0x01FBAD78)
+3CLTEXTCLASS   			java/io/FileNotFoundException(0x01FB4C18)
+3CLTEXTCLASS   			sun/net/www/MimeEntry(0x085D62A8)
+3CLTEXTCLASS   			org/apache/xerces/impl/dv/dtd/StringDatatypeValidator(0x085D3F08)
+3CLTEXTCLASS   			java/lang/Shutdown$HaltLock(0x0829B108)
+3CLTEXTCLASS   			java/io/BufferedOutputStream(0x01FBFD08)
+3CLTEXTCLASS   			com/ibm/io/FileExists(0x01FBF848)
+3CLTEXTCLASS   			org/apache/xerces/impl/XMLDTDScannerImpl(0x085D2028)
+3CLTEXTCLASS   			org/apache/xerces/impl/XMLDocumentScannerImpl$DTDDispatcher(0x085D1DC8)
+3CLTEXTCLASS   			java/util/zip/ZipEntry(0x08295208)
+3CLTEXTCLASS   			org/apache/xerces/util/AugmentationsImpl(0x085D11E8)
+3CLTEXTCLASS   			java/net/UnknownContentHandler(0x08296768)
+3CLTEXTCLASS   			sun/misc/FileURLMapper(0x082949B8)
+3CLTEXTCLASS   			sun/misc/Launcher$Factory(0x082911E8)
+3CLTEXTCLASS   			java/util/Random(0x01FBE418)
+3CLTEXTCLASS   			org/apache/xerces/util/XMLSymbols(0x085D6C28)
+3CLTEXTCLASS   			java/security/BasicPermissionCollection(0x08296FB8)
+3CLTEXTCLASS   			java/net/ContentHandler(0x08296898)
+3CLTEXTCLASS   			org/apache/xerces/xni/parser/XMLConfigurationException(0x085D50D8)
+3CLTEXTCLASS   			org/apache/xerces/util/AugmentationsImpl$SmallContainer(0x085D1448)
+3CLTEXTCLASS   			sun/net/www/protocol/jar/JarFileFactory(0x08299CD8)
+3CLTEXTCLASS   			sun/io/ByteToCharConverter(0x08297A68)
+3CLTEXTCLASS   			java/lang/ref/PhantomReference(0x01FBBCE8)
+3CLTEXTCLASS   			java/util/AbstractMap(0x01FB6E88)
+3CLTEXTCLASS   			java/lang/Error(0x01FB3588)
+3CLTEXTCLASS   			java/lang/Runnable(0x01FB2878)
+3CLTEXTCLASS   			org/apache/xerces/impl/dv/ObjectFactory(0x085D36B8)
+3CLTEXTCLASS   			org/apache/xerces/xni/parser/XMLDTDScanner(0x085D2158)
+3CLTEXTCLASS   			java/util/jar/Attributes$Name(0x01FB8E98)
+3CLTEXTCLASS   			com/ibm/jvm/classloader/TransientAllocation(0x01FB50D8)
+3CLTEXTCLASS   			java/io/ObjectStreamField(0x01FB0F88)
+3CLTEXTCLASS   			org/xml/sax/Locator(0x085D6E88)
+3CLTEXTCLASS   			java/net/FileNameMap(0x085D5DE8)
+3CLTEXTCLASS   			java/util/logging/LogManager(0x0829A788)
+3CLTEXTCLASS   			[Ljava/lang/reflect/Method;(0x0829A2C8)
+3CLTEXTCLASS   			sun/security/util/ManifestEntryVerifier(0x08298058)
+3CLTEXTCLASS   			java/net/Parts(0x082923B8)
+3CLTEXTCLASS   			java/io/FileDescriptor(0x01FBC1A8)
+3CLTEXTCLASS   			org/apache/xerces/impl/io/UTF8Reader(0x085D6768)
+3CLTEXTCLASS   			org/apache/xerces/parsers/SecuritySupport12$8(0x0829E548)
+3CLTEXTCLASS   			java/lang/ClassCastException(0x0829A198)
+3CLTEXTCLASS   			java/io/BufferedWriter(0x08290738)
+3CLTEXTCLASS   			java/lang/InstantiationException(0x01FBA198)
+3CLTEXTCLASS   			sun/reflect/ConstructorAccessor(0x01FB57F8)
+3CLTEXTCLASS   			org/apache/xerces/xni/Augmentations(0x085D1318)
+3CLTEXTCLASS   			org/apache/xerces/util/SymbolTable(0x0829EEC8)
+3CLTEXTCLASS   			java/util/Collections(0x01FBE2E8)
+3CLTEXTCLASS   			org/apache/xerces/impl/XMLEntityManager$ExternalEntity(0x085D16A8)
+3CLTEXTCLASS   			org/apache/xerces/parsers/SAXParser(0x0829CFE8)
+3CLTEXTCLASS   			java/util/logging/LogManager$2(0x0829B498)
+3CLTEXTCLASS   			org/apache/xerces/parsers/AbstractSAXParser(0x0829D118)
+3CLTEXTCLASS   			javax/xml/parsers/SecuritySupport(0x0829C408)
+3CLTEXTCLASS   			java/lang/ref/Reference(0x01FBB368)
+3CLTEXTCLASS   			org/apache/xerces/xni/parser/XMLComponentManager(0x0829EB38)
+3CLTEXTCLASS   			java/util/LinkedList$Entry(0x08298C38)
+3CLTEXTCLASS   			sun/misc/Resource(0x08295DE8)
+3CLTEXTCLASS   			sun/nio/cs/StreamEncoder$ConverterSE(0x08290608)
+3CLTEXTCLASS   			java/lang/Class$3(0x01FB9228)
+3CLTEXTCLASS   			java/util/HashSet(0x08298D68)
+3CLTEXTCLASS   			java/net/URLClassLoader$ClassFinder(0x08292878)
+3CLTEXTCLASS   			java/io/FilterInputStream(0x01FBC668)
+3CLTEXTCLASS   			java/lang/Runtime(0x01FBBE18)
+3CLTEXTCLASS   			org/apache/xerces/impl/msg/XMLMessageFormatter(0x085D4C18)
+3CLTEXTCLASS   			org/apache/xerces/impl/dtd/XMLElementDecl(0x085D30C8)
+3CLTEXTCLASS   			org/apache/xerces/parsers/SecuritySupport12$4(0x0829E2E8)
+3CLTEXTCLASS   			javax/xml/parsers/FactoryFinder(0x0829C2D8)
+3CLTEXTCLASS   			java/util/Hashtable$Enumerator(0x082944F8)
+3CLTEXTCLASS   			java/util/AbstractSet(0x01FBE678)
+3CLTEXTCLASS   			sun/security/action/LoadLibraryAction(0x01FBCD88)
+3CLTEXTCLASS   			java/lang/IllegalAccessException(0x01FBA528)
+3CLTEXTCLASS   			java/lang/Short(0x01FB8188)
+3CLTEXTCLASS   			sun/reflect/MethodAccessor(0x01FB5598)
+3CLTEXTCLASS   			org/apache/xerces/impl/XMLEntityManager$RewindableInputStream(0x085D6638)
+3CLTEXTCLASS   			org/apache/xerces/xni/NamespaceContext(0x085D1A38)
+3CLTEXTCLASS   			org/xml/sax/EntityResolver(0x0829BCE8)
+3CLTEXTCLASS   			java/io/InputStream(0x01FB9818)
+3CLTEXTCLASS   			java/lang/Integer$1(0x01FB83E8)
+3CLTEXTCLASS   			java/lang/StringCoding$DecoderCache(0x082976D8)
+3CLTEXTCLASS   			java/io/FilePermissionCollection(0x08296C28)
+3CLTEXTCLASS   			sun/misc/URLClassPath$7(0x08295CB8)
+3CLTEXTCLASS   			sun/misc/Launcher$1(0x08291908)
+3CLTEXTCLASS   			java/io/WinNTFileSystem(0x01FBD118)
+3CLTEXTCLASS   			java/security/PrivilegedAction(0x01FB62A8)
+3CLTEXTCLASS   			org/apache/xerces/xni/parser/XMLInputSource(0x085D5928)
+3CLTEXTCLASS   			org/apache/xerces/impl/dtd/XMLDTDValidatorFilter(0x085D2D38)
+3CLTEXTCLASS   			org/apache/xerces/util/XMLResourceIdentifierImpl(0x0829F5E8)
+3CLTEXTCLASS   			javax/xml/parsers/SecuritySupport12$2(0x0829C668)
+3CLTEXTCLASS   			java/util/logging/LogManager$LogNode(0x0829AB18)
+3CLTEXTCLASS   			java/security/CodeSource(0x08296178)
+3CLTEXTCLASS   			java/lang/Cloneable(0x01FB31F8)
+3CLTEXTCLASS   			org/apache/xerces/impl/dv/SecuritySupport12$1(0x085D3A48)
+3CLTEXTCLASS   			org/apache/xerces/xni/parser/XMLParserConfiguration(0x0829ED98)
+3CLTEXTCLASS   			java/io/FilenameFilter(0x08291B68)
+3CLTEXTCLASS   			java/io/FileOutputStream(0x01FBC408)
+3CLTEXTCLASS   			java/lang/NoSuchMethodError(0x01FB7938)
+3CLTEXTCLASS   			java/text/DecimalFormatSymbols(0x085D7B98)
+3CLTEXTCLASS   			sun/misc/URLClassPath$FileLoader(0x08295B88)
+3CLTEXTCLASS   			sun/reflect/UnsafeObjectFieldAccessorImpl(0x082936B8)
+3CLTEXTCLASS   			java/util/BitSet(0x08292158)
+3CLTEXTCLASS   			java/lang/Terminator(0x08290BF8)
+3CLTEXTCLASS   			[Ljava/lang/Thread;(0x01FBB238)
+3CLTEXTCLASS   			java/util/HashMap(0x01FB7348)
+3CLTEXTCLASS   			org/apache/xerces/impl/dv/dtd/ListDatatypeValidator(0x085D43C8)
+3CLTEXTCLASS   			java/security/ProtectionDomain(0x082931F8)
+3CLTEXTCLASS   			sun/misc/SignalHandler(0x08290E58)
+3CLTEXTCLASS   			[Z(0x01FB1578)
+3CLTEXTCLASS   			org/apache/xerces/impl/dtd/XMLNSDTDValidator(0x085D29A8)
+3CLTEXTCLASS   			org/apache/xerces/parsers/SecuritySupport12(0x0829DE28)
+3CLTEXTCLASS   			org/apache/xerces/xs/PSVIProvider(0x0829D838)
+3CLTEXTCLASS   			java/io/BufferedReader(0x082983E8)
+3CLTEXTCLASS   			sun/nio/cs/StreamDecoder$ConverterSD(0x082988A8)
+3CLTEXTCLASS   			sun/misc/Launcher$AppClassLoader(0x082937E8)
+3CLTEXTCLASS   			sun/io/CharToByteConverter(0x01FBE088)
+3CLTEXTCLASS   			org/apache/xerces/impl/dtd/DTDGrammarBucket(0x085D3458)
+3CLTEXTCLASS   			java/util/Locale(0x01FBED98)
+3CLTEXTCLASS   			java/util/Collections$EmptySet(0x01FBE548)
+3CLTEXTCLASS   			org/xml/sax/XMLReader(0x0829DA98)
+3CLTEXTCLASS   			sun/misc/Cleaner(0x08298E98)
+3CLTEXTCLASS   			java/io/ByteArrayInputStream(0x08297348)
+3CLTEXTCLASS   			java/util/jar/Manifest(0x08297218)
+3CLTEXTCLASS   			java/lang/Math(0x08295A58)
+3CLTEXTCLASS   			java/lang/Class(0x01FB0148)
+3CLTEXTCLASS   			sun/net/www/protocol/http/Handler(0x0829BA88)
+3CLTEXTCLASS   			java/security/AccessControlContext(0x01FBB108)
+3CLTEXTCLASS   			java/io/DataOutput(0x01FBA068)
+3CLTEXTCLASS   			java/lang/RuntimeException(0x01FB37E8)
+3CLTEXTCLASS   			java/lang/CharSequence(0x01FB0868)
+3CLTEXTCLASS   			sun/net/www/MimeTable$1(0x085D5F18)
+3CLTEXTCLASS   			sun/net/www/protocol/jar/JarURLConnection(0x08299A78)
+3CLTEXTCLASS   			sun/misc/URLClassPath$Loader(0x08294888)
+3CLTEXTCLASS   			sun/io/CharToByteCp1252(0x01FBEEC8)
+3CLTEXTCLASS   			sun/security/action/GetPropertyAction(0x01FBC8C8)
+3CLTEXTCLASS   			com/ibm/jvm/io/ConsoleInputStream(0x01FBC798)
+3CLTEXTCLASS   			java/lang/Void(0x01FB7B98)
+3CLTEXTCLASS   			java/lang/reflect/Method(0x01FB5928)
+3CLTEXTCLASS   			[F(0x01FB23B8)
+3CLTEXTCLASS   			sun/reflect/FieldAccessorImpl(0x01FB0BF8)
+3CLTEXTCLASS   			sun/net/www/MimeTable$2(0x085D6048)
+3CLTEXTCLASS   			org/apache/xerces/impl/dv/DTDDVFactory(0x085D3588)
+3CLTEXTCLASS   			org/apache/xerces/xni/XMLDTDContentModelHandler(0x0829D708)
+3CLTEXTCLASS   			java/lang/Shutdown$Lock(0x0829AFD8)
+3CLTEXTCLASS   			sun/misc/Launcher$2(0x08293918)
+3CLTEXTCLASS   			java/io/BufferedInputStream(0x01FBC538)
+3CLTEXTCLASS   			[Ljava/lang/Class;(0x01FBA9E8)
+3CLTEXTCLASS   			java/util/Dictionary(0x01FB4298)
+3CLTEXTCLASS   			java/text/MessageFormat(0x085D7478)
+3CLTEXTCLASS   			org/apache/xerces/impl/XMLDocumentScannerImpl$PrologDispatcher(0x085D1C98)
+3CLTEXTCLASS   			org/apache/xerces/impl/XMLNSDocumentScannerImpl(0x0829FBD8)
+3CLTEXTCLASS   			org/apache/xerces/parsers/SecuritySupport(0x0829DCF8)
+3CLTEXTCLASS   			sun/reflect/DelegatingMethodAccessorImpl(0x082996E8)
+3CLTEXTCLASS   			sun/misc/SharedSecrets(0x08294E78)
+3CLTEXTCLASS   			java/lang/LinkageError(0x01FB3A48)
+3CLTEXTCLASS   			java/lang/IndexOutOfBoundsException(0x0829B958)
+3CLTEXTCLASS   			sun/misc/Launcher$5(0x08299818)
+3CLTEXTCLASS   			java/lang/ClassLoader$NativeLibrary(0x01FBF978)
+3CLTEXTCLASS   			java/security/PrivilegedExceptionAction(0x01FBDCF8)
+3CLTEXTCLASS   			java/text/DecimalFormat$1(0x085D7938)
+3CLTEXTCLASS   			org/apache/xerces/util/MessageFormatter(0x085D4AE8)
+3CLTEXTCLASS   			org/apache/xerces/xni/parser/XMLDTDContentModelSource(0x085D23B8)
+3CLTEXTCLASS   			org/apache/xerces/impl/XMLScanner(0x085D0018)
+3CLTEXTCLASS   			org/apache/xerces/xni/parser/XMLEntityResolver(0x0829F4B8)
+3CLTEXTCLASS   			java/lang/UnsatisfiedLinkError(0x08292D38)
+3CLTEXTCLASS   			org/apache/xerces/parsers/XMLParser(0x0829D378)
+3CLTEXTCLASS   			com/ibm/jvm/io/LocalizedInputStream$1(0x01FBFBD8)
+3CLTEXTCLASS   			java/lang/ref/FinalReference(0x01FBB958)
+3CLTEXTCLASS   			java/lang/ref/Reference$ReferenceHandler(0x01FBB5C8)
+3CLTEXTCLASS   			java/security/PrivilegedActionException(0x01FB4D48)
+3CLTEXTCLASS   			java/lang/VirtualMachineError(0x01FB4038)
+3CLTEXTCLASS   			[Ljava/net/URL;(0x08293F08)
+3CLTEXTCLASS   			com/ibm/jvm/ExtendedSystem$3(0x01FB8FC8)
+3CLTEXTCLASS   			java/beans/PropertyChangeEvent(0x0829B5C8)
+3CLTEXTCLASS   			sun/reflect/UnsafeBooleanFieldAccessorImpl(0x08293458)
+3CLTEXTCLASS   			java/lang/reflect/Constructor(0x01FB69C8)
+3CLTEXTCLASS   			java/util/Iterator(0x01FB4888)
+3CLTEXTCLASS   			[I(0x01FB1EF8)
+3CLTEXTCLASS   			org/apache/xerces/impl/XMLEntityHandler(0x085D03A8)
+3CLTEXTCLASS   			org/apache/xerces/parsers/SecuritySupport12$7(0x0829E418)
+3CLTEXTCLASS   			java/lang/Shutdown$WrappedHook(0x0829B238)
+3CLTEXTCLASS   			java/lang/NoSuchMethodException(0x08299488)
+3CLTEXTCLASS   			java/lang/UnsupportedOperationException(0x01FBA3F8)
+3CLTEXTCLASS   			org/apache/xerces/util/AugmentationsImpl$AugmentationsItemsContainer(0x085D1578)
+3CLTEXTCLASS   			javax/xml/parsers/SAXParserFactory(0x0829C1A8)
+3CLTEXTCLASS   			org/xml/sax/ErrorHandler(0x0829C078)
+3CLTEXTCLASS   			java/util/LinkedList(0x082989D8)
+3CLTEXTCLASS   			java/lang/ClassLoader$Finalizer(0x08292748)
+3CLTEXTCLASS   			org/apache/xerces/impl/XMLDocumentFragmentScannerImpl$FragmentContentDispatcher(0x085D0BF8)
+3CLTEXTCLASS   			java/lang/StringCoding$4(0x01FBDA98)
+3CLTEXTCLASS   			sun/misc/Signal(0x01FB8B08)
+3CLTEXTCLASS   			java/lang/Long(0x01FB8778)
+3CLTEXTCLASS   			java/lang/ref/ReferenceQueue$Lock(0x01FB7218)
+3CLTEXTCLASS   			org/apache/xerces/impl/XMLEntityManager$ScannedEntity(0x085D6898)
+3CLTEXTCLASS   			org/apache/xerces/xni/parser/XMLDTDContentModelFilter(0x085D2748)
+3CLTEXTCLASS   			javax/xml/parsers/SecuritySupport12$5(0x0829C8C8)
+3CLTEXTCLASS   			java/util/logging/LogManager$Cleaner(0x0829AD78)
+3CLTEXTCLASS   			java/io/ObjectStreamClass(0x01FB6C28)
+3CLTEXTCLASS   			sun/reflect/FieldAccessor(0x01FB0E58)
+3CLTEXTCLASS   			java/lang/Shutdown(0x0829AEA8)
+3CLTEXTCLASS   			java/io/ObjectOutputStream(0x01FB9CD8)
+3CLTEXTCLASS   			org/apache/xerces/jaxp/SAXParserImpl(0x0829CC58)
+3CLTEXTCLASS   			[Ljava/lang/ThreadGroup;(0x01FBAFD8)
+3CLTEXTCLASS   			sun/reflect/ReflectionFactory(0x01FB6508)
+3CLTEXTCLASS   			org/apache/xerces/impl/dv/dtd/NMTOKENDatatypeValidator(0x085D4758)
+3CLTEXTCLASS   			java/util/jar/JarFile$JarFileEntry(0x08295468)
+3CLTEXTCLASS   			java/util/ArrayList(0x08291C98)
+3CLTEXTCLASS   			java/lang/StringCoding$2(0x01FBDBC8)
+3CLTEXTCLASS   			java/text/DecimalFormat(0x085D76D8)
+3CLTEXTCLASS   			org/apache/xerces/impl/validation/ValidationState(0x085D2E68)
+3CLTEXTCLASS   			org/apache/xerces/parsers/SecuritySupport12$3(0x0829E1B8)
+3CLTEXTCLASS   			sun/reflect/ReflectionFactory$1(0x01FBF258)
+3CLTEXTCLASS   			java/lang/Byte(0x01FB8058)
+3CLTEXTCLASS   			sun/misc/JarIndex(0x08294FA8)
+3CLTEXTCLASS   			sun/io/Converters(0x01FBDE28)
+3CLTEXTCLASS   			java/io/FileSystem(0x01FBCFE8)
+3CLTEXTCLASS   			org/xml/sax/Attributes(0x085D4FA8)
+3CLTEXTCLASS   			com/ibm/misc/CharacterDecoder(0x082982B8)
+3CLTEXTCLASS   			java/security/Principal(0x082970E8)
+3CLTEXTCLASS   			java/util/Collections$ReverseComparator(0x01FBEB38)
+3CLTEXTCLASS   			org/apache/xerces/util/XMLStringBuffer(0x085D0608)
+3CLTEXTCLASS   			javax/xml/parsers/SecuritySupport12$1(0x0829C798)
+3CLTEXTCLASS   			java/lang/Throwable(0x01FB03A8)
+3CLTEXTCLASS   			org/apache/xerces/impl/dv/SecuritySupport12(0x085D3918)
+3CLTEXTCLASS   			org/apache/xerces/util/SymbolTable$Entry(0x0829F128)
+3CLTEXTCLASS   			sun/reflect/MethodAccessorImpl(0x01FB5468)
+3CLTEXTCLASS   			java/lang/ThreadDeath(0x01FB3458)
+3CLTEXTCLASS   			com/ibm/jvm/Constants(0x085D6178)
+3CLTEXTCLASS   			org/apache/xerces/xni/XMLLocator(0x0829F978)
+3CLTEXTCLASS   			org/apache/xerces/jaxp/SAXParserFactoryImpl(0x0829CB28)
+3CLTEXTCLASS   			java/net/URLClassLoader$2(0x08299948)
+3CLTEXTCLASS   			java/util/Hashtable(0x01FB4168)
+3CLTEXTCLASS   			java/util/Stack(0x01FB3328)
+3CLTEXTCLASS   			java/lang/Thread(0x01FB2748)
+3CLTEXTCLASS   			org/apache/xerces/impl/dv/dtd/IDREFDatatypeValidator(0x085D4298)
+3CLTEXTCLASS   			org/apache/xerces/impl/dtd/XMLDTDValidator(0x085D2AD8)
+3CLTEXTCLASS   			java/security/Permissions(0x082962A8)
+3CLTEXTCLASS   			sun/nio/cs/StreamEncoder(0x082904D8)
+3CLTEXTCLASS   			java/util/Set(0x01FBE7A8)
+3CLTEXTCLASS   			com/ibm/jvm/io/LocalizedInputStream(0x01FBC9F8)
+3CLTEXTCLASS   			sun/reflect/UnsafeFieldAccessorImpl(0x01FB0AC8)
+3CLTEXTCLASS   			java/text/FieldPosition(0x085D7A68)
+3CLTEXTCLASS   			java/io/EOFException(0x085D7218)
+3CLTEXTCLASS   			org/apache/xerces/impl/dtd/XMLDTDProcessor(0x085D24E8)
+3CLTEXTCLASS   			org/apache/xerces/parsers/AbstractXMLDocumentParser(0x0829D248)
+3CLTEXTCLASS   			java/util/zip/ZipFile$1(0x082956C8)
+3CLTEXTCLASS   			sun/misc/JavaUtilJarAccess(0x08294D48)
+3CLTEXTCLASS   			java/lang/StringBuffer(0x01FBD4A8)
+3CLTEXTCLASS   			java/io/ObjectStreamClass$FieldReflector(0x01FBAB18)
+3CLTEXTCLASS   			java/util/Map$Entry(0x01FB7808)
+NULL           ------------------------------------------------------------------------
+0SECTION       Javadump End section
+1DGJDUMP       Javadump Buffer Usage Information
+NULL           =================================
+2DGJDUMPALLOC  Javadump buffer size (allocated): 2621440
+2DGJDUMPUSED   Javadump buffer size (used)     : 84907
+NULL           ---------------------- END OF DUMP -------------------------------------

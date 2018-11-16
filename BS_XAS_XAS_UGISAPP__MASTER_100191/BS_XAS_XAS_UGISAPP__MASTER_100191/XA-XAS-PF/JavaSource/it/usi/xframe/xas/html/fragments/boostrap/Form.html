@@ -1,0 +1,20 @@
+<!--header.start-->
+ <div class="col-md-12 order-md-1">
+	<h4 class="mb-3">${form_title}</h4>
+	<form action="${form_action}" method="GET" role="form" class="needs-validation">
+<!--header.end-->
+<!--footer.start-->
+		<hr class="mb-4">
+		<div class="form-group row">
+			<label class="col-form-label col-sm-2"></label>
+			<div class="input-group col-sm-10">
+				<button id="${form_name}_submit" class="btn btn-primary btn-lg btn-block"
+				data-loading-text="Wait..." onclick="spinner(true);" type="submit">Run</button>
+		        <div class="animationload modal-dialog modal-sm" data-backdrop="static" data-keyboard="false" tabindex="-1">
+		            <div class="osahanloading"></div>
+		        </div>
+			</div>
+		</div>
+	</form>
+</div>
+<!--footer.end-->

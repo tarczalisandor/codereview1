@@ -1,0 +1,26 @@
+<!--header.start-->
+<!--header.end-->
+<!--body.start-->
+	<div class="form-check form-check-inline" id="${radiogroup_name}">
+		<input class="form-check-input" type="radio" name="${radio_group}" id="${radio_name}" value="${radio_value}" ${radio_checked}>
+		<label class="form-check-label" for="${radio_name}">${radio_label}</label>
+		<script type="text/javascript">
+			$(function() {
+				$('#${radio_name}').change(function() {
+					${radio_enabledFields}
+					${radio_disabledFields}
+				})
+			})
+		</script>
+	</div>
+<!--body.end-->
+<!--footer.start-->
+<!--footer.end-->
+
+
+<!-- old.body.start -->
+    <label class="btn btn-light-blue form-check-label">
+        <input class="form-check-input" type="radio" autocomplete="off" name="${radio_group}" id="${radio_name}"
+         value="${radio_value}" ${radio_checked}>${radio_label}
+    </label>
+<!-- old.body.end -->

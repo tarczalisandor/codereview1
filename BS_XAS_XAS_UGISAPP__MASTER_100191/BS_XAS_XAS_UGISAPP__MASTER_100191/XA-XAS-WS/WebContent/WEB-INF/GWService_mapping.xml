@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE java-wsdl-mapping PUBLIC "-//IBM Corporation, Inc.//DTD J2EE JAX-RPC mapping 1.0//EN" "http://www.ibm.com/webservices/dtd/j2ee_jaxrpc_mapping_1_0.dtd">
+
+   <java-wsdl-mapping id="JavaWSDLMapping_1519297206789">
+      <package-mapping id="PackageMapping_1519297206789">
+         <package-type>SoapSmppGW</package-type>
+         <namespaceURI>urn:SoapSmppGW</namespaceURI>
+      </package-mapping>
+      <java-xml-type-mapping id="JavaXMLTypeMapping_1519297206789">
+         <class-type>java.lang.String</class-type>
+         <root-type-qname id="RootTypeQname_1519297206852">
+            <namespaceURI>http://schemas.xmlsoap.org/soap/encoding/</namespaceURI>
+            <localpart>string</localpart>
+         </root-type-qname>
+         <qname-scope>simpleType</qname-scope>
+      </java-xml-type-mapping>
+      <java-xml-type-mapping id="JavaXMLTypeMapping_1519297206914">
+         <class-type>SoapSmppGW.Deliver_resp</class-type>
+         <root-type-qname id="RootTypeQname_1519297206914">
+            <namespaceURI>urn:SoapSmppGW</namespaceURI>
+            <localpart>Deliver_resp</localpart>
+         </root-type-qname>
+         <qname-scope>complexType</qname-scope>
+         <variable-mapping id="VariableMapping_1519297206914">
+            <java-variable-name>command_status</java-variable-name>
+            <xml-element-name>command_status</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1519297206915">
+            <java-variable-name>error_code</java-variable-name>
+            <xml-element-name>error_code</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1519297206916">
+            <java-variable-name>message_id</java-variable-name>
+            <xml-element-name>message_id</xml-element-name>
+         </variable-mapping>
+      </java-xml-type-mapping>
+      <java-xml-type-mapping id="JavaXMLTypeMapping_1519297206915">
+         <class-type>SoapSmppGW.Submit_sm</class-type>
+         <root-type-qname id="RootTypeQname_1519297206915">
+            <namespaceURI>urn:SoapSmppGW</namespaceURI>
+            <localpart>Submit_sm</localpart>
+         </root-type-qname>
+         <qname-scope>complexType</qname-scope>
+         <variable-mapping id="VariableMapping_1519297206917">
+            <java-variable-name>destination_addr</java-variable-name>
+            <xml-element-name>destination_addr</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1519297206918">
+            <java-variable-name>service_type</java-variable-name>
+            <xml-element-name>service_type</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1519297206919">
+            <java-variable-name>source_addr</java-variable-name>
+            <xml-element-name>source_addr</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1519297206920">
+            <java-variable-name>source_addr_ton</java-variable-name>
+            <xml-element-name>source_addr_ton</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1519297206921">
+            <java-variable-name>source_addr_npi</java-variable-name>
+            <xml-element-name>source_addr_npi</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1519297206922">
+            <java-variable-name>dest_addr_ton</java-variable-name>
+            <xml-element-name>dest_addr_ton</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1519297206923">
+            <java-variable-name>dest_addr_npi</java-variable-name>
+            <xml-element-name>dest_addr_npi</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1519297206924">
+            <java-variable-name>esm_class</java-variable-name>
+            <xml-element-name>esm_class</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1519297206925">
+            <java-variable-name>protocol_id</java-variable-name>
+            <xml-element-name>protocol_id</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1519297206926">
+            <java-variable-name>priority_flag</java-variable-name>
+            <xml-element-name>priority_flag</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1519297206927">
+            <java-variable-name>schedule_delivery_time</java-variable-name>
+            <xml-element-name>schedule_delivery_time</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1519297206928">
+            <java-variable-name>validity_period</java-variable-name>
+            <xml-element-name>validity_period</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1519297206929">
+            <java-variable-name>registered_delivery</java-variable-name>
+            <xml-element-name>registered_delivery</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1519297206930">
+            <java-variable-name>short_message</java-variable-name>
+            <xml-element-name>short_message</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1519297206931">
+            <java-variable-name>replace_if_present_flag</java-variable-name>
+            <xml-element-name>replace_if_present_flag</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1519297206932">
+            <java-variable-name>data_coding</java-variable-name>
+            <xml-element-name>data_coding</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1519297206933">
+            <java-variable-name>sm_default_msg_id</java-variable-name>
+            <xml-element-name>sm_default_msg_id</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1519297206934">
+            <java-variable-name>sm_length</java-variable-name>
+            <xml-element-name>sm_length</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1519297206935">
+            <java-variable-name>message_payload</java-variable-name>
+            <xml-element-name>message_payload</xml-element-name>
+         </variable-mapping>
+      </java-xml-type-mapping>
+      <java-xml-type-mapping id="JavaXMLTypeMapping_1519297206916">
+         <class-type>int</class-type>
+         <root-type-qname id="RootTypeQname_1519297206916">
+            <namespaceURI>http://www.w3.org/2001/XMLSchema</namespaceURI>
+            <localpart>int</localpart>
+         </root-type-qname>
+         <qname-scope>simpleType</qname-scope>
+      </java-xml-type-mapping>
+      <java-xml-type-mapping id="JavaXMLTypeMapping_1519297206917">
+         <class-type>java.lang.Byte</class-type>
+         <root-type-qname id="RootTypeQname_1519297206917">
+            <namespaceURI>http://schemas.xmlsoap.org/soap/encoding/</namespaceURI>
+            <localpart>byte</localpart>
+         </root-type-qname>
+         <qname-scope>simpleType</qname-scope>
+      </java-xml-type-mapping>
+      <java-xml-type-mapping id="JavaXMLTypeMapping_1519297206918">
+         <class-type>java.lang.Integer</class-type>
+         <root-type-qname id="RootTypeQname_1519297206918">
+            <namespaceURI>http://schemas.xmlsoap.org/soap/encoding/</namespaceURI>
+            <localpart>int</localpart>
+         </root-type-qname>
+         <qname-scope>simpleType</qname-scope>
+      </java-xml-type-mapping>
+      <java-xml-type-mapping id="JavaXMLTypeMapping_1519297206919">
+         <class-type>SoapSmppGW.GWSession</class-type>
+         <root-type-qname id="RootTypeQname_1519297206919">
+            <namespaceURI>urn:SoapSmppGW</namespaceURI>
+            <localpart>GWSession</localpart>
+         </root-type-qname>
+         <qname-scope>complexType</qname-scope>
+         <variable-mapping id="VariableMapping_1519297206936">
+            <java-variable-name>accountName</java-variable-name>
+            <xml-element-name>accountName</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1519297206937">
+            <java-variable-name>accountPassword</java-variable-name>
+            <xml-element-name>accountPassword</xml-element-name>
+         </variable-mapping>
+      </java-xml-type-mapping>
+      <java-xml-type-mapping id="JavaXMLTypeMapping_1519297206920">
+         <class-type>SoapSmppGW.Submit_resp</class-type>
+         <root-type-qname id="RootTypeQname_1519297206920">
+            <namespaceURI>urn:SoapSmppGW</namespaceURI>
+            <localpart>Submit_resp</localpart>
+         </root-type-qname>
+         <qname-scope>complexType</qname-scope>
+         <variable-mapping id="VariableMapping_1519297206938">
+            <java-variable-name>message_id</java-variable-name>
+            <xml-element-name>message_id</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1519297206939">
+            <java-variable-name>error_code</java-variable-name>
+            <xml-element-name>error_code</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1519297206940">
+            <java-variable-name>command_status</java-variable-name>
+            <xml-element-name>command_status</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1519297206941">
+            <java-variable-name>sequence_number</java-variable-name>
+            <xml-element-name>sequence_number</xml-element-name>
+         </variable-mapping>
+      </java-xml-type-mapping>
+      <java-xml-type-mapping id="JavaXMLTypeMapping_1519297206921">
+         <class-type>SoapSmppGW.Deliver_sm</class-type>
+         <root-type-qname id="RootTypeQname_1519297206921">
+            <namespaceURI>urn:SoapSmppGW</namespaceURI>
+            <localpart>Deliver_sm</localpart>
+         </root-type-qname>
+         <qname-scope>complexType</qname-scope>
+         <variable-mapping id="VariableMapping_1519297206942">
+            <java-variable-name>destination_addr</java-variable-name>
+            <xml-element-name>destination_addr</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1519297206943">
+            <java-variable-name>service_type</java-variable-name>
+            <xml-element-name>service_type</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1519297206944">
+            <java-variable-name>source_addr</java-variable-name>
+            <xml-element-name>source_addr</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1519297206945">
+            <java-variable-name>source_addr_ton</java-variable-name>
+            <xml-element-name>source_addr_ton</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1519297206946">
+            <java-variable-name>source_addr_npi</java-variable-name>
+            <xml-element-name>source_addr_npi</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1519297206947">
+            <java-variable-name>dest_addr_ton</java-variable-name>
+            <xml-element-name>dest_addr_ton</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1519297206948">
+            <java-variable-name>dest_addr_npi</java-variable-name>
+            <xml-element-name>dest_addr_npi</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1519297206949">
+            <java-variable-name>esm_class</java-variable-name>
+            <xml-element-name>esm_class</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1519297206950">
+            <java-variable-name>protocol_id</java-variable-name>
+            <xml-element-name>protocol_id</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1519297206951">
+            <java-variable-name>priority_flag</java-variable-name>
+            <xml-element-name>priority_flag</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1519297206952">
+            <java-variable-name>registered_delivery</java-variable-name>
+            <xml-element-name>registered_delivery</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1519297206953">
+            <java-variable-name>short_message</java-variable-name>
+            <xml-element-name>short_message</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1519297206954">
+            <java-variable-name>data_coding</java-variable-name>
+            <xml-element-name>data_coding</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1519297206955">
+            <java-variable-name>sm_length</java-variable-name>
+            <xml-element-name>sm_length</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1519297206956">
+            <java-variable-name>message_state</java-variable-name>
+            <xml-element-name>message_state</xml-element-name>
+         </variable-mapping>
+         <variable-mapping id="VariableMapping_1519297206957">
+            <java-variable-name>receipted_message_id</java-variable-name>
+            <xml-element-name>receipted_message_id</xml-element-name>
+         </variable-mapping>
+      </java-xml-type-mapping>
+      <service-interface-mapping id="ServiceInterfaceMapping_1519297206914">
+         <service-interface>SoapSmppGW.GWServiceService</service-interface>
+         <wsdl-service-name id="WSDLServiceName_1519297206914">
+            <namespaceURI>urn:SoapSmppGW</namespaceURI>
+            <localpart>GWServiceService</localpart>
+         </wsdl-service-name>
+         <port-mapping id="PortMapping_1519297206914">
+            <port-name>GWService</port-name>
+            <java-port-name>GWService</java-port-name>
+         </port-mapping>
+      </service-interface-mapping>
+      <service-endpoint-interface-mapping id="ServiceEndpointInterfaceMapping_1519297206914">
+         <service-endpoint-interface>SoapSmppGW.GWService</service-endpoint-interface>
+         <wsdl-port-type id="WSDLPortType_1519297206914">
+            <namespaceURI>urn:SoapSmppGW</namespaceURI>
+            <localpart>GWService</localpart>
+         </wsdl-port-type>
+         <wsdl-binding id="WSDLBinding_1519297206914">
+            <namespaceURI>urn:SoapSmppGW</namespaceURI>
+            <localpart>GWServiceSoapBinding</localpart>
+         </wsdl-binding>
+         <service-endpoint-method-mapping id="ServiceEndpointMethodMapping_1519297206930">
+            <java-method-name>deliver</java-method-name>
+            <wsdl-operation>Deliver</wsdl-operation>
+            <method-param-parts-mapping id="MethodParamPartsMapping_1519297206930">
+               <param-position>0</param-position>
+               <param-type>SoapSmppGW.Deliver_sm</param-type>
+               <wsdl-message-mapping id="WSDLMessageMapping_1519297206930">
+                  <wsdl-message id="WSDLMessage_1519297206930">
+                     <namespaceURI>urn:SoapSmppGW</namespaceURI>
+                     <localpart>DeliverRequest</localpart>
+                  </wsdl-message>
+                  <wsdl-message-part-name>sm</wsdl-message-part-name>
+                  <parameter-mode>IN</parameter-mode>
+               </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <method-param-parts-mapping id="MethodParamPartsMapping_1519297206931">
+               <param-position>1</param-position>
+               <param-type>SoapSmppGW.GWSession</param-type>
+               <wsdl-message-mapping id="WSDLMessageMapping_1519297206931">
+                  <wsdl-message id="WSDLMessage_1519297206931">
+                     <namespaceURI>urn:SoapSmppGW</namespaceURI>
+                     <localpart>DeliverRequest</localpart>
+                  </wsdl-message>
+                  <wsdl-message-part-name>gws</wsdl-message-part-name>
+                  <parameter-mode>IN</parameter-mode>
+               </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <wsdl-return-value-mapping id="WSDLReturnValueMapping_1519297206930">
+               <method-return-value>SoapSmppGW.Deliver_resp</method-return-value>
+               <wsdl-message id="WSDLMessage_1519297206932">
+                  <namespaceURI>urn:SoapSmppGW</namespaceURI>
+                  <localpart>DeliverResponse</localpart>
+               </wsdl-message>
+               <wsdl-message-part-name>DeliverReturn</wsdl-message-part-name>
+            </wsdl-return-value-mapping>
+         </service-endpoint-method-mapping>
+         <service-endpoint-method-mapping id="ServiceEndpointMethodMapping_1519297206931">
+            <java-method-name>submit</java-method-name>
+            <wsdl-operation>Submit</wsdl-operation>
+            <method-param-parts-mapping id="MethodParamPartsMapping_1519297206932">
+               <param-position>0</param-position>
+               <param-type>SoapSmppGW.Submit_sm</param-type>
+               <wsdl-message-mapping id="WSDLMessageMapping_1519297206932">
+                  <wsdl-message id="WSDLMessage_1519297206933">
+                     <namespaceURI>urn:SoapSmppGW</namespaceURI>
+                     <localpart>SubmitRequest</localpart>
+                  </wsdl-message>
+                  <wsdl-message-part-name>sm</wsdl-message-part-name>
+                  <parameter-mode>IN</parameter-mode>
+               </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <method-param-parts-mapping id="MethodParamPartsMapping_1519297206933">
+               <param-position>1</param-position>
+               <param-type>SoapSmppGW.GWSession</param-type>
+               <wsdl-message-mapping id="WSDLMessageMapping_1519297206933">
+                  <wsdl-message id="WSDLMessage_1519297206934">
+                     <namespaceURI>urn:SoapSmppGW</namespaceURI>
+                     <localpart>SubmitRequest</localpart>
+                  </wsdl-message>
+                  <wsdl-message-part-name>gws</wsdl-message-part-name>
+                  <parameter-mode>IN</parameter-mode>
+               </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <wsdl-return-value-mapping id="WSDLReturnValueMapping_1519297206931">
+               <method-return-value>SoapSmppGW.Submit_resp</method-return-value>
+               <wsdl-message id="WSDLMessage_1519297206935">
+                  <namespaceURI>urn:SoapSmppGW</namespaceURI>
+                  <localpart>SubmitResponse</localpart>
+               </wsdl-message>
+               <wsdl-message-part-name>SubmitReturn</wsdl-message-part-name>
+            </wsdl-return-value-mapping>
+         </service-endpoint-method-mapping>
+      </service-endpoint-interface-mapping>
+   </java-wsdl-mapping>

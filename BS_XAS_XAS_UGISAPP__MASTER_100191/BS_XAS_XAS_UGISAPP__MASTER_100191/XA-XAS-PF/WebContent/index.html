@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+<title>XAS Console</title>
+
+<!-- Bootstrap core CSS -->
+<link href="./css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom styles for this template -->
+<link href="starter-template.css" rel="stylesheet">
+</head>
+
+<body>
+
+	<header class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+		<a class="navbar-brand" href="#">XAS</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse"
+			data-target="#navbarsExampleDefault"
+			aria-controls="navbarsExampleDefault" aria-expanded="false"
+			aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active"><a class="nav-link" href="#">Home
+						<span class="sr-only">(current)</span> </a>
+				</li>
+				<li class="nav-item dropdown"><a
+					class="nav-link dropdown-toggle" href="#" id="dropdown_sms"
+					data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sms</a>
+					<div class="dropdown-menu" aria-labelledby="dropdown_sms">
+						<a class="dropdown-item" href="#">sendsms</a> <a
+							class="dropdown-item" href="#">sendsms2</a> <a
+							class="dropdown-item" href="sendsms3.html">sendsms3</a> <a
+							class="dropdown-item" href="#">config</a> <a
+							class="dropdown-item" href="#">log Config</a> <a
+							class="dropdown-item" href="#">delivery</a>
+					</div>
+				</li>
+				<li class="nav-item"><a class="nav-link disabled" href="#">EMail</a>
+				</li>
+				<li class="nav-item"><a class="nav-link disabled" href="#">Monitor</a>
+				</li>
+				<li class="nav-item dropdown"><a
+					class="nav-link dropdown-toggle" href="#" id="dropdown_user"
+					data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">User</a>
+					<div class="dropdown-menu" aria-labelledby="dropdown_user">
+						<a class="dropdown-item" href="login.html">login</a> <a
+							class="dropdown-item" href="#">info</a> <a class="dropdown-item"
+							href="#">user profile</a> <a class="dropdown-item"
+							onclick="logout();" href="#">logout</a>
+					</div>
+				</li>
+			</ul>
+			<form class="form-inline my-2 my-lg-0">
+				<input class="form-control mr-sm-2" type="text" placeholder="Search"
+					aria-label="Search">
+				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+			</form>
+		</div>
+	</header>
+
+	<main role="main" class="container">
+
+<!--
+	<div class="alert alert-info fade in" data-alert="alert">
+		<h3>
+			<strong>Bootstrap sample application. </strong>
+		</h3>
+		<p>Here you'll see the usage of Simple Form and the Bootstrap
+			toolkit on a Rails 4 application.</p>
+		<p>You can check the source code on GitHub.</p>
+	</div>
+
+	<div class="row">
+		<div class="col-md-6">
+			<div class="panel panel-info">
+				<div class="panel-heading">Bootstrap: Basic Form</div>
+				<div class="panel-body">
+					<form role="form">
+						<div class="form-group">
+							<label class="control-label" for="exampleInputEmail1">Email</label>
+							<input type="email" class="form-control" id="exampleInputEmail1"
+								placeholder="Enter email">
+							<p class="help-block">Lorem ipsum dolor sit amet</p>
+						</div>
+
+						<div class="form-group">
+							<label class="control-label" for="exampleInputPassword1">Password</label>
+							<input type="password" class="form-control"
+								id="exampleInputPassword1" placeholder="Password">
+							<p class="help-block">Lorem ipsum dolor sit amet</p>
+						</div>
+
+						<div class="form-group">
+							<label class="control-label" for="exampleInputFile">File</label>
+							<input type="file" id="exampleInputFile">
+							<p class="help-block">Example block-level help text here.</p>
+						</div>
+
+						<div class="form-group">
+							<div class="checkbox">
+								<label> <input type="checkbox"> Active </label>
+							</div>
+							<p class="help-block">Lorem ipsum dolor sit amet</p>
+						</div>
+
+						<div class="form-group">
+							<label class="control-label">Choices</label>
+							<div class="checkbox">
+								<label> <input type="checkbox" name="optionsRadios"
+									id="optionsCheckbox1" value="option1" checked> Option
+									one is this and that&mdash;be sure to include why it's great </label>
+							</div>
+							<div class="checkbox">
+								<label> <input type="checkbox" name="optionsRadios"
+									id="optionsCheckbox2" value="option2"> Option two can
+									be something else and selecting it will deselect option one </label>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label class="control-label">Sex</label>
+							<div class="radio">
+								<label> <input type="radio" name="optionsRadios"
+									id="optionsRadios1" value="option1" checked> Male </label>
+							</div>
+							<div class="radio">
+								<label> <input type="radio" name="optionsRadios"
+									id="optionsRadios2" value="option2"> Female </label>
+							</div>
+							<p class="help-block">Lorem ipsum dolor sit amet</p>
+						</div>
+
+						<button type="submit" class="btn btn-default">Create User</button>
+					</form>
+
+				</div>
+			</div>
+		</div>
+		-->
+	</main>
+	<!-- /.container -->
+
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="./jquery/jquery-3.2.1.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<script>
+		window.jQuery
+				|| document
+						.write('<script src="./js/jquery-3.2.1.min.js"><\/script>')
+	</script>
+	<script src="./js/popper.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+
+	<script>
+		function logout() {
+			var p = window.location.protocol + '//'
+			// current location must return 200 OK for this GET
+			window.location = window.location.href.replace(p, p
+					+ 'logout:password@')
+
+			// To invalidate a basic auth login:
+			// 
+			// 	1. Call this logout function.
+			//	2. It makes a GET request to an URL with false Basic Auth credentials
+			//	3. The URL returns a 401 Unauthorized
+			// 	4. Forward to some "you-are-logged-out"-page
+			// 	5. Done, the Basic Auth header is invalid now
+
+			jQuery.ajax({
+				type : "GET",
+				url : "account?page=logout&action=logout",
+				async : true,
+				username : "logmeout",
+				password : "123456",
+				headers : {
+					"Authorization" : "Basic xxx"
+				}
+			}).done(function() {
+				//If we don't get an error, we actually got an error as we expect an 401!
+			}).fail(function() {
+				//We expect to get an 401 Unauthorized error! In this case we are successfully 
+				//logged out and we redirect the user.
+				window.location = "login.html";
+			});
+			return false;
+		}
+	</script>
+	<footer class="footer">
+		<div class="container">
+			<p>
+				Copyright 2017-2018 XAS
+			</p>
+			<ul class="footer-links">
+				<li><a href="http://agora.wiki.intranet.unicredit.it/xwiki/bin/view/APP-XAS/">Wiki XAS</a></li>
+				<li class="muted">·</li>
+				<li><a href="#">Simple Form @ GitHub</a></li>
+			</ul>
+		</div>
+	</footer>
+</body>
+</html>

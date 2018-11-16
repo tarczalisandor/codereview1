@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Class-Path: slf4j-api-1.6.6.jar 
+ slf4j-log4j12-1.6.6.jar 
+ smart-log-facility-1.2.jar
+

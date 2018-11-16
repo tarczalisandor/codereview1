@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejbbnd:EJBJarBinding xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ejb="ejb.xmi" xmlns:ejbbnd="ejbbnd.xmi" xmi:id="EJBJarBinding_1238506040624">
+  <ejbJar href="META-INF/ejb-jar.xml#ejb-jar_ID"/>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1239262208013" jndiName="ejb/it/usi/xframe/xas/bfintf/XasEmailHome">
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#XasEmail"/>
+    <resRefBindings xmi:id="ResourceRefBinding_1253203118064" jndiName="mail/default">
+      <bindingResourceRef href="META-INF/ejb-jar.xml#ResourceRef_1237470006389"/>
+    </resRefBindings>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1295361499850" jndiName="ejb/it/usi/xframe/xas/bfintf/XasSendsmsHome">
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#XasSendsms"/>
+    <resRefBindings xmi:id="ResourceRefBinding_1333117377961" jndiName="jms/UbiQueueConnectionFactory">
+      <bindingResourceRef href="META-INF/ejb-jar.xml#ResourceRef_1333117377961"/>
+    </resRefBindings>
+    <resRefBindings xmi:id="ResourceRefBinding_1333367279329" jndiName="jms/UbiQueue">
+      <bindingResourceRef href="META-INF/ejb-jar.xml#ResourceRef_1333367279329"/>
+    </resRefBindings>
+    <resRefBindings xmi:id="ResourceRefBinding_1381910137484" jndiName="url/XFR-XAS-VODAFONEPOPSOAPURL">
+      <bindingResourceRef href="META-INF/ejb-jar.xml#ResourceRef_1381910137484"/>
+    </resRefBindings>
+    <resRefBindings xmi:id="ResourceRefBinding_1441037542228" jndiName="url/XFR-XAS-SMSCONFIG">
+      <bindingResourceRef href="META-INF/ejb-jar.xml#ResourceRef_1441037542228"/>
+    </resRefBindings>
+    <resRefBindings xmi:id="ResourceRefBinding_1475498420852" jndiName="mail/default">
+      <bindingResourceRef href="META-INF/ejb-jar.xml#ResourceRef_1475498420852"/>
+    </resRefBindings>
+    <resRefBindings xmi:id="ResourceRefBinding_1491556881534" jndiName="url/XFR-XAS-TELECOMPOPSOAPURL">
+      <bindingResourceRef href="META-INF/ejb-jar.xml#ResourceRef_1491556881534"/>
+    </resRefBindings>
+    <resRefBindings xmi:id="ResourceRefBinding_1499412458734" jndiName="jdbc/XA-XAS-DS">
+      <bindingResourceRef href="META-INF/ejb-jar.xml#ResourceRef_1499412458734"/>
+    </resRefBindings>
+    <ejbRefBindings xmi:id="EjbRefBinding_1500903704986" jndiName="ejb/it/usi/xframe/ifg/bfintf/IfgHome">
+      <bindingEjbRef href="META-INF/ejb-jar.xml#EjbRef_1500903704986"/>
+    </ejbRefBindings>
+  </ejbBindings>
+  <ejbBindings xmi:type="ejbbnd:MessageDrivenBeanBinding" xmi:id="MessageDrivenBeanBinding_1435051034988" listenerInputPortName="SmsRequestListener">
+    <enterpriseBean xmi:type="ejb:MessageDriven" href="META-INF/ejb-jar.xml#XasMdbSms"/>
+    <resRefBindings xmi:id="ResourceRefBinding_1443099147255" jndiName="url/XFR-XAS-SMSCONFIG">
+      <bindingResourceRef href="META-INF/ejb-jar.xml#ResourceRef_1443099147255"/>
+    </resRefBindings>
+    <resRefBindings xmi:id="ResourceRefBinding_1449654101278" jndiName="url/XFR-XAS-VODAFONEPOPSOAPURL">
+      <bindingResourceRef href="META-INF/ejb-jar.xml#ResourceRef_1449654101278"/>
+    </resRefBindings>
+    <resRefBindings xmi:id="ResourceRefBinding_1478526578858" jndiName="mail/default">
+      <bindingResourceRef href="META-INF/ejb-jar.xml#ResourceRef_1478526578858"/>
+    </resRefBindings>
+    <ejbRefBindings xmi:id="EjbRefBinding_1447246872687" jndiName="ejb/it/usi/xframe/pre/bfintf/PreHome">
+      <bindingEjbRef href="META-INF/ejb-jar.xml#EjbRef_1447246872687"/>
+    </ejbRefBindings>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1517928316134" jndiName="ejb/it/usi/xframe/xas/bfintf/XasTestHome">
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#XasTest"/>
+  </ejbBindings>
+</ejbbnd:EJBJarBinding>

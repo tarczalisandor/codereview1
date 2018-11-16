@@ -1,0 +1,16 @@
+<!--header.start-->
+<div class="form-group row">
+	<label class="col-form-label col-sm-2" for="${dropdown_name}">${dropdown_label}</label>
+	<div class="input-group col-sm-10">
+		<div class="input-group-prepend">
+			<span class="input-group-text" id="${dropdown_name}Prepend"><i class="fa fa-list"></i></span>
+		</div>
+		<select class="form-control form-control-md" id="${dropdown_name}" name="${dropdown_name}" placeholder="${dropdown_label}">
+<!--header.end-->
+<!--footer.start-->
+		</select>
+		<small id="${dropdown_name}Help" class="form-text text-muted">${dropdown_suggestion}</small>
+		<div class="invalid-tooltip">${dropdown_label}</div>
+	</div>
+</div>
+<!--footer.end-->

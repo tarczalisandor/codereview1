@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.etools.webservice.wsext:WsExtension xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.etools.webservice.wsext="http://www.ibm.com/websphere/appserver/schemas/5.0.2/wsext.xmi" xmi:id="WsExtension_1239286126062">
+ <wsDescExt xmi:id="WsDescExt_1425478928122" wsDescNameLink="PgeTokenSendEmailService">
+    <pcBinding xmi:id="PcBinding_1425478928122" pcNameLink="PgeTokenSendEmail">
+      <serverServiceConfig xmi:id="ServerServiceConfig_1425479051474">
+        <securityRequestReceiverServiceConfig xmi:id="SecurityRequestReceiverServiceConfig_1425479051474">
+          <loginConfig xmi:id="LoginConfig_1425479051474">
+            <authMethods xmi:id="AuthMethod_1425479051474" text="BasicAuth"/>
+          </loginConfig>
+          <properties xmi:id="Property_1425479051474" name="com.ibm.ws.wssecurity.config.token.BasicAuth.NonceRequired" value="false"/>
+          <properties xmi:id="Property_1425479051475" name="com.ibm.ws.wssecurity.config.token.BasicAuth.Nonce.timestampRequired" value="false"/>
+        </securityRequestReceiverServiceConfig>
+      </serverServiceConfig>
+    </pcBinding>
+  </wsDescExt>
+  <wsDescExt xmi:id="WsDescExt_1425648723224" wsDescNameLink="PgeTokenSendSmsService">
+    <pcBinding xmi:id="PcBinding_1425648723224" pcNameLink="PgeTokenSendSms">
+      <serverServiceConfig xmi:id="ServerServiceConfig_1425648723224">
+        <securityRequestReceiverServiceConfig xmi:id="SecurityRequestReceiverServiceConfig_1425648723224">
+          <loginConfig xmi:id="LoginConfig_1425648723224">
+            <authMethods xmi:id="AuthMethod_1425648723224" text="BasicAuth"/>
+          </loginConfig>
+          <properties xmi:id="Property_1425648723224" name="com.ibm.ws.wssecurity.config.token.BasicAuth.NonceRequired" value="false"/>
+          <properties xmi:id="Property_1425648723225" name="com.ibm.ws.wssecurity.config.token.BasicAuth.Nonce.timestampRequired" value="false"/>
+        </securityRequestReceiverServiceConfig>
+      </serverServiceConfig>
+    </pcBinding>
+  </wsDescExt>
+  <wsDescExt xmi:id="WsDescExt_1449675270700" wsDescNameLink="PgeTokenSendSms2Service">
+    <pcBinding xmi:id="PcBinding_1449675270700" pcNameLink="PgeTokenSendSms2">
+      <serverServiceConfig xmi:id="ServerServiceConfig_1449675503800">
+        <securityRequestReceiverServiceConfig xmi:id="SecurityRequestReceiverServiceConfig_1449675503800">
+          <loginConfig xmi:id="LoginConfig_1449675503800">
+            <authMethods xmi:id="AuthMethod_1449675503801" text="BasicAuth"/>
+          </loginConfig>
+          <properties xmi:id="Property_1449675503801" name="com.ibm.ws.wssecurity.config.token.BasicAuth.NonceRequired" value="false"/>
+          <properties xmi:id="Property_1449675503802" name="com.ibm.ws.wssecurity.config.token.BasicAuth.Nonce.timestampRequired" value="false"/>
+        </securityRequestReceiverServiceConfig>
+      </serverServiceConfig>
+    </pcBinding>
+  </wsDescExt>
+  <wsDescExt xmi:id="WsDescExt_1491571155825" wsDescNameLink="SendEmailService">
+    <pcBinding xmi:id="PcBinding_1491571155825" pcNameLink="SendEmail">
+      <serverServiceConfig xmi:id="ServerServiceConfig_1491571155825">
+        <securityRequestReceiverServiceConfig xmi:id="SecurityRequestReceiverServiceConfig_1491571155825">
+          <loginConfig xmi:id="LoginConfig_1491571155825">
+            <authMethods xmi:id="AuthMethod_1491571155825" text="BasicAuth"/>
+            <authMethods xmi:id="AuthMethod_1491571155826" text="LTPA"/>
+          </loginConfig>
+          <properties xmi:id="Property_1491571155825" name="com.ibm.ws.wssecurity.config.token.BasicAuth.NonceRequired" value="false"/>
+          <properties xmi:id="Property_1491571155826" name="com.ibm.ws.wssecurity.config.token.BasicAuth.Nonce.timestampRequired" value="false"/>
+        </securityRequestReceiverServiceConfig>
+      </serverServiceConfig>
+    </pcBinding>
+  </wsDescExt>
+  <wsDescExt xmi:id="WsDescExt_1500377788801" wsDescNameLink="SendSmsService">
+    <pcBinding xmi:id="PcBinding_1500377788801" pcNameLink="SendSms">
+      <serverServiceConfig xmi:id="ServerServiceConfig_1501830423552">
+        <securityRequestReceiverServiceConfig xmi:id="SecurityRequestReceiverServiceConfig_1501830423552">
+          <loginConfig xmi:id="LoginConfig_1501830423552">
+            <authMethods xmi:id="AuthMethod_1501830423552" text="BasicAuth"/>
+            <authMethods xmi:id="AuthMethod_1501830423553" text="LTPA"/>
+          </loginConfig>
+          <properties xmi:id="Property_1501830423552" name="com.ibm.ws.wssecurity.config.token.BasicAuth.NonceRequired" value="false"/>
+          <properties xmi:id="Property_1501830423553" name="com.ibm.ws.wssecurity.config.token.BasicAuth.Nonce.timestampRequired" value="false"/>
+        </securityRequestReceiverServiceConfig>
+      </serverServiceConfig>
+    </pcBinding>
+  </wsDescExt>
+  <wsDescExt xmi:id="WsDescExt_1500453818224" wsDescNameLink="XasNotificationService">
+    <pcBinding xmi:id="PcBinding_1500453818224" pcNameLink="XasNotification">
+      <serverServiceConfig xmi:id="ServerServiceConfig_1504596099272">
+        <securityRequestReceiverServiceConfig xmi:id="SecurityRequestReceiverServiceConfig_1504596099272">
+          <loginConfig xmi:id="LoginConfig_1504596099272">
+            <authMethods xmi:id="AuthMethod_1504596099272" text="BasicAuth"/>
+          </loginConfig>
+          <properties xmi:id="Property_1504596099272" name="com.ibm.ws.wssecurity.config.token.BasicAuth.NonceRequired" value="false"/>
+          <properties xmi:id="Property_1504596099273" name="com.ibm.ws.wssecurity.config.token.BasicAuth.Nonce.timestampRequired" value="false"/>
+        </securityRequestReceiverServiceConfig>
+      </serverServiceConfig>
+    </pcBinding>
+  </wsDescExt>
+  <wsDescExt xmi:id="WsDescExt_1503905788846" wsDescNameLink="SmsNotificationService">
+    <pcBinding xmi:id="PcBinding_1503905788846" pcNameLink="SmsNotificationServicePort">
+      <serverServiceConfig xmi:id="ServerServiceConfig_1503905846780">
+        <securityRequestReceiverServiceConfig xmi:id="SecurityRequestReceiverServiceConfig_1503905846780">
+          <loginConfig xmi:id="LoginConfig_1503905846780">
+            <authMethods xmi:id="AuthMethod_1503905846780" text="BasicAuth"/>
+          </loginConfig>
+          <properties xmi:id="Property_1503905846780" name="com.ibm.ws.wssecurity.config.token.BasicAuth.NonceRequired" value="false"/>
+          <properties xmi:id="Property_1503905846781" name="com.ibm.ws.wssecurity.config.token.BasicAuth.Nonce.timestampRequired" value="false"/>
+        </securityRequestReceiverServiceConfig>
+      </serverServiceConfig>
+    </pcBinding>
+  </wsDescExt>
+  <wsDescExt xmi:id="WsDescExt_1501835643677" wsDescNameLink="SendSms2Service">
+    <pcBinding xmi:id="PcBinding_1501835643677" pcNameLink="SendSms2">
+      <serverServiceConfig xmi:id="ServerServiceConfig_1501835643677">
+        <securityRequestReceiverServiceConfig xmi:id="SecurityRequestReceiverServiceConfig_1501835643677">
+          <loginConfig xmi:id="LoginConfig_1501835643677">
+            <authMethods xmi:id="AuthMethod_1501835643677" text="BasicAuth"/>
+            <authMethods xmi:id="AuthMethod_1501835643678" text="LTPA"/>
+          </loginConfig>
+          <properties xmi:id="Property_1501835643677" name="com.ibm.ws.wssecurity.config.token.BasicAuth.NonceRequired" value="false"/>
+          <properties xmi:id="Property_1501835643678" name="com.ibm.ws.wssecurity.config.token.BasicAuth.Nonce.timestampRequired" value="false"/>
+        </securityRequestReceiverServiceConfig>
+      </serverServiceConfig>
+    </pcBinding>
+  </wsDescExt>
+  <wsDescExt xmi:id="WsDescExt_1519297366315" wsDescNameLink="GWServiceService">
+    <pcBinding xmi:id="PcBinding_1519297366315" pcNameLink="GWService">
+      <serverServiceConfig xmi:id="ServerServiceConfig_1519301301021">
+        <securityRequestReceiverServiceConfig xmi:id="SecurityRequestReceiverServiceConfig_1519301301021">
+          <loginConfig xmi:id="LoginConfig_1519301301021">
+            <authMethods xmi:id="AuthMethod_1519301301021" text="BasicAuth"/>
+          </loginConfig>
+          <properties xmi:id="Property_1519301301021" name="com.ibm.ws.wssecurity.config.token.BasicAuth.NonceRequired" value="false"/>
+          <properties xmi:id="Property_1519301301022" name="com.ibm.ws.wssecurity.config.token.BasicAuth.Nonce.timestampRequired" value="false"/>
+        </securityRequestReceiverServiceConfig>
+      </serverServiceConfig>
+    </pcBinding>
+  </wsDescExt>
+</com.ibm.etools.webservice.wsext:WsExtension>

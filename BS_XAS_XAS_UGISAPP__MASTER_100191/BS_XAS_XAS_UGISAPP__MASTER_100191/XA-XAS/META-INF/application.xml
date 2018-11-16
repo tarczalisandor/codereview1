@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE application PUBLIC "-//Sun Microsystems, Inc.//DTD J2EE Application 1.3//EN" "http://java.sun.com/dtd/application_1_3.dtd">
+<application id="Application_ID">
+	<display-name>XA-XAS</display-name>
+	<module id="EjbModule_1237364684714">
+		<ejb>XA-XAS-BF.jar</ejb>
+	</module>
+	<module id="WebModule_1237364760559">
+		<web>
+			<web-uri>XA-XAS-WS.war</web-uri>
+			<context-root>XA-XAS-WS</context-root>
+		</web>
+	</module>
+	<module id="WebModule_1237364760560">
+		<web>
+			<web-uri>XA-XAS-PF.war</web-uri>
+			<context-root>XA-XAS-PF</context-root>
+		</web>
+	</module>
+	<security-role id="SecurityRole_1523627146286">
+		<description>All users</description>
+		<role-name>Unauthenticated</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1266488443233">
+		<description>Authenticated user</description>
+		<role-name>Authenticated</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1237905756515">
+		<description></description>
+		<role-name>SendEmail</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1297344337667">
+		<description></description>
+		<role-name>SendSms</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1526391203277">
+		<description>Role to send sms type MT</description>
+		<role-name>SendMT</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1526391229793">
+		<description>Role to send sms type MO or DR</description>
+		<role-name>SendMODR</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1519119907106">
+		<description>Role to search for smses</description>
+		<role-name>SearchSms</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1523887680140">
+		<description>user that can see statisatics</description>
+		<role-name>ViewStatistics</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1523887680139">
+		<description>user that can manage configuration</description>
+		<role-name>ManageConfiguration</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1523866053057">
+		<description>amministratore</description>
+		<role-name>Admin</role-name>
+	</security-role>
+</application>

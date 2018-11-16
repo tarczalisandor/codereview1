@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE webservicesclient PUBLIC "-//IBM Corporation, Inc.//DTD J2EE Web services client 1.0//EN" "http://www.ibm.com/webservices/dtd/j2ee_web_services_client_1_0.dtd">
+<webservicesclient>
+  <component-scoped-refs>
+    <component-name>XasSendsms</component-name>
+    <service-ref>
+    	<description>WSDL Service SmsSendingService</description>
+    	<service-ref-name>service/SmsSendingService</service-ref-name>
+    	<service-interface>it.eng.service.mgp.sms.SmsSendingService</service-interface>
+    	<wsdl-file>META-INF/wsdl/telecom/SmsSendingService.wsdl</wsdl-file>
+    	<jaxrpc-mapping-file>META-INF/SmsSendingService_mapping.xml</jaxrpc-mapping-file>
+    	<service-qname>
+    		<namespaceURI>http://sms.mgp.service.eng.it/</namespaceURI>
+    		<localpart>SmsSendingService</localpart>
+    	</service-qname>
+    	<port-component-ref>
+    		<service-endpoint-interface>it.eng.service.mgp.sms.SmsSendingServicePortType</service-endpoint-interface>
+    	</port-component-ref>
+    	<handler>
+    		<description>OutboundWSSE2004UsernameToken</description>
+    		<display-name>OutboundWSSE2004UsernameToken</display-name>
+    		<handler-name>OutboundWSSE2004UsernameToken</handler-name>
+    		<handler-class>it.usi.xframe.xas.jaxrpc.auth.OutboundWSSE2004UsernameToken</handler-class>
+    		<init-param>
+    			<param-name>UTCacheFactory.class</param-name>
+    			<param-value>it.usi.xframe.xas.bfimpl.a2psms.providers.XasUTCacheFactory</param-value>
+    			<description>Description</description>
+    		</init-param>
+    		<init-param>
+    			<param-name>UTProfile</param-name>
+    			<param-value>service.telecom</param-value>
+    			<description>Description</description>
+    		</init-param>
+    	</handler>
+    </service-ref>
+    <service-ref>
+    	<description>WSDL Service XasNotificationService</description>
+    	<service-ref-name>service/XasNotificationService</service-ref-name>
+    	<service-interface>it.usi.xframe.xas.wsutil.XasNotificationService</service-interface>
+    	<wsdl-file>META-INF/wsdl/applicationGateway/XasNotificationService.wsdl</wsdl-file>
+    	<jaxrpc-mapping-file>META-INF/XasNotificationService_mapping.xml</jaxrpc-mapping-file>
+    	<service-qname>
+    		<namespaceURI>http://wsutil.xas.xframe.usi.it</namespaceURI>
+    		<localpart>XasNotificationService</localpart>
+    	</service-qname>
+    	<port-component-ref>
+    		<service-endpoint-interface>it.usi.xframe.xas.wsutil.XasNotification</service-endpoint-interface>
+    	</port-component-ref>
+    	<handler>
+    		<description>OutboundWSSE2004UsernameToken</description>
+    		<display-name>OutboundWSSE2004UsernameToken</display-name>
+    		<handler-name>OutboundWSSE2004UsernameToken</handler-name>
+    		<handler-class>it.usi.xframe.xas.jaxrpc.auth.OutboundWSSE2004UsernameToken</handler-class>
+    		<init-param>
+    			<param-name>UTCacheFactory.class</param-name>
+    			<param-value>it.usi.xframe.xas.bfimpl.a2psms.providers.XasUTCacheFactory</param-value>
+    			<description>Description</description>
+    		</init-param>
+    		<init-param>
+    			<param-name>UTProfile</param-name>
+    			<param-value>service.applicationGateway</param-value>
+    			<description>Description</description>
+    		</init-param>
+    	</handler>
+    </service-ref>
+  </component-scoped-refs>
+</webservicesclient>

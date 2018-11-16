@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry exported="true" kind="lib" path="/XA-XAS/xstream-1.4.8.jar" sourcepath="C:/projects/.devtools/m2local/.m2/repository/com/thoughtworks/xstream/xstream/1.4.8/xstream-1.4.8-sources.jar"/>
+	<classpathentry kind="src" path="ejbModule"/>
+	<classpathentry exported="true" kind="lib" path="/XA-XAS/applid.jar" sourcepath="/XA-XAS/applid.jar"/>
+	<classpathentry exported="true" kind="lib" path="/XA-XAS/CommRes.jar"/>
+	<classpathentry exported="true" kind="lib" path="/XA-XAS/stcommsrvrtk.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/com.ibm.ws.ast.st.runtime.runtimeTarget.v60/was.base.v6">
+		<attributes>
+			<attribute name="owner.project.facets" value="jst.ejb"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/WebSphere v6 JRE"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/x10s-eba-core.libraries"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/x10s-eba-ws-ext-dir.libraries"/>
+	<classpathentry exported="true" kind="lib" path="/XA-XAS/smart-log-facility-1.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="/XA-XAS/jettison-1.0.1.jar"/>
+	<classpathentry kind="lib" path="/XA-PRE/XA-PRE-BFCL.jar"/>
+	<classpathentry kind="lib" path="/XA-IFG/XA-IFG-BFCL.jar"/>
+	<classpathentry kind="lib" path="/XA-XAS/joda-time-1.6.2.jar"/>
+	<classpathentry kind="output" path="classes"/>
+</classpath>

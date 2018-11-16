@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<applicationbnd:ApplicationBinding xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:applicationbnd="applicationbnd.xmi" xmi:id="ApplicationBinding_1237545271859">
+  <authorizationTable xmi:id="AuthorizationTable_1237545271859">
+    <authorizations xmi:id="RoleAssignment_1237905756515">
+      <specialSubjects xmi:type="applicationbnd:AllAuthenticatedUsers" xmi:id="AllAuthenticatedUsers_1526387993527" name="AllAuthenticatedUsers"/>
+      <role href="META-INF/application.xml#SecurityRole_1237905756515"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1266488443233">
+      <specialSubjects xmi:type="applicationbnd:AllAuthenticatedUsers" xmi:id="AllAuthenticatedUsers_1526387993527" name="AllAuthenticatedUsers"/>
+      <role href="META-INF/application.xml#SecurityRole_1266488443233"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1297344337667">
+      <role href="META-INF/application.xml#SecurityRole_1297344337667"/>
+      <groups xmi:id="Group_1526387993527" name="XASXAS002"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1523627146286">
+      <specialSubjects xmi:type="applicationbnd:Everyone" xmi:id="Everyone_1523887680139" name="Everyone"/>
+      <role href="META-INF/application.xml#SecurityRole_1523627146286"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1524044074784">
+      <role href="META-INF/application.xml#SecurityRole_1519119907106"/>
+      <groups xmi:id="Group_1526387993528" name="XASXAS003"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1524044074785">
+      <role href="META-INF/application.xml#SecurityRole_1523866053057"/>
+      <groups xmi:id="Group_1526387993529" name="XASXAS010"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1524044074786">
+      <role href="META-INF/application.xml#SecurityRole_1523887680140"/>
+      <groups xmi:id="Group_1526387993530" name="XASXAS004"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1524044074787">
+      <role href="META-INF/application.xml#SecurityRole_1523887680139"/>
+      <groups xmi:id="Group_1526387993531" name="XASXAS005"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1526391203277">
+      <role href="META-INF/application.xml#SecurityRole_1526391203277"/>
+      <groups xmi:id="Group_1526387993527" name="XASXAS002"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1526391229793">
+      <role href="META-INF/application.xml#SecurityRole_1526391229793"/>
+      <groups xmi:id="Group_1526387993527" name="XASXAS002"/>
+    </authorizations>
+  </authorizationTable>
+  <application href="META-INF/application.xml#Application_ID"/>
+</applicationbnd:ApplicationBinding>

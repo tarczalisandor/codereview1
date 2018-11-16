@@ -1,0 +1,38 @@
+<!--header.start-->
+<div class="form-group row">
+	<label class="col-form-label col-sm-2" for="${fielddate_name}Container">${fielddate_label}</label>
+	<div class="input-group col-sm-10 date" id="${fielddate_name}Container" data-target-input="nearest">
+<!--header.end-->
+<!--body.start-->
+		<div class="input-group-prepend" data-target="#${fielddate_name}Container" data-toggle="datetimepicker">
+			<div class="input-group-text"><i class="fa fa-calendar-alt"></i></div>
+		</div>
+		<input id="${fielddate_name}" name="${fielddate_name}" type="text" class="form-control form-control-sm datetimepicker-input"
+		data-target="#${fielddate_name}Container" placeholder="${fielddate_label}" data-toggle="tooltip" data-placement="${fielddate_tooltip_position}" title="${fielddate_suggestion}"/>
+		<script type="text/javascript">
+			var ${fielddate_name}Container_default_date = "${fielddate_value}";
+			if(${fielddate_name}Container_default_date!="")
+				${fielddate_name}Container_default_date = moment(${fielddate_name}Container_default_date, 'DD/MM/YYYY HH:mm');
+			$(function () {
+				$('#${fielddate_name}Container').datetimepicker({
+					format: 'DD/MM/YYYY HH:mm',
+					defaultDate: ${fielddate_name}Container_default_date,
+					icons: {
+						time: 'fa fa-clock',
+						date: 'fa fa-calendar',
+						up: 'fa fa-arrow-up',
+						down: 'fa fa-arrow-down',
+						previous: 'fa fa-chevron-left',
+						next: 'fa fa-chevron-right',
+						today: 'fa fa-calendar-check-o',
+						clear: 'fa fa-trash',
+						close: 'fa fa-times'
+					}
+				});
+			});
+		</script>
+<!--body.end-->
+<!--footer.start-->
+	</div>
+</div>
+<!--footer.end-->

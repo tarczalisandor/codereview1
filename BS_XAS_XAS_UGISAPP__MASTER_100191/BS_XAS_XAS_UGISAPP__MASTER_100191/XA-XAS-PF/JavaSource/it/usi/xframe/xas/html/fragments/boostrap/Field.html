@@ -1,0 +1,20 @@
+<!--header.start-->
+<div class="form-group row ${field_hide}">
+	<label class="col-form-label col-sm-2" for="${field_name}">${field_label}</label>
+	<div class="input-group col-sm-10">
+		<div class="input-group-prepend">
+			<span class="input-group-text" id="${field_name}Prepend"><i class="${field_icon}"></i></span>
+		</div>
+<!--header.end-->
+<!--body.start-->
+		<input type="${field_type}" class="form-control form-control-sm ${field_class}"
+			id="${field_name}" name="${field_name}" data-format="${field_format}" ${field_others_attributes} placeholder="${field_label}" 
+			aria-label="${field_label}" aria-describedby="${field_name}Prepend" value="${field_value}" ${field_required} ${field_enabled}
+			data-toggle="tooltip" data-placement="${field_tooltip_position}" title="${field_suggestion}"/>
+		<small id="${field_name}Help" class="form-text text-muted"></small>
+		<div class="invalid-tooltip">${field_label}</div>
+<!--body.end-->
+<!--footer.start-->
+	</div>
+</div>
+<!--footer.end-->
